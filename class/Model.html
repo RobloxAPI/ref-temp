@@ -1,0 +1,1160 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=/ref/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/ref/favicon-16x16.png><link rel="shortcut icon" href=/ref/favicon.png><title>Model | Roblox API Reference</title><link rel=stylesheet href=/ref/css/main.min.31b9689d1dee9dee8eebdec0725b3be10c75a72fe10d890488a2c4dc7ffc7018.css integrity="sha256-MblonR3une6O697Acls74Qx1py/hDYkEiKLE3H/8cBg=" crossorigin=anonymous><script src=/ref/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js integrity="sha256-I80MfYNyY7nq65buLZzPopadqj+gD6HB/ocBqbhyUaE=" crossorigin=anonymous></script></head><body><header><header id=main-header><div id=main-header-left><h1><a href=/ref/>Roblox API Reference</a></h1><nav class=main-nav><ul><li><a href=/ref/class.html>Classes</a></li><li><a href=/ref/enum.html>Enums</a></li><li><a href=/ref/type.html>Types</a></li><li><a href=/ref/updates.html>Updates</a></li></ul></nav><aside id=search><section id=no-search>Searching requires Javascript.</section></aside></div><div id=main-header-right></div></header></header><main><header><h1>Model</h1></header><section id=summary><header><h2>Summary</h2></header><table class=metadata-pairs><tbody><tr><th>Memory Category</th><td>PhysicsParts</td></tr></tbody></table></section><nav><section><header><h2>Table of contents</h2></header><ol class=toc><li id=toc-class-tree>Class tree<ol><li id=toc-superclasses><a href=#superclasses>Inherits</a></li><li id=toc-subclasses><a href=#subclasses>Inherited by</a></li></ol></li><li><a href=#members-index>Member index</a></li><li id=toc-removed-members-index><a href=#removed-members-index>Removed member index</a></li><li><a href=#history>History</a></li><li><a href=#members>Members</a><ol><li><a href=#member-AddPersistentPlayer>AddPersistentPlayer</a></li><li><a href=#member-BreakJoints>BreakJoints</a></li><li><a href=#member-GetBoundingBox>GetBoundingBox</a></li><li><a href=#member-GetExtentsSize>GetExtentsSize</a></li><li><a href=#member-GetModelCFrame>GetModelCFrame</a></li><li><a href=#member-GetModelSize>GetModelSize</a></li><li><a href=#member-GetPersistentPlayers>GetPersistentPlayers</a></li><li><a href=#member-GetPrimaryPartCFrame>GetPrimaryPartCFrame</a></li><li><a href=#member-GetScale>GetScale</a></li><li><a href=#member-LevelOfDetail>LevelOfDetail</a></li><li><a href=#member-LodEntity>LodEntity</a></li><li><a href=#member-MakeJoints>MakeJoints</a></li><li><a href=#member-ModelMeshCFrame>ModelMeshCFrame</a></li><li><a href=#member-ModelMeshData>ModelMeshData</a></li><li><a href=#member-ModelMeshSize>ModelMeshSize</a></li><li><a href=#member-ModelStreamingMode>ModelStreamingMode</a></li><li><a href=#member-MoveTo>MoveTo</a></li><li><a href=#member-NeedsPivotMigration>NeedsPivotMigration</a></li><li><a href=#member-PrimaryPart>PrimaryPart</a></li><li><a href=#member-RemovePersistentPlayer>RemovePersistentPlayer</a></li><li><a href=#member-ResetOrientationToIdentity>ResetOrientationToIdentity</a></li><li><a href=#member-Scale>Scale</a></li><li><a href=#member-ScaleFactor>ScaleFactor</a></li><li><a href=#member-ScaleTo>ScaleTo</a></li><li><a href=#member-SetIdentityOrientation>SetIdentityOrientation</a></li><li><a href=#member-SetPrimaryPartCFrame>SetPrimaryPartCFrame</a></li><li><a href=#member-TranslateBy>TranslateBy</a></li><li><a href=#member-WorldPivot>WorldPivot</a></li><li><a href=#member-WorldPivotData>WorldPivotData</a></li><li><a href=#member-breakJoints>breakJoints</a></li><li><a href=#member-makeJoints>makeJoints</a></li><li><a href=#member-move>move</a></li><li><a href=#member-moveTo>moveTo</a></li></ol></li><li><a href=#removed-members>Removed members</a><ol><li><a href=#member-World%20Pivot%20Orientation>World Pivot Orientation</a></li><li><a href=#member-World%20Pivot%20Position>World Pivot Position</a></li></ol></li><li>References<ol><li><a href=#related-classes>Related classes</a></li><li><a href=#related-members>Related members</a></li><li><a href=#related-enums>Related enums</a></li><li><a href=#related-types>Related types</a></li></ol></li></ol></section></nav><section id=hierarchy><section id=superclasses><header><h2>Inherits <span class=element-count>2</span></h2></header><ul><li><a href=https://robloxapi.github.io/ref/class/PVInstance.html>PVInstance</a></li><li><a href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></li></ul></section><section id=subclasses><header><h2>Inherited by <span class=element-count>4</span></h2></header><ul><li><a href=https://robloxapi.github.io/ref/class/Actor.html>Actor</a></li><li><a href=https://robloxapi.github.io/ref/class/BackpackItem.html>BackpackItem</a></li><li><a href=https://robloxapi.github.io/ref/class/Status.html>Status</a></li><li><a href=https://robloxapi.github.io/ref/class/WorldRoot.html>WorldRoot</a></li></ul></section></section><section id=members-index><header><h2>Members <span class=element-count>33</span></h2></header><table class=members-index><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-LevelOfDetail>LevelOfDetail</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/enum/ModelLevelOfDetail.html>ModelLevelOfDetail</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-LodEntity>LodEntity</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/class/LodDataEntity.html>LodDataEntity</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelMeshCFrame>ModelMeshCFrame</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/CFrame.html>CFrame</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelMeshData>ModelMeshData</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/SharedString.html>SharedString</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelMeshSize>ModelMeshSize</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelStreamingMode>ModelStreamingMode</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/enum/ModelStreamingMode.html>ModelStreamingMode</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-NeedsPivotMigration>NeedsPivotMigration</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-PrimaryPart>PrimaryPart</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/class/BasePart.html>BasePart</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2023-02-08T13:44:08-08:00
+0.562.0.5620360
+version-37f56b71e8444990">562</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-Scale>Scale</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/float.html>float</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2023-02-08T13:44:08-08:00
+0.562.0.5620360
+version-37f56b71e8444990">562</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-ScaleFactor>ScaleFactor</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/float.html>float</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivot>WorldPivot</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/CFrame.html>CFrame</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivotData>WorldPivotData</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/OptionalCoordinateFrame.html>OptionalCoordinateFrame</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-AddPersistentPlayer>AddPersistentPlayer</a></span><span class=params-open>(</span><span class=parameter>playerInstance: <a class=type href=https://robloxapi.github.io/ref/class/Player.html>Player</a> = nil</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-BreakJoints>BreakJoints</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2024-01-09T18:39:11-08:00
+0.607.0.6070550
+version-954719f125be4a9d">607</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-GetBoundingBox>GetBoundingBox</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=returns-open>(</span><span class=return><a class=type href=https://robloxapi.github.io/ref/type/CFrame.html>CFrame</a></span><span class=return-sep>, </span><span class=return><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></span><span class=returns-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-GetExtentsSize>GetExtentsSize</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelCFrame>GetModelCFrame</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/CFrame.html>CFrame</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelSize>GetModelSize</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2023-05-17T11:55:31-07:00
+0.576.0.5760523
+version-6eaeb4d7cda146c1">576</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPersistentPlayers>GetPersistentPlayers</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Objects.html>Objects</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-05-17T11:55:31-07:00
+0.576.0.5760523
+version-6eaeb4d7cda146c1">576</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPrimaryPartCFrame>GetPrimaryPartCFrame</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/CFrame.html>CFrame</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2023-02-08T13:44:08-08:00
+0.562.0.5620360
+version-37f56b71e8444990">562</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-GetScale>GetScale</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/float.html>float</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-MakeJoints>MakeJoints</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-MoveTo>MoveTo</a></span><span class=params-open>(</span><span class=parameter>position: <a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-RemovePersistentPlayer>RemovePersistentPlayer</a></span><span class=params-open>(</span><span class=parameter>playerInstance: <a class=type href=https://robloxapi.github.io/ref/class/Player.html>Player</a> = nil</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-ResetOrientationToIdentity>ResetOrientationToIdentity</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-ScaleTo>ScaleTo</a></span><span class=params-open>(</span><span class=parameter>newScaleFactor: <a class=type href=https://robloxapi.github.io/ref/type/float.html>float</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-SetIdentityOrientation>SetIdentityOrientation</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-SetPrimaryPartCFrame>SetPrimaryPartCFrame</a></span><span class=params-open>(</span><span class=parameter>cframe: <a class=type href=https://robloxapi.github.io/ref/type/CFrame.html>CFrame</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-TranslateBy>TranslateBy</a></span><span class=params-open>(</span><span class=parameter>delta: <a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-breakJoints>breakJoints</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-makeJoints>makeJoints</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-move>move</a></span><span class=params-open>(</span><span class=parameter>location: <a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-moveTo>moveTo</a></span><span class=params-open>(</span><span class=parameter>location: <a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr></tbody></table></section><section id=removed-members-index><header><h2>Removed members <span class=element-count>2</span></h2></header><table class=members-index><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2023-01-03T16:43:41-08:00
+0.557.0.5570255
+version-e347054dd7884aef">557</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Orientation>World Pivot Orientation</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2023-01-03T16:43:41-08:00
+0.557.0.5570255
+version-e347054dd7884aef">557</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Position>World Pivot Position</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></span></td></tr></tbody></table></section><section id=history><header><h2>History <span class=element-count>112</span></h2></header><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2024-01-09T18:39:11-08:00
+0.607.0.6070550
+version-954719f125be4a9d">607</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetBoundingBox>Model.GetBoundingBox</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-05-17T11:55:31-07:00
+0.576.0.5760523
+version-6eaeb4d7cda146c1">576</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPrimaryPartCFrame>Model.GetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2023-05-17T11:55:31-07:00
+0.576.0.5760523
+version-6eaeb4d7cda146c1">576</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPersistentPlayers>Model.GetPersistentPlayers</a></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-moveTo>Model.moveTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-move>Model.move</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-makeJoints>Model.makeJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-breakJoints>Model.breakJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-TranslateBy>Model.TranslateBy</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetPrimaryPartCFrame>Model.SetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetIdentityOrientation>Model.SetIdentityOrientation</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-ScaleTo>Model.ScaleTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-ResetOrientationToIdentity>Model.ResetOrientationToIdentity</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-RemovePersistentPlayer>Model.RemovePersistentPlayer</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-MoveTo>Model.MoveTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-MakeJoints>Model.MakeJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-BreakJoints>Model.BreakJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-AddPersistentPlayer>Model.AddPersistentPlayer</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-02-21T19:35:12-08:00
+0.564.1.5640444
+version-5f157d1735294168">564</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-MakeJoints>Model.MakeJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-02-21T19:35:12-08:00
+0.564.1.5640444
+version-5f157d1735294168">564</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-BreakJoints>Model.BreakJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2023-02-08T13:44:08-08:00
+0.562.0.5620360
+version-37f56b71e8444990">562</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ScaleTo>Model.ScaleTo</a></li><li><a class="history-tag added" href=# title="Added on 2023-02-08T13:44:08-08:00
+0.562.0.5620360
+version-37f56b71e8444990">562</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetScale>Model.GetScale</a></li><li><a class="history-tag added" href=# title="Added on 2023-02-08T13:44:08-08:00
+0.562.0.5620360
+version-37f56b71e8444990">562</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ScaleFactor>Model.ScaleFactor</a></li><li><a class="history-tag added" href=# title="Added on 2023-02-08T13:44:08-08:00
+0.562.0.5620360
+version-37f56b71e8444990">562</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-Scale>Model.Scale</a></li><li><a class="history-tag added" href=# title="Added on 2023-01-03T16:43:41-08:00
+0.557.0.5570255
+version-e347054dd7884aef">557</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-RemovePersistentPlayer>Model.RemovePersistentPlayer</a></li><li><a class="history-tag added" href=# title="Added on 2023-01-03T16:43:41-08:00
+0.557.0.5570255
+version-e347054dd7884aef">557</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-AddPersistentPlayer>Model.AddPersistentPlayer</a></li><li><a class="history-tag removed" href=# title="Removed on 2023-01-03T16:43:41-08:00
+0.557.0.5570255
+version-e347054dd7884aef">557</a>
+Remove <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Position>Model.World Pivot Position</a></li><li><a class="history-tag removed" href=# title="Removed on 2023-01-03T16:43:41-08:00
+0.557.0.5570255
+version-e347054dd7884aef">557</a>
+Remove <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Orientation>Model.World Pivot Orientation</a></li><li><a class="history-tag removed" href=# title="Removed on 2022-12-08T21:40:29-08:00
+0.554.1.5540506
+version-3fe5b0e817e743ea">554</a>
+Remove <a href=https://robloxapi.github.io/ref/class/Model.html#member-RemovePersistentPlayer>Model.RemovePersistentPlayer</a></li><li><a class="history-tag removed" href=# title="Removed on 2022-12-08T21:40:29-08:00
+0.554.1.5540506
+version-3fe5b0e817e743ea">554</a>
+Remove <a href=https://robloxapi.github.io/ref/class/Model.html#member-AddPersistentPlayer>Model.AddPersistentPlayer</a></li><li><a class="history-tag added" href=# title="Added on 2022-12-06T19:43:08-08:00
+0.555.0.5550872
+version-251757a31ad1480e">555</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-RemovePersistentPlayer>Model.RemovePersistentPlayer</a></li><li><a class="history-tag added" href=# title="Added on 2022-12-06T19:43:08-08:00
+0.555.0.5550872
+version-251757a31ad1480e">555</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-AddPersistentPlayer>Model.AddPersistentPlayer</a></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-moveTo>Model.moveTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-move>Model.move</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-makeJoints>Model.makeJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-breakJoints>Model.breakJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetPrimaryPartCFrame>Model.SetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetIdentityOrientation>Model.SetIdentityOrientation</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-ResetOrientationToIdentity>Model.ResetOrientationToIdentity</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPrimaryPartCFrame>Model.GetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelSize>Model.GetModelSize</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelCFrame>Model.GetModelCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivotData>Model.WorldPivotData</a></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivot>Model.WorldPivot</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Position>Model.World Pivot Position</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Orientation>Model.World Pivot Orientation</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/Model.html#member-PrimaryPart>Model.PrimaryPart</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-NeedsPivotMigration>Model.NeedsPivotMigration</a></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelStreamingMode>Model.ModelStreamingMode</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelMeshSize>Model.ModelMeshSize</a></li><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelMeshData>Model.ModelMeshData</a></li><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelMeshCFrame>Model.ModelMeshCFrame</a></li><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-LodEntity>Model.LodEntity</a></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/Model.html#member-LevelOfDetail>Model.LevelOfDetail</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2022-10-11T18:25:47-07:00
+0.548.0.5480523
+version-d9be6bba61054c5c">548</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelStreamingMode>Model.ModelStreamingMode</a></li><li><a class="history-tag changed" href=# title="Changed on 2022-08-02T16:22:52-07:00
+0.538.0.5380364
+version-a7e9cf37f70a404a">538</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetPrimaryPartCFrame>Model.SetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-08-02T16:22:52-07:00
+0.538.0.5380364
+version-a7e9cf37f70a404a">538</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPrimaryPartCFrame>Model.GetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-08-02T16:22:52-07:00
+0.538.0.5380364
+version-a7e9cf37f70a404a">538</a>
+Change Category of <a href=https://robloxapi.github.io/ref/class/Model.html#member-PrimaryPart>Model.PrimaryPart</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivot>Model.WorldPivot</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Position>Model.World Pivot Position</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Orientation>Model.World Pivot Orientation</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-PrimaryPart>Model.PrimaryPart</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-LevelOfDetail>Model.LevelOfDetail</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-04-07T10:51:06-07:00
+0.473.0.420291
+version-8d3d2e19aaae440f">473</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivot>Model.WorldPivot</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-04-07T10:51:06-07:00
+0.473.0.420291
+version-8d3d2e19aaae440f">473</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivot>Model.WorldPivot</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-04-07T10:51:06-07:00
+0.473.0.420291
+version-8d3d2e19aaae440f">473</a>
+Change CanSave of <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivot>Model.WorldPivot</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-03-15T16:10:14-07:00
+0.470.0.419147
+version-1c2bc58e0cae4563">470</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivot>Model.WorldPivot</a></li><li><a class="history-tag added" href=# title="Added on 2021-03-15T16:10:14-07:00
+0.470.0.419147
+version-1c2bc58e0cae4563">470</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Position>Model.World Pivot Position</a></li><li><a class="history-tag added" href=# title="Added on 2021-03-15T16:10:14-07:00
+0.470.0.419147
+version-1c2bc58e0cae4563">470</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Orientation>Model.World Pivot Orientation</a></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-moveTo>Model.moveTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-move>Model.move</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-makeJoints>Model.makeJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-breakJoints>Model.breakJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-TranslateBy>Model.TranslateBy</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetPrimaryPartCFrame>Model.SetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetIdentityOrientation>Model.SetIdentityOrientation</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-ResetOrientationToIdentity>Model.ResetOrientationToIdentity</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-MoveTo>Model.MoveTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-MakeJoints>Model.MakeJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPrimaryPartCFrame>Model.GetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelSize>Model.GetModelSize</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelCFrame>Model.GetModelCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetExtentsSize>Model.GetExtentsSize</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetBoundingBox>Model.GetBoundingBox</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-BreakJoints>Model.BreakJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-PrimaryPart>Model.PrimaryPart</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-LevelOfDetail>Model.LevelOfDetail</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2020-07-24T17:55:48-07:00
+0.442.0.409067
+version-be1ccd4216c24116">442</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-LevelOfDetail>Model.LevelOfDetail</a></li><li><a class="history-tag added" href=# title="Added on 2018-10-02T12:35:00-07:00
+0.357.0.244916
+version-08edfeeed2494a60">357</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetBoundingBox>Model.GetBoundingBox</a></li><li><a class="history-tag changed" href=# title="Changed on 2018-03-13T19:19:58-07:00
+0.329.0.187788
+version-a10a16caa13a4288">329</a>
+Change ValueType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-PrimaryPart>Model.PrimaryPart</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/Model.html#member-TranslateBy>Model.TranslateBy</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetPrimaryPartCFrame>Model.SetPrimaryPartCFrame</a></li><li><a class="history-tag changed" href=# title="Changed on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetIdentityOrientation>Model.SetIdentityOrientation</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-ResetOrientationToIdentity>Model.ResetOrientationToIdentity</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/Model.html#member-MoveTo>Model.MoveTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPrimaryPartCFrame>Model.GetPrimaryPartCFrame</a></li><li><a class="history-tag changed" href=# title="Changed on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelSize>Model.GetModelSize</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelCFrame>Model.GetModelCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetExtentsSize>Model.GetExtentsSize</a></li><li><a class="history-tag added" href=# title="Added on 2012-02-16T23:49:58-08:00
+0.51.0.521
+version-b3dc906c765c40b6">51</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetIdentityOrientation>Model.SetIdentityOrientation</a></li><li><a class="history-tag added" href=# title="Added on 2012-02-16T23:49:58-08:00
+0.51.0.521
+version-b3dc906c765c40b6">51</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ResetOrientationToIdentity>Model.ResetOrientationToIdentity</a></li><li><a class="history-tag added" href=# title="Added on 2012-01-30T23:45:54-08:00
+0.50.0.502
+version-33cdd1a534aa4a98">50</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-moveTo>Model.moveTo</a></li><li><a class="history-tag added" href=# title="Added on 2011-12-09T00:29:44-08:00
+0.49.0.444
+version-844560f43f354d3f">49</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-breakJoints>Model.breakJoints</a></li><li><a class="history-tag added" href=# title="Added on 2011-11-15T23:49:43-08:00
+0.48.0.416
+version-d18531733302454e">48</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-makeJoints>Model.makeJoints</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-move>Model.move</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-TranslateBy>Model.TranslateBy</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-MoveTo>Model.MoveTo</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-MakeJoints>Model.MakeJoints</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelSize>Model.GetModelSize</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelCFrame>Model.GetModelCFrame</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-BreakJoints>Model.BreakJoints</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-PrimaryPart>Model.PrimaryPart</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html>Model</a></li></ul></section><section id=members><header><h2>Members</h2></header><div id=members-sections><section id=member-AddPersistentPlayer><header><h3>AddPersistentPlayer</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-playerInstance><td class=col-member>playerInstance</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/class/Player.html>Player</a></td><td class=col-default><span class=api-default>nil</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-AddPersistentPlayer>Model.AddPersistentPlayer</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2023-01-03T16:43:41-08:00
+0.557.0.5570255
+version-e347054dd7884aef">557</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-AddPersistentPlayer>Model.AddPersistentPlayer</a></li><li><a class="history-tag removed" href=# title="Removed on 2022-12-08T21:40:29-08:00
+0.554.1.5540506
+version-3fe5b0e817e743ea">554</a>
+Remove <a href=https://robloxapi.github.io/ref/class/Model.html#member-AddPersistentPlayer>Model.AddPersistentPlayer</a></li><li><a class="history-tag added" href=# title="Added on 2022-12-06T19:43:08-08:00
+0.555.0.5550872
+version-251757a31ad1480e">555</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-AddPersistentPlayer>Model.AddPersistentPlayer</a></li></ul></section><section id=member-BreakJoints><header><h3>BreakJoints</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-BreakJoints>Model.BreakJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-02-21T19:35:12-08:00
+0.564.1.5640444
+version-5f157d1735294168">564</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-BreakJoints>Model.BreakJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-BreakJoints>Model.BreakJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-BreakJoints>Model.BreakJoints</a></li></ul></section><section id=member-GetBoundingBox><header><h3>GetBoundingBox</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/CFrame.html>CFrame</a>, <a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></td></tr></tbody></table><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2024-01-09T18:39:11-08:00
+0.607.0.6070550
+version-954719f125be4a9d">607</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetBoundingBox>Model.GetBoundingBox</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetBoundingBox>Model.GetBoundingBox</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2018-10-02T12:35:00-07:00
+0.357.0.244916
+version-08edfeeed2494a60">357</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetBoundingBox>Model.GetBoundingBox</a></li></ul></section><section id=member-GetExtentsSize><header><h3>GetExtentsSize</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetExtentsSize>Model.GetExtentsSize</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetExtentsSize>Model.GetExtentsSize</a></li></ul></section><section id=member-GetModelCFrame><header><h3>GetModelCFrame</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/CFrame.html>CFrame</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelCFrame>Model.GetModelCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelCFrame>Model.GetModelCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelCFrame>Model.GetModelCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelCFrame>Model.GetModelCFrame</a></li></ul></section><section id=member-GetModelSize><header><h3>GetModelSize</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelSize>Model.GetModelSize</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelSize>Model.GetModelSize</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelSize>Model.GetModelSize</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetModelSize>Model.GetModelSize</a></li></ul></section><section id=member-GetPersistentPlayers><header><h3>GetPersistentPlayers</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Objects.html>Objects</a></td></tr></tbody></table><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2023-05-17T11:55:31-07:00
+0.576.0.5760523
+version-6eaeb4d7cda146c1">576</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPersistentPlayers>Model.GetPersistentPlayers</a></li></ul></section><section id=member-GetPrimaryPartCFrame><header><h3>GetPrimaryPartCFrame</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/CFrame.html>CFrame</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-05-17T11:55:31-07:00
+0.576.0.5760523
+version-6eaeb4d7cda146c1">576</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPrimaryPartCFrame>Model.GetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPrimaryPartCFrame>Model.GetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-08-02T16:22:52-07:00
+0.538.0.5380364
+version-a7e9cf37f70a404a">538</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPrimaryPartCFrame>Model.GetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPrimaryPartCFrame>Model.GetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetPrimaryPartCFrame>Model.GetPrimaryPartCFrame</a></li></ul></section><section id=member-GetScale><header><h3>GetScale</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/float.html>float</a></td></tr></tbody></table><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2023-02-08T13:44:08-08:00
+0.562.0.5620360
+version-37f56b71e8444990">562</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-GetScale>Model.GetScale</a></li></ul></section><section id=member-LevelOfDetail><header><h3>LevelOfDetail</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/enum/ModelLevelOfDetail.html>ModelLevelOfDetail</a></td></tr><tr><td>Security</td><td>PluginSecurity</td></tr><tr><td>Category</td><td>Appearance</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/Model.html#member-LevelOfDetail>Model.LevelOfDetail</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-LevelOfDetail>Model.LevelOfDetail</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-LevelOfDetail>Model.LevelOfDetail</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2020-07-24T17:55:48-07:00
+0.442.0.409067
+version-be1ccd4216c24116">442</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-LevelOfDetail>Model.LevelOfDetail</a></li></ul></section><section id=member-LodEntity><header><h3>LodEntity</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/class/LodDataEntity.html>LodDataEntity</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotScriptable]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-LodEntity>Model.LodEntity</a></li></ul></section><section id=member-MakeJoints><header><h3>MakeJoints</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-MakeJoints>Model.MakeJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-02-21T19:35:12-08:00
+0.564.1.5640444
+version-5f157d1735294168">564</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-MakeJoints>Model.MakeJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-MakeJoints>Model.MakeJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-MakeJoints>Model.MakeJoints</a></li></ul></section><section id=member-ModelMeshCFrame><header><h3>ModelMeshCFrame</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/CFrame.html>CFrame</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotScriptable]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelMeshCFrame>Model.ModelMeshCFrame</a></li></ul></section><section id=member-ModelMeshData><header><h3>ModelMeshData</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/SharedString.html>SharedString</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotScriptable]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelMeshData>Model.ModelMeshData</a></li></ul></section><section id=member-ModelMeshSize><header><h3>ModelMeshSize</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotScriptable]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelMeshSize>Model.ModelMeshSize</a></li></ul></section><section id=member-ModelStreamingMode><header><h3>ModelStreamingMode</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/enum/ModelStreamingMode.html>ModelStreamingMode</a></td></tr><tr><td>Category</td><td>Behavior</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelStreamingMode>Model.ModelStreamingMode</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2022-10-11T18:25:47-07:00
+0.548.0.5480523
+version-d9be6bba61054c5c">548</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ModelStreamingMode>Model.ModelStreamingMode</a></li></ul></section><section id=member-MoveTo><header><h3>MoveTo</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-position><td class=col-member>position</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-MoveTo>Model.MoveTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-MoveTo>Model.MoveTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/Model.html#member-MoveTo>Model.MoveTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-MoveTo>Model.MoveTo</a></li></ul></section><section id=member-NeedsPivotMigration><header><h3>NeedsPivotMigration</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotReplicated, NotScriptable]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-NeedsPivotMigration>Model.NeedsPivotMigration</a></li></ul></section><section id=member-PrimaryPart><header><h3>PrimaryPart</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/class/BasePart.html>BasePart</a></td></tr><tr><td>Category</td><td>Pivot</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><h4>History <span class=element-count>6</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/Model.html#member-PrimaryPart>Model.PrimaryPart</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-08-02T16:22:52-07:00
+0.538.0.5380364
+version-a7e9cf37f70a404a">538</a>
+Change Category of <a href=https://robloxapi.github.io/ref/class/Model.html#member-PrimaryPart>Model.PrimaryPart</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-PrimaryPart>Model.PrimaryPart</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-PrimaryPart>Model.PrimaryPart</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-03-13T19:19:58-07:00
+0.329.0.187788
+version-a10a16caa13a4288">329</a>
+Change ValueType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-PrimaryPart>Model.PrimaryPart</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-PrimaryPart>Model.PrimaryPart</a></li></ul></section><section id=member-RemovePersistentPlayer><header><h3>RemovePersistentPlayer</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-playerInstance><td class=col-member>playerInstance</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/class/Player.html>Player</a></td><td class=col-default><span class=api-default>nil</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-RemovePersistentPlayer>Model.RemovePersistentPlayer</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2023-01-03T16:43:41-08:00
+0.557.0.5570255
+version-e347054dd7884aef">557</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-RemovePersistentPlayer>Model.RemovePersistentPlayer</a></li><li><a class="history-tag removed" href=# title="Removed on 2022-12-08T21:40:29-08:00
+0.554.1.5540506
+version-3fe5b0e817e743ea">554</a>
+Remove <a href=https://robloxapi.github.io/ref/class/Model.html#member-RemovePersistentPlayer>Model.RemovePersistentPlayer</a></li><li><a class="history-tag added" href=# title="Added on 2022-12-06T19:43:08-08:00
+0.555.0.5550872
+version-251757a31ad1480e">555</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-RemovePersistentPlayer>Model.RemovePersistentPlayer</a></li></ul></section><section id=member-ResetOrientationToIdentity><header><h3>ResetOrientationToIdentity</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-ResetOrientationToIdentity>Model.ResetOrientationToIdentity</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-ResetOrientationToIdentity>Model.ResetOrientationToIdentity</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-ResetOrientationToIdentity>Model.ResetOrientationToIdentity</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-ResetOrientationToIdentity>Model.ResetOrientationToIdentity</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-02-16T23:49:58-08:00
+0.51.0.521
+version-b3dc906c765c40b6">51</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ResetOrientationToIdentity>Model.ResetOrientationToIdentity</a></li></ul></section><section id=member-Scale><header><h3>Scale</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/float.html>float</a></td></tr><tr><td>Category</td><td>Pivot</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [NotReplicated, NotScriptable]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2023-02-08T13:44:08-08:00
+0.562.0.5620360
+version-37f56b71e8444990">562</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-Scale>Model.Scale</a></li></ul></section><section id=member-ScaleFactor><header><h3>ScaleFactor</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/float.html>float</a></td></tr><tr><td>Category</td><td>Pivot</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotScriptable]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2023-02-08T13:44:08-08:00
+0.562.0.5620360
+version-37f56b71e8444990">562</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ScaleFactor>Model.ScaleFactor</a></li></ul></section><section id=member-ScaleTo><header><h3>ScaleTo</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-newScaleFactor><td class=col-member>newScaleFactor</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/float.html>float</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-ScaleTo>Model.ScaleTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2023-02-08T13:44:08-08:00
+0.562.0.5620360
+version-37f56b71e8444990">562</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-ScaleTo>Model.ScaleTo</a></li></ul></section><section id=member-SetIdentityOrientation><header><h3>SetIdentityOrientation</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetIdentityOrientation>Model.SetIdentityOrientation</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetIdentityOrientation>Model.SetIdentityOrientation</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetIdentityOrientation>Model.SetIdentityOrientation</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetIdentityOrientation>Model.SetIdentityOrientation</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-02-16T23:49:58-08:00
+0.51.0.521
+version-b3dc906c765c40b6">51</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetIdentityOrientation>Model.SetIdentityOrientation</a></li></ul></section><section id=member-SetPrimaryPartCFrame><header><h3>SetPrimaryPartCFrame</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-cframe><td class=col-member>cframe</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/CFrame.html>CFrame</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetPrimaryPartCFrame>Model.SetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetPrimaryPartCFrame>Model.SetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-08-02T16:22:52-07:00
+0.538.0.5380364
+version-a7e9cf37f70a404a">538</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetPrimaryPartCFrame>Model.SetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetPrimaryPartCFrame>Model.SetPrimaryPartCFrame</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-SetPrimaryPartCFrame>Model.SetPrimaryPartCFrame</a></li></ul></section><section id=member-TranslateBy><header><h3>TranslateBy</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-delta><td class=col-member>delta</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-TranslateBy>Model.TranslateBy</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-TranslateBy>Model.TranslateBy</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-05-28T23:45:30-07:00
+0.152.0.46962
+version-24e66ffe847b42da">152</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/Model.html#member-TranslateBy>Model.TranslateBy</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-TranslateBy>Model.TranslateBy</a></li></ul></section><section id=member-WorldPivot><header><h3>WorldPivot</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/CFrame.html>CFrame</a></td></tr><tr><td>Category</td><td>Pivot</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [NotReplicated]</p><h4>History <span class=element-count>6</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivot>Model.WorldPivot</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivot>Model.WorldPivot</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-04-07T10:51:06-07:00
+0.473.0.420291
+version-8d3d2e19aaae440f">473</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivot>Model.WorldPivot</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-04-07T10:51:06-07:00
+0.473.0.420291
+version-8d3d2e19aaae440f">473</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivot>Model.WorldPivot</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-04-07T10:51:06-07:00
+0.473.0.420291
+version-8d3d2e19aaae440f">473</a>
+Change CanSave of <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivot>Model.WorldPivot</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-03-15T16:10:14-07:00
+0.470.0.419147
+version-1c2bc58e0cae4563">470</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivot>Model.WorldPivot</a></li></ul></section><section id=member-WorldPivotData><header><h3>WorldPivotData</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/OptionalCoordinateFrame.html>OptionalCoordinateFrame</a></td></tr><tr><td>Category</td><td>Pivot</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotScriptable]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-WorldPivotData>Model.WorldPivotData</a></li></ul></section><section id=member-breakJoints><header><h3>breakJoints</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-breakJoints>Model.breakJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-breakJoints>Model.breakJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-breakJoints>Model.breakJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-12-09T00:29:44-08:00
+0.49.0.444
+version-844560f43f354d3f">49</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-breakJoints>Model.breakJoints</a></li></ul></section><section id=member-makeJoints><header><h3>makeJoints</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-makeJoints>Model.makeJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-makeJoints>Model.makeJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-makeJoints>Model.makeJoints</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-11-15T23:49:43-08:00
+0.48.0.416
+version-d18531733302454e">48</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-makeJoints>Model.makeJoints</a></li></ul></section><section id=member-move><header><h3>move</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-location><td class=col-member>location</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-move>Model.move</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-move>Model.move</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-move>Model.move</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-move>Model.move</a></li></ul></section><section id=member-moveTo><header><h3>moveTo</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-location><td class=col-member>location</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/Model.html#member-moveTo>Model.moveTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref/class/Model.html#member-moveTo>Model.moveTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-moveTo>Model.moveTo</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-01-30T23:45:54-08:00
+0.50.0.502
+version-33cdd1a534aa4a98">50</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-moveTo>Model.moveTo</a></li></ul></section></div></section><section id=removed-members><header><h2>Removed members</h2></header><div id=members-sections><section id="member-World Pivot Orientation"><header><h3>World Pivot Orientation</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></td></tr><tr><td>Category</td><td>Pivot</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [NotReplicated, NotScriptable]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2023-01-03T16:43:41-08:00
+0.557.0.5570255
+version-e347054dd7884aef">557</a>
+Remove <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Orientation>Model.World Pivot Orientation</a></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Orientation>Model.World Pivot Orientation</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Orientation>Model.World Pivot Orientation</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-03-15T16:10:14-07:00
+0.470.0.419147
+version-1c2bc58e0cae4563">470</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Orientation>Model.World Pivot Orientation</a></li></ul></section><section id="member-World Pivot Position"><header><h3>World Pivot Position</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></td></tr><tr><td>Category</td><td>Pivot</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [NotReplicated, NotScriptable]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2023-01-03T16:43:41-08:00
+0.557.0.5570255
+version-e347054dd7884aef">557</a>
+Remove <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Position>Model.World Pivot Position</a></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Position>Model.World Pivot Position</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Position>Model.World Pivot Position</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-03-15T16:10:14-07:00
+0.470.0.419147
+version-1c2bc58e0cae4563">470</a>
+Add <a href=https://robloxapi.github.io/ref/class/Model.html#member-World%20Pivot%20Position>Model.World Pivot Position</a></li></ul></section></div></section><section id=references><section id=related-classes><header><h2>Related classes <span class=element-count>3</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref/class/BasePart.html>BasePart</a></li><li><a href=https://robloxapi.github.io/ref/class/LodDataEntity.html>LodDataEntity</a></li><li><a href=https://robloxapi.github.io/ref/class/Player.html>Player</a></li></ul></section><section id=related-members><header><h2>Related members <span class=element-count>9</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref/class/Player.html#member-Character>Player.Character</a></li><li><a href=https://robloxapi.github.io/ref/class/Player.html#member-CharacterAdded>Player.CharacterAdded</a> (character)</li><li><a href=https://robloxapi.github.io/ref/class/Player.html#member-CharacterAppearanceLoaded>Player.CharacterAppearanceLoaded</a> (character)</li><li><a href=https://robloxapi.github.io/ref/class/Player.html#member-CharacterRemoving>Player.CharacterRemoving</a> (character)</li><li><a href=https://robloxapi.github.io/ref/class/Players.html#member-CreateHumanoidModelFromDescription>Players.CreateHumanoidModelFromDescription</a></li><li><a href=https://robloxapi.github.io/ref/class/Players.html#member-CreateHumanoidModelFromUserId>Players.CreateHumanoidModelFromUserId</a></li><li><a href=https://robloxapi.github.io/ref/class/Players.html#member-GetCharacterAppearanceAsync>Players.GetCharacterAppearanceAsync</a></li><li><a href=https://robloxapi.github.io/ref/class/Players.html#member-GetPlayerFromCharacter>Players.GetPlayerFromCharacter</a> (character)</li><li><a href=https://robloxapi.github.io/ref/class/Players.html#member-playerFromCharacter>Players.playerFromCharacter</a> (character)</li></ul></section><section id=related-enums><header><h2>Related enums <span class=element-count>2</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref/enum/ModelLevelOfDetail.html>ModelLevelOfDetail</a></li><li><a href=https://robloxapi.github.io/ref/enum/ModelStreamingMode.html>ModelStreamingMode</a></li></ul></section><section id=related-types><header><h2>Related types <span class=element-count>8</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref/type/bool.html>bool</a></li><li><a href=https://robloxapi.github.io/ref/type/CFrame.html>CFrame</a></li><li><a href=https://robloxapi.github.io/ref/type/float.html>float</a></li><li><a href=https://robloxapi.github.io/ref/type/null.html>null</a></li><li><a href=https://robloxapi.github.io/ref/type/Objects.html>Objects</a></li><li><a href=https://robloxapi.github.io/ref/type/OptionalCoordinateFrame.html>OptionalCoordinateFrame</a></li><li><a href=https://robloxapi.github.io/ref/type/SharedString.html>SharedString</a></li><li><a href=https://robloxapi.github.io/ref/type/Vector3.html>Vector3</a></li></ul></section></section></main><footer><footer id=main-footer><nav class=main-nav><ul><li><a class=header-block href=/ref/>Main</a></li><li><a class=header-block href=/ref/updates.html>Updates</a></li><li><a class=header-block href=/ref/about.html>About</a></li><li><a class=header-block href=https://www.roblox.com>Roblox</a></li><li><a class=header-block href=https://create.roblox.com/docs/en-us/reference/engine>CreatorHub</a></li><li><a class=header-block href=https://github.com/robloxapi/roar>Develop</a></li><li><a class=header-block href=https://github.com/robloxapi/roar/issues>Issues</a></li></ul></nav><div class="header-block license">Content is licensed under <a href=https://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA-4.0.</a></div><div class="header-block publication"><span class="icon svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 7" height="7" width="7"><path d="M2 0V1H1V4H2V7H3V6H4V7H5V4H6V1H5V0H4V1H3V0zM2 2H3V3H2zM4 2H5V3H4z"/></svg></span>2018–2024 <a href=https://anaminus.github.io>Anaminus</a></div></footer></footer></body></html>

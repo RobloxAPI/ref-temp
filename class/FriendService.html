@@ -1,0 +1,308 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=/ref/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/ref/favicon-16x16.png><link rel="shortcut icon" href=/ref/favicon.png><title>FriendService | Roblox API Reference</title><link rel=stylesheet href=/ref/css/main.min.31b9689d1dee9dee8eebdec0725b3be10c75a72fe10d890488a2c4dc7ffc7018.css integrity="sha256-MblonR3une6O697Acls74Qx1py/hDYkEiKLE3H/8cBg=" crossorigin=anonymous><script src=/ref/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js integrity="sha256-I80MfYNyY7nq65buLZzPopadqj+gD6HB/ocBqbhyUaE=" crossorigin=anonymous></script></head><body><header><header id=main-header><div id=main-header-left><h1><a href=/ref/>Roblox API Reference</a></h1><nav class=main-nav><ul><li><a href=/ref/class.html>Classes</a></li><li><a href=/ref/enum.html>Enums</a></li><li><a href=/ref/type.html>Types</a></li><li><a href=/ref/updates.html>Updates</a></li></ul></nav><aside id=search><section id=no-search>Searching requires Javascript.</section></aside></div><div id=main-header-right></div></header></header><main><header><h1>FriendService</h1></header><section id=summary><header><h2>Summary</h2></header><table class=metadata-pairs><tbody><tr><th>Memory Category</th><td>Instances</td></tr></tbody></table><p class=tags>Tags: [NotCreatable, Service]</p></section><nav><section><header><h2>Table of contents</h2></header><ol class=toc><li id=toc-class-tree>Class tree<ol><li id=toc-superclasses><a href=#superclasses>Inherits</a></li></ol></li><li><a href=#members-index>Member index</a></li><li id=toc-removed-members-index><a href=#removed-members-index>Removed member index</a></li><li><a href=#history>History</a></li><li><a href=#members>Members</a><ol><li><a href=#member-FriendsUpdated>FriendsUpdated</a></li><li><a href=#member-GetPlatformFriends>GetPlatformFriends</a></li><li><a href=#member-RemoteFriendEventSignal>RemoteFriendEventSignal</a></li><li><a href=#member-RemoteFriendStatusSignal>RemoteFriendStatusSignal</a></li></ol></li><li><a href=#removed-members>Removed members</a><ol><li><a href=#member-FriendsEvent>FriendsEvent</a></li><li><a href=#member-GetAreUsersFriends>GetAreUsersFriends</a></li><li><a href=#member-SetBreakFriendUrl>SetBreakFriendUrl</a></li><li><a href=#member-SetCreateFriendRequestUrl>SetCreateFriendRequestUrl</a></li><li><a href=#member-SetDeleteFriendRequestUrl>SetDeleteFriendRequestUrl</a></li><li><a href=#member-SetEnabled>SetEnabled</a></li><li><a href=#member-SetFriendsOnlineUrl>SetFriendsOnlineUrl</a></li><li><a href=#member-SetGetFriendsUrl>SetGetFriendsUrl</a></li><li><a href=#member-SetMakeFriendUrl>SetMakeFriendUrl</a></li><li><a href=#member-StartReceivingPlatformFriendsEvents>StartReceivingPlatformFriendsEvents</a></li></ol></li><li>References<ol><li><a href=#related-enums>Related enums</a></li><li><a href=#related-types>Related types</a></li></ol></li></ol></section></nav><section id=hierarchy><section id=superclasses><header><h2>Inherits <span class=element-count>1</span></h2></header><ul><li><a href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></li></ul></section></section><section id=members-index><header><h2>Members <span class=element-count>4</span></h2></header><table class=members-index><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetPlatformFriends>GetPlatformFriends</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsUpdated>FriendsUpdated</a></span><span class=params-open>(</span><span class=parameter>friendData: <a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-RemoteFriendEventSignal>RemoteFriendEventSignal</a></span><span class=params-open>(</span><span class=parameter>userId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=param-sep>, </span><span class=parameter>userId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=param-sep>, </span><span class=parameter>event: <a class=type href=https://robloxapi.github.io/ref/enum/FriendRequestEvent.html>FriendRequestEvent</a></span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-RemoteFriendStatusSignal>RemoteFriendStatusSignal</a></span><span class=params-open>(</span><span class=parameter>userId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=param-sep>, </span><span class=parameter>userId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=param-sep>, </span><span class=parameter>status: <a class=type href=https://robloxapi.github.io/ref/enum/FriendStatus.html>FriendStatus</a></span><span class=params-close>)</span></td></tr></tbody></table></section><section id=removed-members-index><header><h2>Removed members <span class=element-count>10</span></h2></header><table class=members-index><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-11-07T18:34:44-08:00
+0.315.0.162548
+version-8b1abbafbf174a21">315</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetAreUsersFriends>GetAreUsersFriends</a></span><span class=params-open>(</span><span class=parameter>userId: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span><span class=param-sep>, </span><span class=parameter>otherUserId: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span><span class=param-sep>, </span><span class=parameter>allowOfflineUsers: <a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a> = false</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetBreakFriendUrl>SetBreakFriendUrl</a></span><span class=params-open>(</span><span class=parameter>url: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetCreateFriendRequestUrl>SetCreateFriendRequestUrl</a></span><span class=params-open>(</span><span class=parameter>url: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetDeleteFriendRequestUrl>SetDeleteFriendRequestUrl</a></span><span class=params-open>(</span><span class=parameter>url: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetEnabled>SetEnabled</a></span><span class=params-open>(</span><span class=parameter>enable: <a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetFriendsOnlineUrl>SetFriendsOnlineUrl</a></span><span class=params-open>(</span><span class=parameter>url: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetGetFriendsUrl>SetGetFriendsUrl</a></span><span class=params-open>(</span><span class=parameter>url: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetMakeFriendUrl>SetMakeFriendUrl</a></span><span class=params-open>(</span><span class=parameter>url: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-09-19T23:37:33-07:00
+0.308.0.150864
+version-d640a62aa8e946de">308</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-StartReceivingPlatformFriendsEvents>StartReceivingPlatformFriendsEvents</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-09-19T23:37:33-07:00
+0.308.0.150864
+version-d640a62aa8e946de">308</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsEvent>FriendsEvent</a></span><span class=params-open>(</span><span class=parameter>eventInfo: <a class=type href=https://robloxapi.github.io/ref/type/Dictionary.html>Dictionary</a></span><span class=param-sep>, </span><span class=parameter>friendData: <a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></span><span class=params-close>)</span></td></tr></tbody></table></section><section id=history><header><h2>History <span class=element-count>41</span></h2></header><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-RemoteFriendStatusSignal>FriendService.RemoteFriendStatusSignal</a></li><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-RemoteFriendEventSignal>FriendService.RemoteFriendEventSignal</a></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsUpdated>FriendService.FriendsUpdated</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetPlatformFriends>FriendService.GetPlatformFriends</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag removed" href=# title="Removed on 2017-11-07T18:34:44-08:00
+0.315.0.162548
+version-8b1abbafbf174a21">315</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetAreUsersFriends>FriendService.GetAreUsersFriends</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetMakeFriendUrl>FriendService.SetMakeFriendUrl</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetGetFriendsUrl>FriendService.SetGetFriendsUrl</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetBreakFriendUrl>FriendService.SetBreakFriendUrl</a></li><li><a class="history-tag added" href=# title="Added on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetAreUsersFriends>FriendService.GetAreUsersFriends</a></li><li><a class="history-tag added" href=# title="Added on 2017-09-19T23:37:33-07:00
+0.308.0.150864
+version-d640a62aa8e946de">308</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsUpdated>FriendService.FriendsUpdated</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-09-19T23:37:33-07:00
+0.308.0.150864
+version-d640a62aa8e946de">308</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsEvent>FriendService.FriendsEvent</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-09-19T23:37:33-07:00
+0.308.0.150864
+version-d640a62aa8e946de">308</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-StartReceivingPlatformFriendsEvents>FriendService.StartReceivingPlatformFriendsEvents</a></li><li><a class="history-tag changed" href=# title="Changed on 2017-07-18T23:30:26-07:00
+0.299.0.136981
+version-17732db86c1f4699">299</a>
+Change Security of <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsEvent>FriendService.FriendsEvent</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a>
+Change Security of <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsEvent>FriendService.FriendsEvent</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag removed" href=# title="Removed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetFriendsOnlineUrl>FriendService.SetFriendsOnlineUrl</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetEnabled>FriendService.SetEnabled</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetDeleteFriendRequestUrl>FriendService.SetDeleteFriendRequestUrl</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetCreateFriendRequestUrl>FriendService.SetCreateFriendRequestUrl</a></li><li><a class="history-tag changed" href=# title="Changed on 2017-04-06T03:02:05-07:00
+0.284.0.112222
+version-08845fe3eda34ec5">284</a>
+Change Security of <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsEvent>FriendService.FriendsEvent</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2017-04-06T03:02:05-07:00
+0.284.0.112222
+version-08845fe3eda34ec5">284</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetFriendsOnlineUrl>FriendService.SetFriendsOnlineUrl</a></li><li><a class="history-tag added" href=# title="Added on 2017-04-06T03:02:05-07:00
+0.284.0.112222
+version-08845fe3eda34ec5">284</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetEnabled>FriendService.SetEnabled</a></li><li><a class="history-tag added" href=# title="Added on 2017-04-06T03:02:05-07:00
+0.284.0.112222
+version-08845fe3eda34ec5">284</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetDeleteFriendRequestUrl>FriendService.SetDeleteFriendRequestUrl</a></li><li><a class="history-tag added" href=# title="Added on 2017-04-06T03:02:05-07:00
+0.284.0.112222
+version-08845fe3eda34ec5">284</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetCreateFriendRequestUrl>FriendService.SetCreateFriendRequestUrl</a></li><li><a class="history-tag changed" href=# title="Changed on 2017-04-05T23:36:38-07:00
+0.285.0.114436
+version-058c2df0638c4b29">285</a>
+Change Security of <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsEvent>FriendService.FriendsEvent</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag removed" href=# title="Removed on 2017-04-05T23:36:38-07:00
+0.285.0.114436
+version-058c2df0638c4b29">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetFriendsOnlineUrl>FriendService.SetFriendsOnlineUrl</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-04-05T23:36:38-07:00
+0.285.0.114436
+version-058c2df0638c4b29">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetEnabled>FriendService.SetEnabled</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-04-05T23:36:38-07:00
+0.285.0.114436
+version-058c2df0638c4b29">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetDeleteFriendRequestUrl>FriendService.SetDeleteFriendRequestUrl</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-04-05T23:36:38-07:00
+0.285.0.114436
+version-058c2df0638c4b29">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetCreateFriendRequestUrl>FriendService.SetCreateFriendRequestUrl</a></li><li><a class="history-tag added" href=# title="Added on 2017-03-22T23:33:26-07:00
+0.283.0.111404
+version-8792f1948dc240b5">283</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetPlatformFriends>FriendService.GetPlatformFriends</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-03-22T01:38:39-07:00
+0.282.0.110137
+version-ad5bef3a760c43f9">282</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetPlatformFriends>FriendService.GetPlatformFriends</a></li><li><a class="history-tag added" href=# title="Added on 2017-03-21T23:34:42-07:00
+0.283.0.110760
+version-2378fd8021164159">283</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetPlatformFriends>FriendService.GetPlatformFriends</a></li><li><a class="history-tag added" href=# title="Added on 2016-11-30T23:57:24-08:00
+0.270.0.96141
+version-4f4eb962659b4ffb">270</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsEvent>FriendService.FriendsEvent</a></li><li><a class="history-tag added" href=# title="Added on 2016-11-30T23:57:24-08:00
+0.270.0.96141
+version-4f4eb962659b4ffb">270</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-StartReceivingPlatformFriendsEvents>FriendService.StartReceivingPlatformFriendsEvents</a></li><li><a class="history-tag added" href=# title="Added on 2013-09-04T23:49:36-07:00
+0.119.0.37583
+version-bfcf9c6870e347ac">119</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetFriendsOnlineUrl>FriendService.SetFriendsOnlineUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetMakeFriendUrl>FriendService.SetMakeFriendUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetGetFriendsUrl>FriendService.SetGetFriendsUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetEnabled>FriendService.SetEnabled</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetDeleteFriendRequestUrl>FriendService.SetDeleteFriendRequestUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetCreateFriendRequestUrl>FriendService.SetCreateFriendRequestUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetBreakFriendUrl>FriendService.SetBreakFriendUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html>FriendService</a></li></ul></section><section id=members><header><h2>Members</h2></header><div id=members-sections><section id=member-FriendsUpdated><header><h3>FriendsUpdated</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-friendData><td class=col-member>friendData</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsUpdated>FriendService.FriendsUpdated</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2017-09-19T23:37:33-07:00
+0.308.0.150864
+version-d640a62aa8e946de">308</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsUpdated>FriendService.FriendsUpdated</a></li></ul></section><section id=member-GetPlatformFriends><header><h3>GetPlatformFriends</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></td></tr></tbody></table><p class=tags>Tags: [Yields]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetPlatformFriends>FriendService.GetPlatformFriends</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2017-03-22T23:33:26-07:00
+0.283.0.111404
+version-8792f1948dc240b5">283</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetPlatformFriends>FriendService.GetPlatformFriends</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-03-22T01:38:39-07:00
+0.282.0.110137
+version-ad5bef3a760c43f9">282</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetPlatformFriends>FriendService.GetPlatformFriends</a></li><li><a class="history-tag added" href=# title="Added on 2017-03-21T23:34:42-07:00
+0.283.0.110760
+version-2378fd8021164159">283</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetPlatformFriends>FriendService.GetPlatformFriends</a></li></ul></section><section id=member-RemoteFriendEventSignal><header><h3>RemoteFriendEventSignal</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>3</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-userId><td class=col-member>userId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-userId><td class=col-member>userId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-event><td class=col-member>event</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/enum/FriendRequestEvent.html>FriendRequestEvent</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><p class=tags>Tags: [Hidden]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-RemoteFriendEventSignal>FriendService.RemoteFriendEventSignal</a></li></ul></section><section id=member-RemoteFriendStatusSignal><header><h3>RemoteFriendStatusSignal</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>3</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-userId><td class=col-member>userId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-userId><td class=col-member>userId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-status><td class=col-member>status</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/enum/FriendStatus.html>FriendStatus</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><p class=tags>Tags: [Hidden]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-RemoteFriendStatusSignal>FriendService.RemoteFriendStatusSignal</a></li></ul></section></div></section><section id=removed-members><header><h2>Removed members</h2></header><div id=members-sections><section id=member-FriendsEvent><header><h3>FriendsEvent</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>2</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-eventInfo><td class=col-member>eventInfo</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Dictionary.html>Dictionary</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-friendData><td class=col-member>friendData</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>6</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-09-19T23:37:33-07:00
+0.308.0.150864
+version-d640a62aa8e946de">308</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsEvent>FriendService.FriendsEvent</a></li><li><a class="history-tag changed" href=# title="Changed on 2017-07-18T23:30:26-07:00
+0.299.0.136981
+version-17732db86c1f4699">299</a>
+Change Security of <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsEvent>FriendService.FriendsEvent</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a>
+Change Security of <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsEvent>FriendService.FriendsEvent</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2017-04-06T03:02:05-07:00
+0.284.0.112222
+version-08845fe3eda34ec5">284</a>
+Change Security of <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsEvent>FriendService.FriendsEvent</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2017-04-05T23:36:38-07:00
+0.285.0.114436
+version-058c2df0638c4b29">285</a>
+Change Security of <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsEvent>FriendService.FriendsEvent</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2016-11-30T23:57:24-08:00
+0.270.0.96141
+version-4f4eb962659b4ffb">270</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-FriendsEvent>FriendService.FriendsEvent</a></li></ul></section><section id=member-GetAreUsersFriends><header><h3>GetAreUsersFriends</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>3</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-userId><td class=col-member>userId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-otherUserId><td class=col-member>otherUserId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-allowOfflineUsers><td class=col-member>allowOfflineUsers</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td><td class=col-default><span class=api-default>false</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr></tbody></table><p class=tags>Tags: [Yields]</p><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-11-07T18:34:44-08:00
+0.315.0.162548
+version-8b1abbafbf174a21">315</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetAreUsersFriends>FriendService.GetAreUsersFriends</a></li><li><a class="history-tag added" href=# title="Added on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-GetAreUsersFriends>FriendService.GetAreUsersFriends</a></li></ul></section><section id=member-SetBreakFriendUrl><header><h3>SetBreakFriendUrl</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-url><td class=col-member>url</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetBreakFriendUrl>FriendService.SetBreakFriendUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetBreakFriendUrl>FriendService.SetBreakFriendUrl</a></li></ul></section><section id=member-SetCreateFriendRequestUrl><header><h3>SetCreateFriendRequestUrl</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-url><td class=col-member>url</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetCreateFriendRequestUrl>FriendService.SetCreateFriendRequestUrl</a></li><li><a class="history-tag added" href=# title="Added on 2017-04-06T03:02:05-07:00
+0.284.0.112222
+version-08845fe3eda34ec5">284</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetCreateFriendRequestUrl>FriendService.SetCreateFriendRequestUrl</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-04-05T23:36:38-07:00
+0.285.0.114436
+version-058c2df0638c4b29">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetCreateFriendRequestUrl>FriendService.SetCreateFriendRequestUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetCreateFriendRequestUrl>FriendService.SetCreateFriendRequestUrl</a></li></ul></section><section id=member-SetDeleteFriendRequestUrl><header><h3>SetDeleteFriendRequestUrl</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-url><td class=col-member>url</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetDeleteFriendRequestUrl>FriendService.SetDeleteFriendRequestUrl</a></li><li><a class="history-tag added" href=# title="Added on 2017-04-06T03:02:05-07:00
+0.284.0.112222
+version-08845fe3eda34ec5">284</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetDeleteFriendRequestUrl>FriendService.SetDeleteFriendRequestUrl</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-04-05T23:36:38-07:00
+0.285.0.114436
+version-058c2df0638c4b29">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetDeleteFriendRequestUrl>FriendService.SetDeleteFriendRequestUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetDeleteFriendRequestUrl>FriendService.SetDeleteFriendRequestUrl</a></li></ul></section><section id=member-SetEnabled><header><h3>SetEnabled</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-enable><td class=col-member>enable</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetEnabled>FriendService.SetEnabled</a></li><li><a class="history-tag added" href=# title="Added on 2017-04-06T03:02:05-07:00
+0.284.0.112222
+version-08845fe3eda34ec5">284</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetEnabled>FriendService.SetEnabled</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-04-05T23:36:38-07:00
+0.285.0.114436
+version-058c2df0638c4b29">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetEnabled>FriendService.SetEnabled</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetEnabled>FriendService.SetEnabled</a></li></ul></section><section id=member-SetFriendsOnlineUrl><header><h3>SetFriendsOnlineUrl</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-url><td class=col-member>url</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-04-06T23:37:49-07:00
+0.285.0.114548
+version-da823d17eb7346c9">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetFriendsOnlineUrl>FriendService.SetFriendsOnlineUrl</a></li><li><a class="history-tag added" href=# title="Added on 2017-04-06T03:02:05-07:00
+0.284.0.112222
+version-08845fe3eda34ec5">284</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetFriendsOnlineUrl>FriendService.SetFriendsOnlineUrl</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-04-05T23:36:38-07:00
+0.285.0.114436
+version-058c2df0638c4b29">285</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetFriendsOnlineUrl>FriendService.SetFriendsOnlineUrl</a></li><li><a class="history-tag added" href=# title="Added on 2013-09-04T23:49:36-07:00
+0.119.0.37583
+version-bfcf9c6870e347ac">119</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetFriendsOnlineUrl>FriendService.SetFriendsOnlineUrl</a></li></ul></section><section id=member-SetGetFriendsUrl><header><h3>SetGetFriendsUrl</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-url><td class=col-member>url</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetGetFriendsUrl>FriendService.SetGetFriendsUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetGetFriendsUrl>FriendService.SetGetFriendsUrl</a></li></ul></section><section id=member-SetMakeFriendUrl><header><h3>SetMakeFriendUrl</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-url><td class=col-member>url</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetMakeFriendUrl>FriendService.SetMakeFriendUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-SetMakeFriendUrl>FriendService.SetMakeFriendUrl</a></li></ul></section><section id=member-StartReceivingPlatformFriendsEvents><header><h3>StartReceivingPlatformFriendsEvents</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-09-19T23:37:33-07:00
+0.308.0.150864
+version-d640a62aa8e946de">308</a>
+Remove <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-StartReceivingPlatformFriendsEvents>FriendService.StartReceivingPlatformFriendsEvents</a></li><li><a class="history-tag added" href=# title="Added on 2016-11-30T23:57:24-08:00
+0.270.0.96141
+version-4f4eb962659b4ffb">270</a>
+Add <a href=https://robloxapi.github.io/ref/class/FriendService.html#member-StartReceivingPlatformFriendsEvents>FriendService.StartReceivingPlatformFriendsEvents</a></li></ul></section></div></section><section id=references><section id=related-enums><header><h2>Related enums <span class=element-count>2</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref/enum/FriendRequestEvent.html>FriendRequestEvent</a></li><li><a href=https://robloxapi.github.io/ref/enum/FriendStatus.html>FriendStatus</a></li></ul></section><section id=related-types><header><h2>Related types <span class=element-count>2</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref/type/Array.html>Array</a></li><li><a href=https://robloxapi.github.io/ref/type/int64.html>int64</a></li></ul></section></section></main><footer><footer id=main-footer><nav class=main-nav><ul><li><a class=header-block href=/ref/>Main</a></li><li><a class=header-block href=/ref/updates.html>Updates</a></li><li><a class=header-block href=/ref/about.html>About</a></li><li><a class=header-block href=https://www.roblox.com>Roblox</a></li><li><a class=header-block href=https://create.roblox.com/docs/en-us/reference/engine>CreatorHub</a></li><li><a class=header-block href=https://github.com/robloxapi/roar>Develop</a></li><li><a class=header-block href=https://github.com/robloxapi/roar/issues>Issues</a></li></ul></nav><div class="header-block license">Content is licensed under <a href=https://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA-4.0.</a></div><div class="header-block publication"><span class="icon svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 7" height="7" width="7"><path d="M2 0V1H1V4H2V7H3V6H4V7H5V4H6V1H5V0H4V1H3V0zM2 2H3V3H2zM4 2H5V3H4z"/></svg></span>2018–2024 <a href=https://anaminus.github.io>Anaminus</a></div></footer></footer></body></html>

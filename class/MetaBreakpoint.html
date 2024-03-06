@@ -1,0 +1,512 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=/ref/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/ref/favicon-16x16.png><link rel="shortcut icon" href=/ref/favicon.png><title>MetaBreakpoint | Roblox API Reference</title><link rel=stylesheet href=/ref/css/main.min.31b9689d1dee9dee8eebdec0725b3be10c75a72fe10d890488a2c4dc7ffc7018.css integrity="sha256-MblonR3une6O697Acls74Qx1py/hDYkEiKLE3H/8cBg=" crossorigin=anonymous><script src=/ref/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js integrity="sha256-I80MfYNyY7nq65buLZzPopadqj+gD6HB/ocBqbhyUaE=" crossorigin=anonymous></script></head><body><header><header id=main-header><div id=main-header-left><h1><a href=/ref/>Roblox API Reference</a></h1><nav class=main-nav><ul><li><a href=/ref/class.html>Classes</a></li><li><a href=/ref/enum.html>Enums</a></li><li><a href=/ref/type.html>Types</a></li><li><a href=/ref/updates.html>Updates</a></li></ul></nav><aside id=search><section id=no-search>Searching requires Javascript.</section></aside></div><div id=main-header-right></div></header></header><main><header><h1>MetaBreakpoint</h1></header><section id=summary><header><h2>Summary</h2></header><table class=metadata-pairs><tbody><tr><th>Memory Category</th><td>Instances</td></tr></tbody></table><p class=tags>Tags: [NotCreatable, NotReplicated]</p></section><nav><section><header><h2>Table of contents</h2></header><ol class=toc><li id=toc-class-tree>Class tree<ol><li id=toc-superclasses><a href=#superclasses>Inherits</a></li></ol></li><li><a href=#members-index>Member index</a></li><li id=toc-removed-members-index><a href=#removed-members-index>Removed member index</a></li><li><a href=#history>History</a></li><li><a href=#members>Members</a><ol><li><a href=#member-Condition>Condition</a></li><li><a href=#member-ContinueExecution>ContinueExecution</a></li><li><a href=#member-Enabled>Enabled</a></li><li><a href=#member-GetContextBreakpoints>GetContextBreakpoints</a></li><li><a href=#member-Id>Id</a></li><li><a href=#member-IsLogpoint>IsLogpoint</a></li><li><a href=#member-Line>Line</a></li><li><a href=#member-LogMessage>LogMessage</a></li><li><a href=#member-Remove>Remove</a></li><li><a href=#member-RemoveOnHit>RemoveOnHit</a></li><li><a href=#member-Script>Script</a></li><li><a href=#member-SetChildBreakpointEnabledByScriptAndContext>SetChildBreakpointEnabledByScriptAndContext</a></li><li><a href=#member-SetContextEnabled>SetContextEnabled</a></li><li><a href=#member-SetContinueExecution>SetContinueExecution</a></li><li><a href=#member-SetEnabled>SetEnabled</a></li><li><a href=#member-SetLine>SetLine</a></li><li><a href=#member-SetRemoveOnHit>SetRemoveOnHit</a></li><li><a href=#member-Valid>Valid</a></li></ol></li><li><a href=#removed-members>Removed members</a><ol><li><a href=#member-GetContexts>GetContexts</a></li><li><a href=#member-SetCondition>SetCondition</a></li></ol></li><li>References<ol><li><a href=#related-members>Related members</a></li><li><a href=#related-types>Related types</a></li></ol></li></ol></section></nav><section id=hierarchy><section id=superclasses><header><h2>Inherits <span class=element-count>1</span></h2></header><ul><li><a href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></li></ul></section></section><section id=members-index><header><h2>Members <span class=element-count>18</span></h2></header><table class=members-index><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-02-01T14:21:29-08:00
+0.512.0.5120419
+version-d5507247339543c1">512</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Condition>Condition</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-ContinueExecution>ContinueExecution</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Enabled>Enabled</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Id>Id</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-IsLogpoint>IsLogpoint</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Line>Line</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-02-22T16:11:35-08:00
+0.515.0.5150376
+version-da7548d603154250">515</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-LogMessage>LogMessage</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-07-24T14:36:55-07:00
+0.587.0.5870056
+version-116c54c684b84afc">587</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-RemoveOnHit>RemoveOnHit</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Script>Script</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Valid>Valid</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-02-22T16:11:35-08:00
+0.515.0.5150376
+version-da7548d603154250">515</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-GetContextBreakpoints>GetContextBreakpoints</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Dictionary.html>Dictionary</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Remove>Remove</a></span><span class=params-open>(</span><span class=parameter>status: <a class=type href=https://robloxapi.github.io/ref/type/Function.html>Function</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetChildBreakpointEnabledByScriptAndContext>SetChildBreakpointEnabledByScriptAndContext</a></span><span class=params-open>(</span><span class=parameter>script: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=param-sep>, </span><span class=parameter>contextGST: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span><span class=param-sep>, </span><span class=parameter>enabled: <a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetContextEnabled>SetContextEnabled</a></span><span class=params-open>(</span><span class=parameter>context: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span><span class=param-sep>, </span><span class=parameter>enabled: <a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetContinueExecution>SetContinueExecution</a></span><span class=params-open>(</span><span class=parameter>enabled: <a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetEnabled>SetEnabled</a></span><span class=params-open>(</span><span class=parameter>enabled: <a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetLine>SetLine</a></span><span class=params-open>(</span><span class=parameter>line: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span><span class=param-sep>, </span><span class=parameter>status: <a class=type href=https://robloxapi.github.io/ref/type/Function.html>Function</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2023-06-29T12:37:20-07:00
+0.582.1.5820387
+version-cb457944642b4d94">582</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetRemoveOnHit>SetRemoveOnHit</a></span><span class=params-open>(</span><span class=parameter>enabled: <a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr></tbody></table></section><section id=removed-members-index><header><h2>Removed members <span class=element-count>2</span></h2></header><table class=members-index><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2022-02-22T16:11:35-08:00
+0.515.0.5150376
+version-da7548d603154250">515</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-GetContexts>GetContexts</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2022-02-01T14:21:29-08:00
+0.512.0.5120419
+version-d5507247339543c1">512</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetCondition>SetCondition</a></span><span class=params-open>(</span><span class=parameter>condition: <a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></span><span class=param-sep>, </span><span class=parameter>status: <a class=type href=https://robloxapi.github.io/ref/type/Function.html>Function</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span></td></tr></tbody></table></section><section id=history><header><h2>History <span class=element-count>52</span></h2></header><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-07-24T14:36:55-07:00
+0.587.0.5870056
+version-116c54c684b84afc">587</a>
+Change CanSave of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-RemoveOnHit>MetaBreakpoint.RemoveOnHit</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-07-24T14:36:55-07:00
+0.587.0.5870056
+version-116c54c684b84afc">587</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-RemoveOnHit>MetaBreakpoint.RemoveOnHit</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2023-06-29T12:37:20-07:00
+0.582.1.5820387
+version-cb457944642b4d94">582</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetRemoveOnHit>MetaBreakpoint.SetRemoveOnHit</a></li><li><a class="history-tag added" href=# title="Added on 2023-06-21T00:03:46-07:00
+0.581.0.5810563
+version-d9128aa1071a43de">581</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-RemoveOnHit>MetaBreakpoint.RemoveOnHit</a></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetEnabled>MetaBreakpoint.SetEnabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetContinueExecution>MetaBreakpoint.SetContinueExecution</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetContextEnabled>MetaBreakpoint.SetContextEnabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetChildBreakpointEnabledByScriptAndContext>MetaBreakpoint.SetChildBreakpointEnabledByScriptAndContext</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Valid>MetaBreakpoint.Valid</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Line>MetaBreakpoint.Line</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-IsLogpoint>MetaBreakpoint.IsLogpoint</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Id>MetaBreakpoint.Id</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Enabled>MetaBreakpoint.Enabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-ContinueExecution>MetaBreakpoint.ContinueExecution</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2022-06-15T00:29:52-07:00
+0.531.0.5310423
+version-7acf1179e3524a06">531</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Valid>MetaBreakpoint.Valid</a></li><li><a class="history-tag added" href=# title="Added on 2022-05-24T16:12:01-07:00
+0.528.0.5280404
+version-5d20a6b7d5e94509">528</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetChildBreakpointEnabledByScriptAndContext>MetaBreakpoint.SetChildBreakpointEnabledByScriptAndContext</a></li><li><a class="history-tag added" href=# title="Added on 2022-05-12T11:51:51-07:00
+0.526.0.5260426
+version-48ae1ea5c44a46f8">526</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetContextEnabled>MetaBreakpoint.SetContextEnabled</a></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Script>MetaBreakpoint.Script</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Script>MetaBreakpoint.Script</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Line>MetaBreakpoint.Line</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Line>MetaBreakpoint.Line</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Enabled>MetaBreakpoint.Enabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Enabled>MetaBreakpoint.Enabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-ContinueExecution>MetaBreakpoint.ContinueExecution</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change CanSave of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-ContinueExecution>MetaBreakpoint.ContinueExecution</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-ContinueExecution>MetaBreakpoint.ContinueExecution</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag removed" href=# title="Removed on 2022-02-22T16:11:35-08:00
+0.515.0.5150376
+version-da7548d603154250">515</a>
+Remove <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-GetContexts>MetaBreakpoint.GetContexts</a></li><li><a class="history-tag added" href=# title="Added on 2022-02-22T16:11:35-08:00
+0.515.0.5150376
+version-da7548d603154250">515</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-GetContextBreakpoints>MetaBreakpoint.GetContextBreakpoints</a></li><li><a class="history-tag changed" href=# title="Changed on 2022-02-22T16:11:35-08:00
+0.515.0.5150376
+version-da7548d603154250">515</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-LogMessage>MetaBreakpoint.LogMessage</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-02-22T16:11:35-08:00
+0.515.0.5150376
+version-da7548d603154250">515</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-LogMessage>MetaBreakpoint.LogMessage</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag removed" href=# title="Removed on 2022-02-01T14:21:29-08:00
+0.512.0.5120419
+version-d5507247339543c1">512</a>
+Remove <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetCondition>MetaBreakpoint.SetCondition</a></li><li><a class="history-tag changed" href=# title="Changed on 2022-02-01T14:21:29-08:00
+0.512.0.5120419
+version-d5507247339543c1">512</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Condition>MetaBreakpoint.Condition</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-02-01T14:21:29-08:00
+0.512.0.5120419
+version-d5507247339543c1">512</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Condition>MetaBreakpoint.Condition</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-12-07T20:41:27-08:00
+0.506.0.5060606
+version-a96da7dee57b4164">506</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-GetContexts>MetaBreakpoint.GetContexts</a></li><li><a class="history-tag removed" href=# title="Removed on 2021-11-17T11:07:11-08:00
+0.504.0.5040410
+version-c5f45f330c3b462c">504</a>
+Remove <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Valid>MetaBreakpoint.Valid</a></li><li><a class="history-tag added" href=# title="Added on 2021-11-02T16:06:17-07:00
+0.502.0.5020362
+version-dcc93c78b1634a97">502</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-LogMessage>MetaBreakpoint.LogMessage</a></li><li><a class="history-tag added" href=# title="Added on 2021-11-02T16:06:17-07:00
+0.502.0.5020362
+version-dcc93c78b1634a97">502</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-IsLogpoint>MetaBreakpoint.IsLogpoint</a></li><li><a class="history-tag changed" href=# title="Changed on 2021-10-26T17:04:39-07:00
+0.501.0.5010363
+version-fcb30c86a9c14b52">501</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetEnabled>MetaBreakpoint.SetEnabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-10-26T17:04:39-07:00
+0.501.0.5010363
+version-fcb30c86a9c14b52">501</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetEnabled>MetaBreakpoint.SetEnabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-10-26T17:04:39-07:00
+0.501.0.5010363
+version-fcb30c86a9c14b52">501</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetContinueExecution>MetaBreakpoint.SetContinueExecution</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-26T17:04:39-07:00
+0.501.0.5010363
+version-fcb30c86a9c14b52">501</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-ContinueExecution>MetaBreakpoint.ContinueExecution</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetLine>MetaBreakpoint.SetLine</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetEnabled>MetaBreakpoint.SetEnabled</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetCondition>MetaBreakpoint.SetCondition</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Remove>MetaBreakpoint.Remove</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Valid>MetaBreakpoint.Valid</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Script>MetaBreakpoint.Script</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Line>MetaBreakpoint.Line</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Id>MetaBreakpoint.Id</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Enabled>MetaBreakpoint.Enabled</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Condition>MetaBreakpoint.Condition</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html>MetaBreakpoint</a></li></ul></section><section id=members><header><h2>Members</h2></header><div id=members-sections><section id=member-Condition><header><h3>Condition</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td></tr><tr><td>Security</td><td>RobloxScriptSecurity</td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotReplicated]</p><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-02-01T14:21:29-08:00
+0.512.0.5120419
+version-d5507247339543c1">512</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Condition>MetaBreakpoint.Condition</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-02-01T14:21:29-08:00
+0.512.0.5120419
+version-d5507247339543c1">512</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Condition>MetaBreakpoint.Condition</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Condition>MetaBreakpoint.Condition</a></li></ul></section><section id=member-ContinueExecution><header><h3>ContinueExecution</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr><tr><td>Security</td><td>RobloxScriptSecurity</td></tr><tr><td>Category</td><td>State</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotReplicated]</p><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-ContinueExecution>MetaBreakpoint.ContinueExecution</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-ContinueExecution>MetaBreakpoint.ContinueExecution</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change CanSave of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-ContinueExecution>MetaBreakpoint.ContinueExecution</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-ContinueExecution>MetaBreakpoint.ContinueExecution</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-10-26T17:04:39-07:00
+0.501.0.5010363
+version-fcb30c86a9c14b52">501</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-ContinueExecution>MetaBreakpoint.ContinueExecution</a></li></ul></section><section id=member-Enabled><header><h3>Enabled</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr><tr><td>Security</td><td>RobloxScriptSecurity</td></tr><tr><td>Category</td><td>State</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Enabled>MetaBreakpoint.Enabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Enabled>MetaBreakpoint.Enabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Enabled>MetaBreakpoint.Enabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Enabled>MetaBreakpoint.Enabled</a></li></ul></section><section id=member-GetContextBreakpoints><header><h3>GetContextBreakpoints</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Dictionary.html>Dictionary</a></td></tr></tbody></table><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-02-22T16:11:35-08:00
+0.515.0.5150376
+version-da7548d603154250">515</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-GetContextBreakpoints>MetaBreakpoint.GetContextBreakpoints</a></li></ul></section><section id=member-Id><header><h3>Id</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td></tr><tr><td>Security</td><td>RobloxScriptSecurity</td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, ReadOnly, NotReplicated]</p><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Id>MetaBreakpoint.Id</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Id>MetaBreakpoint.Id</a></li></ul></section><section id=member-IsLogpoint><header><h3>IsLogpoint</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr><tr><td>Security</td><td>RobloxScriptSecurity</td></tr><tr><td>Category</td><td>State</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, ReadOnly, NotReplicated]</p><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-IsLogpoint>MetaBreakpoint.IsLogpoint</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-11-02T16:06:17-07:00
+0.502.0.5020362
+version-dcc93c78b1634a97">502</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-IsLogpoint>MetaBreakpoint.IsLogpoint</a></li></ul></section><section id=member-Line><header><h3>Line</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td></tr><tr><td>Security</td><td>RobloxScriptSecurity</td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Line>MetaBreakpoint.Line</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Line>MetaBreakpoint.Line</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Line>MetaBreakpoint.Line</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Line>MetaBreakpoint.Line</a></li></ul></section><section id=member-LogMessage><header><h3>LogMessage</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td></tr><tr><td>Security</td><td>RobloxScriptSecurity</td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotReplicated]</p><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-02-22T16:11:35-08:00
+0.515.0.5150376
+version-da7548d603154250">515</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-LogMessage>MetaBreakpoint.LogMessage</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-02-22T16:11:35-08:00
+0.515.0.5150376
+version-da7548d603154250">515</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-LogMessage>MetaBreakpoint.LogMessage</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-11-02T16:06:17-07:00
+0.502.0.5020362
+version-dcc93c78b1634a97">502</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-LogMessage>MetaBreakpoint.LogMessage</a></li></ul></section><section id=member-Remove><header><h3>Remove</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-status><td class=col-member>status</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Function.html>Function</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td></tr></tbody></table><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Remove>MetaBreakpoint.Remove</a></li></ul></section><section id=member-RemoveOnHit><header><h3>RemoveOnHit</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr><tr><td>Security</td><td>RobloxScriptSecurity</td></tr><tr><td>Category</td><td>State</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotReplicated]</p><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-07-24T14:36:55-07:00
+0.587.0.5870056
+version-116c54c684b84afc">587</a>
+Change CanSave of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-RemoveOnHit>MetaBreakpoint.RemoveOnHit</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-07-24T14:36:55-07:00
+0.587.0.5870056
+version-116c54c684b84afc">587</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-RemoveOnHit>MetaBreakpoint.RemoveOnHit</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2023-06-21T00:03:46-07:00
+0.581.0.5810563
+version-d9128aa1071a43de">581</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-RemoveOnHit>MetaBreakpoint.RemoveOnHit</a></li></ul></section><section id=member-Script><header><h3>Script</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td></tr><tr><td>Security</td><td>RobloxScriptSecurity</td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotReplicated]</p><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change CanLoad of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Script>MetaBreakpoint.Script</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-03-23T16:07:48-07:00
+0.519.0.5190432
+version-742a56bedeaa4c97">519</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Script>MetaBreakpoint.Script</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Script>MetaBreakpoint.Script</a></li></ul></section><section id=member-SetChildBreakpointEnabledByScriptAndContext><header><h3>SetChildBreakpointEnabledByScriptAndContext</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>3</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-script><td class=col-member>script</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-contextGST><td class=col-member>contextGST</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-enabled><td class=col-member>enabled</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetChildBreakpointEnabledByScriptAndContext>MetaBreakpoint.SetChildBreakpointEnabledByScriptAndContext</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2022-05-24T16:12:01-07:00
+0.528.0.5280404
+version-5d20a6b7d5e94509">528</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetChildBreakpointEnabledByScriptAndContext>MetaBreakpoint.SetChildBreakpointEnabledByScriptAndContext</a></li></ul></section><section id=member-SetContextEnabled><header><h3>SetContextEnabled</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>2</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-context><td class=col-member>context</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-enabled><td class=col-member>enabled</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetContextEnabled>MetaBreakpoint.SetContextEnabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2022-05-12T11:51:51-07:00
+0.526.0.5260426
+version-48ae1ea5c44a46f8">526</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetContextEnabled>MetaBreakpoint.SetContextEnabled</a></li></ul></section><section id=member-SetContinueExecution><header><h3>SetContinueExecution</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-enabled><td class=col-member>enabled</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetContinueExecution>MetaBreakpoint.SetContinueExecution</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-10-26T17:04:39-07:00
+0.501.0.5010363
+version-fcb30c86a9c14b52">501</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetContinueExecution>MetaBreakpoint.SetContinueExecution</a></li></ul></section><section id=member-SetEnabled><header><h3>SetEnabled</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-enabled><td class=col-member>enabled</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetEnabled>MetaBreakpoint.SetEnabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-10-26T17:04:39-07:00
+0.501.0.5010363
+version-fcb30c86a9c14b52">501</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetEnabled>MetaBreakpoint.SetEnabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-10-26T17:04:39-07:00
+0.501.0.5010363
+version-fcb30c86a9c14b52">501</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetEnabled>MetaBreakpoint.SetEnabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetEnabled>MetaBreakpoint.SetEnabled</a></li></ul></section><section id=member-SetLine><header><h3>SetLine</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>2</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-line><td class=col-member>line</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-status><td class=col-member>status</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Function.html>Function</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td></tr></tbody></table><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetLine>MetaBreakpoint.SetLine</a></li></ul></section><section id=member-SetRemoveOnHit><header><h3>SetRemoveOnHit</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-enabled><td class=col-member>enabled</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2023-06-29T12:37:20-07:00
+0.582.1.5820387
+version-cb457944642b4d94">582</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetRemoveOnHit>MetaBreakpoint.SetRemoveOnHit</a></li></ul></section><section id=member-Valid><header><h3>Valid</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr><tr><td>Security</td><td>RobloxScriptSecurity</td></tr><tr><td>Category</td><td>State</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a>
+Change Default of <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Valid>MetaBreakpoint.Valid</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2022-06-15T00:29:52-07:00
+0.531.0.5310423
+version-7acf1179e3524a06">531</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Valid>MetaBreakpoint.Valid</a></li><li><a class="history-tag removed" href=# title="Removed on 2021-11-17T11:07:11-08:00
+0.504.0.5040410
+version-c5f45f330c3b462c">504</a>
+Remove <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Valid>MetaBreakpoint.Valid</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-Valid>MetaBreakpoint.Valid</a></li></ul></section></div></section><section id=removed-members><header><h2>Removed members</h2></header><div id=members-sections><section id=member-GetContexts><header><h3>GetContexts</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2022-02-22T16:11:35-08:00
+0.515.0.5150376
+version-da7548d603154250">515</a>
+Remove <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-GetContexts>MetaBreakpoint.GetContexts</a></li><li><a class="history-tag added" href=# title="Added on 2021-12-07T20:41:27-08:00
+0.506.0.5060606
+version-a96da7dee57b4164">506</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-GetContexts>MetaBreakpoint.GetContexts</a></li></ul></section><section id=member-SetCondition><header><h3>SetCondition</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>2</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-condition><td class=col-member>condition</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-status><td class=col-member>status</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Function.html>Function</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2022-02-01T14:21:29-08:00
+0.512.0.5120419
+version-d5507247339543c1">512</a>
+Remove <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetCondition>MetaBreakpoint.SetCondition</a></li><li><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a>
+Add <a href=https://robloxapi.github.io/ref/class/MetaBreakpoint.html#member-SetCondition>MetaBreakpoint.SetCondition</a></li></ul></section></div></section><section id=references><section id=related-members><header><h2>Related members <span class=element-count>5</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref/class/MetaBreakpointManager.html#member-GetBreakpointById>MetaBreakpointManager.GetBreakpointById</a></li><li><a href=https://robloxapi.github.io/ref/class/MetaBreakpointManager.html#member-MetaBreakpointAdded>MetaBreakpointManager.MetaBreakpointAdded</a> (breakpoint)</li><li><a href=https://robloxapi.github.io/ref/class/MetaBreakpointManager.html#member-MetaBreakpointChanged>MetaBreakpointManager.MetaBreakpointChanged</a> (breakpoint)</li><li><a href=https://robloxapi.github.io/ref/class/MetaBreakpointManager.html#member-MetaBreakpointRemoved>MetaBreakpointManager.MetaBreakpointRemoved</a> (breakpoint)</li><li><a href=https://robloxapi.github.io/ref/class/MetaBreakpointManager.html#member-MetaBreakpointSetChanged>MetaBreakpointManager.MetaBreakpointSetChanged</a> (breakpoint)</li></ul></section><section id=related-types><header><h2>Related types <span class=element-count>6</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref/type/bool.html>bool</a></li><li><a href=https://robloxapi.github.io/ref/type/Dictionary.html>Dictionary</a></li><li><a href=https://robloxapi.github.io/ref/type/Function.html>Function</a></li><li><a href=https://robloxapi.github.io/ref/type/int.html>int</a></li><li><a href=https://robloxapi.github.io/ref/type/null.html>null</a></li><li><a href=https://robloxapi.github.io/ref/type/string.html>string</a></li></ul></section></section></main><footer><footer id=main-footer><nav class=main-nav><ul><li><a class=header-block href=/ref/>Main</a></li><li><a class=header-block href=/ref/updates.html>Updates</a></li><li><a class=header-block href=/ref/about.html>About</a></li><li><a class=header-block href=https://www.roblox.com>Roblox</a></li><li><a class=header-block href=https://create.roblox.com/docs/en-us/reference/engine>CreatorHub</a></li><li><a class=header-block href=https://github.com/robloxapi/roar>Develop</a></li><li><a class=header-block href=https://github.com/robloxapi/roar/issues>Issues</a></li></ul></nav><div class="header-block license">Content is licensed under <a href=https://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA-4.0.</a></div><div class="header-block publication"><span class="icon svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 7" height="7" width="7"><path d="M2 0V1H1V4H2V7H3V6H4V7H5V4H6V1H5V0H4V1H3V0zM2 2H3V3H2zM4 2H5V3H4z"/></svg></span>2018–2024 <a href=https://anaminus.github.io>Anaminus</a></div></footer></footer></body></html>

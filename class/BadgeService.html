@@ -1,0 +1,376 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=/ref/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/ref/favicon-16x16.png><link rel="shortcut icon" href=/ref/favicon.png><title>BadgeService | Roblox API Reference</title><link rel=stylesheet href=/ref/css/main.min.31b9689d1dee9dee8eebdec0725b3be10c75a72fe10d890488a2c4dc7ffc7018.css integrity="sha256-MblonR3une6O697Acls74Qx1py/hDYkEiKLE3H/8cBg=" crossorigin=anonymous><script src=/ref/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js integrity="sha256-I80MfYNyY7nq65buLZzPopadqj+gD6HB/ocBqbhyUaE=" crossorigin=anonymous></script></head><body><header><header id=main-header><div id=main-header-left><h1><a href=/ref/>Roblox API Reference</a></h1><nav class=main-nav><ul><li><a href=/ref/class.html>Classes</a></li><li><a href=/ref/enum.html>Enums</a></li><li><a href=/ref/type.html>Types</a></li><li><a href=/ref/updates.html>Updates</a></li></ul></nav><aside id=search><section id=no-search>Searching requires Javascript.</section></aside></div><div id=main-header-right></div></header></header><main><header><h1>BadgeService</h1></header><section id=summary><header><h2>Summary</h2></header><table class=metadata-pairs><tbody><tr><th>Memory Category</th><td>Instances</td></tr></tbody></table><p class=tags>Tags: [NotCreatable, Service]</p></section><nav><section><header><h2>Table of contents</h2></header><ol class=toc><li id=toc-class-tree>Class tree<ol><li id=toc-superclasses><a href=#superclasses>Inherits</a></li></ol></li><li><a href=#members-index>Member index</a></li><li id=toc-removed-members-index><a href=#removed-members-index>Removed member index</a></li><li><a href=#history>History</a></li><li><a href=#members>Members</a><ol><li><a href=#member-AwardBadge>AwardBadge</a></li><li><a href=#member-BadgeAwarded>BadgeAwarded</a></li><li><a href=#member-CheckUserBadgesAsync>CheckUserBadgesAsync</a></li><li><a href=#member-GetBadgeInfoAsync>GetBadgeInfoAsync</a></li><li><a href=#member-IsDisabled>IsDisabled</a></li><li><a href=#member-IsLegal>IsLegal</a></li><li><a href=#member-OnBadgeAwarded>OnBadgeAwarded</a></li><li><a href=#member-UserHasBadge>UserHasBadge</a></li><li><a href=#member-UserHasBadgeAsync>UserHasBadgeAsync</a></li></ol></li><li><a href=#removed-members>Removed members</a><ol><li><a href=#member-SetAwardBadgeUrl>SetAwardBadgeUrl</a></li><li><a href=#member-SetHasBadgeCooldown>SetHasBadgeCooldown</a></li><li><a href=#member-SetHasBadgeUrl>SetHasBadgeUrl</a></li><li><a href=#member-SetIsBadgeDisabledUrl>SetIsBadgeDisabledUrl</a></li><li><a href=#member-SetIsBadgeLegalUrl>SetIsBadgeLegalUrl</a></li><li><a href=#member-SetPlaceId>SetPlaceId</a></li></ol></li><li>References<ol><li><a href=#related-types>Related types</a></li></ol></li></ol></section></nav><section id=hierarchy><section id=superclasses><header><h2>Inherits <span class=element-count>1</span></h2></header><ul><li><a href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></li></ul></section></section><section id=members-index><header><h2>Members <span class=element-count>9</span></h2></header><table class=members-index><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-AwardBadge>AwardBadge</a></span><span class=params-open>(</span><span class=parameter>userId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=param-sep>, </span><span class=parameter>badgeId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2024-03-06T08:46:52-08:00
+0.615.0.6150606
+version-ef38986dea3640c8">615</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-CheckUserBadgesAsync>CheckUserBadgesAsync</a></span><span class=params-open>(</span><span class=parameter>userId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=param-sep>, </span><span class=parameter>badgeIds: <a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-GetBadgeInfoAsync>GetBadgeInfoAsync</a></span><span class=params-open>(</span><span class=parameter>badgeId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Dictionary.html>Dictionary</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsDisabled>IsDisabled</a></span><span class=params-open>(</span><span class=parameter>badgeId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsLegal>IsLegal</a></span><span class=params-open>(</span><span class=parameter>badgeId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadge>UserHasBadge</a></span><span class=params-open>(</span><span class=parameter>userId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=param-sep>, </span><span class=parameter>badgeId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadgeAsync>UserHasBadgeAsync</a></span><span class=params-open>(</span><span class=parameter>userId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=param-sep>, </span><span class=parameter>badgeId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-BadgeAwarded>BadgeAwarded</a></span><span class=params-open>(</span><span class=parameter>message: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=param-sep>, </span><span class=parameter>userId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=param-sep>, </span><span class=parameter>badgeId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-OnBadgeAwarded>OnBadgeAwarded</a></span><span class=params-open>(</span><span class=parameter>userId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=param-sep>, </span><span class=parameter>creatorId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=param-sep>, </span><span class=parameter>badgeId: <a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></span><span class=params-close>)</span></td></tr></tbody></table></section><section id=removed-members-index><header><h2>Removed members <span class=element-count>6</span></h2></header><table class=members-index><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetAwardBadgeUrl>SetAwardBadgeUrl</a></span><span class=params-open>(</span><span class=parameter>url: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetHasBadgeCooldown>SetHasBadgeCooldown</a></span><span class=params-open>(</span><span class=parameter>seconds: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetHasBadgeUrl>SetHasBadgeUrl</a></span><span class=params-open>(</span><span class=parameter>url: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetIsBadgeDisabledUrl>SetIsBadgeDisabledUrl</a></span><span class=params-open>(</span><span class=parameter>url: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetIsBadgeLegalUrl>SetIsBadgeLegalUrl</a></span><span class=params-open>(</span><span class=parameter>url: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetPlaceId>SetPlaceId</a></span><span class=params-open>(</span><span class=parameter>placeId: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr></tbody></table></section><section id=history><header><h2>History <span class=element-count>41</span></h2></header><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2024-03-06T08:46:52-08:00
+0.615.0.6150606
+version-ef38986dea3640c8">615</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-CheckUserBadgesAsync>BadgeService.CheckUserBadgesAsync</a></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-OnBadgeAwarded>BadgeService.OnBadgeAwarded</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-BadgeAwarded>BadgeService.BadgeAwarded</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadgeAsync>BadgeService.UserHasBadgeAsync</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadge>BadgeService.UserHasBadge</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsLegal>BadgeService.IsLegal</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsDisabled>BadgeService.IsDisabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-GetBadgeInfoAsync>BadgeService.GetBadgeInfoAsync</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-AwardBadge>BadgeService.AwardBadge</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2019-11-04T20:49:08-08:00
+0.409.0.358284
+version-2c88bb74b1a349e7">409</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-OnBadgeAwarded>BadgeService.OnBadgeAwarded</a></li><li><a class="history-tag changed" href=# title="Changed on 2018-10-08T15:06:59-07:00
+0.358.0.246716
+version-c7c6d55ab4ee460a">358</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsLegal>BadgeService.IsLegal</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-10-08T15:06:59-07:00
+0.358.0.246716
+version-c7c6d55ab4ee460a">358</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsDisabled>BadgeService.IsDisabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-07-10T14:18:12-07:00
+0.345.0.219036
+version-418137ce542940cc">345</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadge>BadgeService.UserHasBadge</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2018-05-22T17:48:33-07:00
+0.339.0.205431
+version-3cb5b0d716b54ead">339</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-GetBadgeInfoAsync>BadgeService.GetBadgeInfoAsync</a></li><li><a class="history-tag added" href=# title="Added on 2018-05-01T17:26:36-07:00
+0.336.0.199282
+version-72b02a0f9953418e">336</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadgeAsync>BadgeService.UserHasBadgeAsync</a></li><li><a class="history-tag changed" href=# title="Changed on 2018-01-03T20:00:58-08:00
+0.319.0.172062
+version-62384ee365424ad9">319</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-BadgeAwarded>BadgeService.BadgeAwarded</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-01-03T20:00:58-08:00
+0.319.0.172062
+version-62384ee365424ad9">319</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadge>BadgeService.UserHasBadge</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-01-03T20:00:58-08:00
+0.319.0.172062
+version-62384ee365424ad9">319</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsLegal>BadgeService.IsLegal</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-01-03T20:00:58-08:00
+0.319.0.172062
+version-62384ee365424ad9">319</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsDisabled>BadgeService.IsDisabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-01-03T20:00:58-08:00
+0.319.0.172062
+version-62384ee365424ad9">319</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-AwardBadge>BadgeService.AwardBadge</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetPlaceId>BadgeService.SetPlaceId</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetIsBadgeLegalUrl>BadgeService.SetIsBadgeLegalUrl</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetIsBadgeDisabledUrl>BadgeService.SetIsBadgeDisabledUrl</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetHasBadgeUrl>BadgeService.SetHasBadgeUrl</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetHasBadgeCooldown>BadgeService.SetHasBadgeCooldown</a></li><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetAwardBadgeUrl>BadgeService.SetAwardBadgeUrl</a></li><li><a class="history-tag changed" href=# title="Changed on 2014-09-17T23:41:19-07:00
+0.168.0.51652
+version-a730860d440c4e6c">168</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-BadgeAwarded>BadgeService.BadgeAwarded</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2013-02-14T03:14:01-08:00
+0.91.0.29925
+version-3fd4130a2cc844d3">91</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-BadgeAwarded>BadgeService.BadgeAwarded</a></li><li><a class="history-tag removed" href=# title="Removed on 2013-02-14T02:46:52-08:00
+0.90.0.29610
+version-acc00e7404af499b">90</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-BadgeAwarded>BadgeService.BadgeAwarded</a></li><li><a class="history-tag added" href=# title="Added on 2013-02-14T00:07:23-08:00
+0.91.0.29925
+version-673150fb80244383">91</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-BadgeAwarded>BadgeService.BadgeAwarded</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadge>BadgeService.UserHasBadge</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetPlaceId>BadgeService.SetPlaceId</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetIsBadgeLegalUrl>BadgeService.SetIsBadgeLegalUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetIsBadgeDisabledUrl>BadgeService.SetIsBadgeDisabledUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetHasBadgeUrl>BadgeService.SetHasBadgeUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetHasBadgeCooldown>BadgeService.SetHasBadgeCooldown</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetAwardBadgeUrl>BadgeService.SetAwardBadgeUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsLegal>BadgeService.IsLegal</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsDisabled>BadgeService.IsDisabled</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-AwardBadge>BadgeService.AwardBadge</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html>BadgeService</a></li></ul></section><section id=members><header><h2>Members</h2></header><div id=members-sections><section id=member-AwardBadge><header><h3>AwardBadge</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>2</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-userId><td class=col-member>userId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-badgeId><td class=col-member>badgeId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr></tbody></table><p class=tags>Tags: [Yields]</p><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-AwardBadge>BadgeService.AwardBadge</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-01-03T20:00:58-08:00
+0.319.0.172062
+version-62384ee365424ad9">319</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-AwardBadge>BadgeService.AwardBadge</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-AwardBadge>BadgeService.AwardBadge</a></li></ul></section><section id=member-BadgeAwarded><header><h3>BadgeAwarded</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>3</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-message><td class=col-member>message</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-userId><td class=col-member>userId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-badgeId><td class=col-member>badgeId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>6</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-BadgeAwarded>BadgeService.BadgeAwarded</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-01-03T20:00:58-08:00
+0.319.0.172062
+version-62384ee365424ad9">319</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-BadgeAwarded>BadgeService.BadgeAwarded</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-09-17T23:41:19-07:00
+0.168.0.51652
+version-a730860d440c4e6c">168</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-BadgeAwarded>BadgeService.BadgeAwarded</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2013-02-14T03:14:01-08:00
+0.91.0.29925
+version-3fd4130a2cc844d3">91</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-BadgeAwarded>BadgeService.BadgeAwarded</a></li><li><a class="history-tag removed" href=# title="Removed on 2013-02-14T02:46:52-08:00
+0.90.0.29610
+version-acc00e7404af499b">90</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-BadgeAwarded>BadgeService.BadgeAwarded</a></li><li><a class="history-tag added" href=# title="Added on 2013-02-14T00:07:23-08:00
+0.91.0.29925
+version-673150fb80244383">91</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-BadgeAwarded>BadgeService.BadgeAwarded</a></li></ul></section><section id=member-CheckUserBadgesAsync><header><h3>CheckUserBadgesAsync</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>2</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-userId><td class=col-member>userId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-badgeIds><td class=col-member>badgeIds</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></td></tr></tbody></table><p class=tags>Tags: [Yields]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2024-03-06T08:46:52-08:00
+0.615.0.6150606
+version-ef38986dea3640c8">615</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-CheckUserBadgesAsync>BadgeService.CheckUserBadgesAsync</a></li></ul></section><section id=member-GetBadgeInfoAsync><header><h3>GetBadgeInfoAsync</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-badgeId><td class=col-member>badgeId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Dictionary.html>Dictionary</a></td></tr></tbody></table><p class=tags>Tags: [Yields]</p><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-GetBadgeInfoAsync>BadgeService.GetBadgeInfoAsync</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2018-05-22T17:48:33-07:00
+0.339.0.205431
+version-3cb5b0d716b54ead">339</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-GetBadgeInfoAsync>BadgeService.GetBadgeInfoAsync</a></li></ul></section><section id=member-IsDisabled><header><h3>IsDisabled</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-badgeId><td class=col-member>badgeId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr></tbody></table><p class=tags>Tags: [Yields, Deprecated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsDisabled>BadgeService.IsDisabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-10-08T15:06:59-07:00
+0.358.0.246716
+version-c7c6d55ab4ee460a">358</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsDisabled>BadgeService.IsDisabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-01-03T20:00:58-08:00
+0.319.0.172062
+version-62384ee365424ad9">319</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsDisabled>BadgeService.IsDisabled</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsDisabled>BadgeService.IsDisabled</a></li></ul></section><section id=member-IsLegal><header><h3>IsLegal</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-badgeId><td class=col-member>badgeId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr></tbody></table><p class=tags>Tags: [Yields, Deprecated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsLegal>BadgeService.IsLegal</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-10-08T15:06:59-07:00
+0.358.0.246716
+version-c7c6d55ab4ee460a">358</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsLegal>BadgeService.IsLegal</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-01-03T20:00:58-08:00
+0.319.0.172062
+version-62384ee365424ad9">319</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsLegal>BadgeService.IsLegal</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-IsLegal>BadgeService.IsLegal</a></li></ul></section><section id=member-OnBadgeAwarded><header><h3>OnBadgeAwarded</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>3</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-userId><td class=col-member>userId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-creatorId><td class=col-member>creatorId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-badgeId><td class=col-member>badgeId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-OnBadgeAwarded>BadgeService.OnBadgeAwarded</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2019-11-04T20:49:08-08:00
+0.409.0.358284
+version-2c88bb74b1a349e7">409</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-OnBadgeAwarded>BadgeService.OnBadgeAwarded</a></li></ul></section><section id=member-UserHasBadge><header><h3>UserHasBadge</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>2</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-userId><td class=col-member>userId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-badgeId><td class=col-member>badgeId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr></tbody></table><p class=tags>Tags: [Yields, Deprecated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadge>BadgeService.UserHasBadge</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-07-10T14:18:12-07:00
+0.345.0.219036
+version-418137ce542940cc">345</a>
+Change Tags of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadge>BadgeService.UserHasBadge</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-01-03T20:00:58-08:00
+0.319.0.172062
+version-62384ee365424ad9">319</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadge>BadgeService.UserHasBadge</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadge>BadgeService.UserHasBadge</a></li></ul></section><section id=member-UserHasBadgeAsync><header><h3>UserHasBadgeAsync</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>2</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-userId><td class=col-member>userId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-badgeId><td class=col-member>badgeId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int64.html>int64</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr></tbody></table><p class=tags>Tags: [Yields]</p><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadgeAsync>BadgeService.UserHasBadgeAsync</a>
+<span class=diff-values><span class=row-from><span class=col-label>from</span>
+<span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
+<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2018-05-01T17:26:36-07:00
+0.336.0.199282
+version-72b02a0f9953418e">336</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-UserHasBadgeAsync>BadgeService.UserHasBadgeAsync</a></li></ul></section></div></section><section id=removed-members><header><h2>Removed members</h2></header><div id=members-sections><section id=member-SetAwardBadgeUrl><header><h3>SetAwardBadgeUrl</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-url><td class=col-member>url</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetAwardBadgeUrl>BadgeService.SetAwardBadgeUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetAwardBadgeUrl>BadgeService.SetAwardBadgeUrl</a></li></ul></section><section id=member-SetHasBadgeCooldown><header><h3>SetHasBadgeCooldown</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-seconds><td class=col-member>seconds</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetHasBadgeCooldown>BadgeService.SetHasBadgeCooldown</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetHasBadgeCooldown>BadgeService.SetHasBadgeCooldown</a></li></ul></section><section id=member-SetHasBadgeUrl><header><h3>SetHasBadgeUrl</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-url><td class=col-member>url</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetHasBadgeUrl>BadgeService.SetHasBadgeUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetHasBadgeUrl>BadgeService.SetHasBadgeUrl</a></li></ul></section><section id=member-SetIsBadgeDisabledUrl><header><h3>SetIsBadgeDisabledUrl</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-url><td class=col-member>url</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetIsBadgeDisabledUrl>BadgeService.SetIsBadgeDisabledUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetIsBadgeDisabledUrl>BadgeService.SetIsBadgeDisabledUrl</a></li></ul></section><section id=member-SetIsBadgeLegalUrl><header><h3>SetIsBadgeLegalUrl</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-url><td class=col-member>url</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetIsBadgeLegalUrl>BadgeService.SetIsBadgeLegalUrl</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetIsBadgeLegalUrl>BadgeService.SetIsBadgeLegalUrl</a></li></ul></section><section id=member-SetPlaceId><header><h3>SetPlaceId</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-placeId><td class=col-member>placeId</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2017-10-03T23:40:46-07:00
+0.310.0.154547
+version-cbdbf8f90c004849">310</a>
+Remove <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetPlaceId>BadgeService.SetPlaceId</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+0.47.0.380
+version-87de5333d4254860">47</a>
+Add <a href=https://robloxapi.github.io/ref/class/BadgeService.html#member-SetPlaceId>BadgeService.SetPlaceId</a></li></ul></section></div></section><section id=references><section id=related-types><header><h2>Related types <span class=element-count>5</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref/type/Array.html>Array</a></li><li><a href=https://robloxapi.github.io/ref/type/bool.html>bool</a></li><li><a href=https://robloxapi.github.io/ref/type/Dictionary.html>Dictionary</a></li><li><a href=https://robloxapi.github.io/ref/type/int64.html>int64</a></li><li><a href=https://robloxapi.github.io/ref/type/string.html>string</a></li></ul></section></section></main><footer><footer id=main-footer><nav class=main-nav><ul><li><a class=header-block href=/ref/>Main</a></li><li><a class=header-block href=/ref/updates.html>Updates</a></li><li><a class=header-block href=/ref/about.html>About</a></li><li><a class=header-block href=https://www.roblox.com>Roblox</a></li><li><a class=header-block href=https://create.roblox.com/docs/en-us/reference/engine>CreatorHub</a></li><li><a class=header-block href=https://github.com/robloxapi/roar>Develop</a></li><li><a class=header-block href=https://github.com/robloxapi/roar/issues>Issues</a></li></ul></nav><div class="header-block license">Content is licensed under <a href=https://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA-4.0.</a></div><div class="header-block publication"><span class="icon svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 7" height="7" width="7"><path d="M2 0V1H1V4H2V7H3V6H4V7H5V4H6V1H5V0H4V1H3V0zM2 2H3V3H2zM4 2H5V3H4z"/></svg></span>2018–2024 <a href=https://anaminus.github.io>Anaminus</a></div></footer></footer></body></html>
