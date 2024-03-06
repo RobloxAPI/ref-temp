@@ -14,7 +14,8 @@ jobs:
     steps:
     - name: "Print environment"
       run: |
-        printenv && pwd
+        printenv
+        pwd
     - name: "Checkout roar"
       uses: "actions/checkout@v4"
       with:
