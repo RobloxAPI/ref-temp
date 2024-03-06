@@ -36,7 +36,9 @@ jobs:
       with:
         path: |
           roar/site/data/History.json
-        key: "history"
+        key: "history-${{ runner.os }}-${{ github.run_id }}"
+        restore-keys: |
+          history-${{ runner.os }}
     - name: "Setup Go"
       uses: "actions/setup-go@v4"
       with:
