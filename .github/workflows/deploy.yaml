@@ -45,7 +45,7 @@ jobs:
         extended: true
     - name: "Build roar"
       run: |
-        go build -v -o "bin/roar" "roar/cmd/roar"
+        go build -C "roar" -v -o "../bin/roar" "./cmd/roar"
     - name: "Generate data"
       run: |
         bin/roar \
