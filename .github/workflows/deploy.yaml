@@ -61,7 +61,7 @@ jobs:
     - name: "Build website"
       run: |
         hugo \
-        --verbose \
+        --logLevel info \
         --minify \
         --source "roar/site" \
         --destination "ref"
