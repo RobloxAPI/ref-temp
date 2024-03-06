@@ -1,810 +1,810 @@
-<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=/ref/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/ref/favicon-16x16.png><link rel="shortcut icon" href=/ref/favicon.png><title>ScriptDebugger | Roblox API Reference</title><link rel=stylesheet href=/ref/css/main.min.31b9689d1dee9dee8eebdec0725b3be10c75a72fe10d890488a2c4dc7ffc7018.css integrity="sha256-MblonR3une6O697Acls74Qx1py/hDYkEiKLE3H/8cBg=" crossorigin=anonymous><script src=/ref/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js integrity="sha256-I80MfYNyY7nq65buLZzPopadqj+gD6HB/ocBqbhyUaE=" crossorigin=anonymous></script></head><body><header><header id=main-header><div id=main-header-left><h1><a href=/ref/>Roblox API Reference</a></h1><nav class=main-nav><ul><li><a href=/ref/class.html>Classes</a></li><li><a href=/ref/enum.html>Enums</a></li><li><a href=/ref/type.html>Types</a></li><li><a href=/ref/updates.html>Updates</a></li></ul></nav><aside id=search><section id=no-search>Searching requires Javascript.</section></aside></div><div id=main-header-right></div></header></header><main><header><h1>ScriptDebugger</h1></header><section id=summary><header><h2>Summary</h2></header><table class=metadata-pairs><tbody><tr><th>Memory Category</th><td>Instances</td></tr></tbody></table><p class=tags>Tags: [NotCreatable]</p></section><nav><section><header><h2>Table of contents</h2></header><ol class=toc><li id=toc-class-tree>Class tree<ol><li id=toc-superclasses><a href=#superclasses>Inherits</a></li></ol></li><li><a href=#members-index>Member index</a></li><li id=toc-removed-members-index><a href=#removed-members-index>Removed member index</a></li><li><a href=#history>History</a></li><li><a href=#members>Members</a><ol><li><a href=#member-AddWatch>AddWatch</a></li><li><a href=#member-BreakpointAdded>BreakpointAdded</a></li><li><a href=#member-BreakpointRemoved>BreakpointRemoved</a></li><li><a href=#member-CoreScriptIdentifier>CoreScriptIdentifier</a></li><li><a href=#member-CurrentLine>CurrentLine</a></li><li><a href=#member-EncounteredBreak>EncounteredBreak</a></li><li><a href=#member-GetBreakpoints>GetBreakpoints</a></li><li><a href=#member-GetGlobals>GetGlobals</a></li><li><a href=#member-GetLocals>GetLocals</a></li><li><a href=#member-GetStack>GetStack</a></li><li><a href=#member-GetUpvalues>GetUpvalues</a></li><li><a href=#member-GetWatchValue>GetWatchValue</a></li><li><a href=#member-GetWatches>GetWatches</a></li><li><a href=#member-IsDebugging>IsDebugging</a></li><li><a href=#member-IsPaused>IsPaused</a></li><li><a href=#member-Resuming>Resuming</a></li><li><a href=#member-Script>Script</a></li><li><a href=#member-ScriptGuid>ScriptGuid</a></li><li><a href=#member-SetBreakpoint>SetBreakpoint</a></li><li><a href=#member-SetGlobal>SetGlobal</a></li><li><a href=#member-SetLocal>SetLocal</a></li><li><a href=#member-SetUpvalue>SetUpvalue</a></li><li><a href=#member-WatchAdded>WatchAdded</a></li><li><a href=#member-WatchRemoved>WatchRemoved</a></li></ol></li><li><a href=#removed-members>Removed members</a><ol><li><a href=#member-Resume>Resume</a></li><li><a href=#member-StepIn>StepIn</a></li><li><a href=#member-StepOut>StepOut</a></li><li><a href=#member-StepOver>StepOver</a></li></ol></li><li>References<ol><li><a href=#related-classes>Related classes</a></li><li><a href=#related-enums>Related enums</a></li><li><a href=#related-types>Related types</a></li></ol></li></ol></section></nav><section id=hierarchy><section id=superclasses><header><h2>Inherits <span class=element-count>1</span></h2></header><ul><li><a href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></li></ul></section></section><section id=members-index><header><h2>Members <span class=element-count>24</span></h2></header><table class=members-index><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width"><link rel=icon type=image/png sizes=32x32 href=/ref-temp/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/ref-temp/favicon-16x16.png><link rel="shortcut icon" href=/ref-temp/favicon.png><title>ScriptDebugger | Roblox API Reference</title><link rel=stylesheet href=/ref-temp/css/main.min.31b9689d1dee9dee8eebdec0725b3be10c75a72fe10d890488a2c4dc7ffc7018.css integrity="sha256-MblonR3une6O697Acls74Qx1py/hDYkEiKLE3H/8cBg=" crossorigin=anonymous><script src=/ref-temp/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js integrity="sha256-I80MfYNyY7nq65buLZzPopadqj+gD6HB/ocBqbhyUaE=" crossorigin=anonymous></script></head><body><header><header id=main-header><div id=main-header-left><h1><a href=/ref-temp/>Roblox API Reference</a></h1><nav class=main-nav><ul><li><a href=/ref-temp/class.html>Classes</a></li><li><a href=/ref-temp/enum.html>Enums</a></li><li><a href=/ref-temp/type.html>Types</a></li><li><a href=/ref-temp/updates.html>Updates</a></li></ul></nav><aside id=search><section id=no-search>Searching requires Javascript.</section></aside></div><div id=main-header-right></div></header></header><main><header><h1>ScriptDebugger</h1></header><section id=summary><header><h2>Summary</h2></header><table class=metadata-pairs><tbody><tr><th>Memory Category</th><td>Instances</td></tr></tbody></table><p class=tags>Tags: [NotCreatable]</p></section><nav><section><header><h2>Table of contents</h2></header><ol class=toc><li id=toc-class-tree>Class tree<ol><li id=toc-superclasses><a href=#superclasses>Inherits</a></li></ol></li><li><a href=#members-index>Member index</a></li><li id=toc-removed-members-index><a href=#removed-members-index>Removed member index</a></li><li><a href=#history>History</a></li><li><a href=#members>Members</a><ol><li><a href=#member-AddWatch>AddWatch</a></li><li><a href=#member-BreakpointAdded>BreakpointAdded</a></li><li><a href=#member-BreakpointRemoved>BreakpointRemoved</a></li><li><a href=#member-CoreScriptIdentifier>CoreScriptIdentifier</a></li><li><a href=#member-CurrentLine>CurrentLine</a></li><li><a href=#member-EncounteredBreak>EncounteredBreak</a></li><li><a href=#member-GetBreakpoints>GetBreakpoints</a></li><li><a href=#member-GetGlobals>GetGlobals</a></li><li><a href=#member-GetLocals>GetLocals</a></li><li><a href=#member-GetStack>GetStack</a></li><li><a href=#member-GetUpvalues>GetUpvalues</a></li><li><a href=#member-GetWatchValue>GetWatchValue</a></li><li><a href=#member-GetWatches>GetWatches</a></li><li><a href=#member-IsDebugging>IsDebugging</a></li><li><a href=#member-IsPaused>IsPaused</a></li><li><a href=#member-Resuming>Resuming</a></li><li><a href=#member-Script>Script</a></li><li><a href=#member-ScriptGuid>ScriptGuid</a></li><li><a href=#member-SetBreakpoint>SetBreakpoint</a></li><li><a href=#member-SetGlobal>SetGlobal</a></li><li><a href=#member-SetLocal>SetLocal</a></li><li><a href=#member-SetUpvalue>SetUpvalue</a></li><li><a href=#member-WatchAdded>WatchAdded</a></li><li><a href=#member-WatchRemoved>WatchRemoved</a></li></ol></li><li><a href=#removed-members>Removed members</a><ol><li><a href=#member-Resume>Resume</a></li><li><a href=#member-StepIn>StepIn</a></li><li><a href=#member-StepOut>StepOut</a></li><li><a href=#member-StepOver>StepOver</a></li></ol></li><li>References<ol><li><a href=#related-classes>Related classes</a></li><li><a href=#related-enums>Related enums</a></li><li><a href=#related-types>Related types</a></li></ol></li></ol></section></nav><section id=hierarchy><section id=superclasses><header><h2>Inherits <span class=element-count>1</span></h2></header><ul><li><a href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></li></ul></section></section><section id=members-index><header><h2>Members <span class=element-count>24</span></h2></header><table class=members-index><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-CoreScriptIdentifier>CoreScriptIdentifier</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-CoreScriptIdentifier>CoreScriptIdentifier</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-CurrentLine>CurrentLine</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-CurrentLine>CurrentLine</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsDebugging>IsDebugging</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsDebugging>IsDebugging</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsPaused>IsPaused</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsPaused>IsPaused</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Script>Script</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Script>Script</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-ScriptGuid>ScriptGuid</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-ScriptGuid>ScriptGuid</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-AddWatch>AddWatch</a></span><span class=params-open>(</span><span class=parameter>expression: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-AddWatch>AddWatch</a></span><span class=params-open>(</span><span class=parameter>expression: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetBreakpoints>GetBreakpoints</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Objects.html>Objects</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetBreakpoints>GetBreakpoints</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/Objects.html>Objects</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetGlobals>GetGlobals</a></span><span class=params-open>(</span><span class=parameter>stackFrame: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a> = 0</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Map.html>Map</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetGlobals>GetGlobals</a></span><span class=params-open>(</span><span class=parameter>stackFrame: <a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a> = 0</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/Map.html>Map</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetLocals>GetLocals</a></span><span class=params-open>(</span><span class=parameter>stackFrame: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a> = 0</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Map.html>Map</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetLocals>GetLocals</a></span><span class=params-open>(</span><span class=parameter>stackFrame: <a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a> = 0</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/Map.html>Map</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetStack>GetStack</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetStack>GetStack</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/Array.html>Array</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetUpvalues>GetUpvalues</a></span><span class=params-open>(</span><span class=parameter>stackFrame: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a> = 0</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Map.html>Map</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetUpvalues>GetUpvalues</a></span><span class=params-open>(</span><span class=parameter>stackFrame: <a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a> = 0</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/Map.html>Map</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetWatchValue>GetWatchValue</a></span><span class=params-open>(</span><span class=parameter>watch: <a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Variant.html>Variant</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetWatchValue>GetWatchValue</a></span><span class=params-open>(</span><span class=parameter>watch: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/Variant.html>Variant</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetWatches>GetWatches</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/Objects.html>Objects</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetWatches>GetWatches</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/Objects.html>Objects</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetBreakpoint>SetBreakpoint</a></span><span class=params-open>(</span><span class=parameter>line: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span><span class=param-sep>, </span><span class=parameter>isContextDependentBreakpoint: <a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetBreakpoint>SetBreakpoint</a></span><span class=params-open>(</span><span class=parameter>line: <a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span><span class=param-sep>, </span><span class=parameter>isContextDependentBreakpoint: <a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
 0.573.0.5730507
-version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetGlobal>SetGlobal</a></span><span class=params-open>(</span><span class=parameter>name: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=param-sep>, </span><span class=parameter>value: <a class=type href=https://robloxapi.github.io/ref/type/Variant.html>Variant</a></span><span class=param-sep>, </span><span class=parameter>stackFrame: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetGlobal>SetGlobal</a></span><span class=params-open>(</span><span class=parameter>name: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class=param-sep>, </span><span class=parameter>value: <a class=type href=https://robloxapi.github.io/ref-temp/type/Variant.html>Variant</a></span><span class=param-sep>, </span><span class=parameter>stackFrame: <a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
 0.573.0.5730507
-version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetLocal>SetLocal</a></span><span class=params-open>(</span><span class=parameter>name: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=param-sep>, </span><span class=parameter>value: <a class=type href=https://robloxapi.github.io/ref/type/Variant.html>Variant</a></span><span class=param-sep>, </span><span class=parameter>stackFrame: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a> = 0</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetLocal>SetLocal</a></span><span class=params-open>(</span><span class=parameter>name: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class=param-sep>, </span><span class=parameter>value: <a class=type href=https://robloxapi.github.io/ref-temp/type/Variant.html>Variant</a></span><span class=param-sep>, </span><span class=parameter>stackFrame: <a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a> = 0</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
 0.573.0.5730507
-version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetUpvalue>SetUpvalue</a></span><span class=params-open>(</span><span class=parameter>name: <a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></span><span class=param-sep>, </span><span class=parameter>value: <a class=type href=https://robloxapi.github.io/ref/type/Variant.html>Variant</a></span><span class=param-sep>, </span><span class=parameter>stackFrame: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a> = 0</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetUpvalue>SetUpvalue</a></span><span class=params-open>(</span><span class=parameter>name: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class=param-sep>, </span><span class=parameter>value: <a class=type href=https://robloxapi.github.io/ref-temp/type/Variant.html>Variant</a></span><span class=param-sep>, </span><span class=parameter>stackFrame: <a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a> = 0</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-BreakpointAdded>BreakpointAdded</a></span><span class=params-open>(</span><span class=parameter>breakpoint: <a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-BreakpointAdded>BreakpointAdded</a></span><span class=params-open>(</span><span class=parameter>breakpoint: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-BreakpointRemoved>BreakpointRemoved</a></span><span class=params-open>(</span><span class=parameter>breakpoint: <a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-BreakpointRemoved>BreakpointRemoved</a></span><span class=params-open>(</span><span class=parameter>breakpoint: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-EncounteredBreak>EncounteredBreak</a></span><span class=params-open>(</span><span class=parameter>line: <a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></span><span class=param-sep>, </span><span class=parameter>breakReason: <a class=type href=https://robloxapi.github.io/ref/enum/BreakReason.html>BreakReason</a></span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-EncounteredBreak>EncounteredBreak</a></span><span class=params-open>(</span><span class=parameter>line: <a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span><span class=param-sep>, </span><span class=parameter>breakReason: <a class=type href=https://robloxapi.github.io/ref-temp/enum/BreakReason.html>BreakReason</a></span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Resuming>Resuming</a></span><span class=params-open>(</span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Resuming>Resuming</a></span><span class=params-open>(</span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-WatchAdded>WatchAdded</a></span><span class=params-open>(</span><span class=parameter>watch: <a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-WatchAdded>WatchAdded</a></span><span class=params-open>(</span><span class=parameter>watch: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-WatchRemoved>WatchRemoved</a></span><span class=params-open>(</span><span class=parameter>watch: <a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></span><span class=params-close>)</span></td></tr></tbody></table></section><section id=removed-members-index><header><h2>Removed members <span class=element-count>4</span></h2></header><table class=members-index><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-WatchRemoved>WatchRemoved</a></span><span class=params-open>(</span><span class=parameter>watch: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class=params-close>)</span></td></tr></tbody></table></section><section id=removed-members-index><header><h2>Removed members <span class=element-count>4</span></h2></header><table class=members-index><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
 0.425.0.394331
-version-d85098f1966b41ca">425</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Resume>Resume</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
+version-d85098f1966b41ca">425</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Resume>Resume</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
 0.425.0.394331
-version-d85098f1966b41ca">425</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepIn>StepIn</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
+version-d85098f1966b41ca">425</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepIn>StepIn</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
 0.425.0.394331
-version-d85098f1966b41ca">425</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOut>StepOut</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
+version-d85098f1966b41ca">425</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOut>StepOut</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/void.html>void</a></span></td></tr><tr><td class=col-history><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
 0.425.0.394331
-version-d85098f1966b41ca">425</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOver>StepOver</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></span></td></tr></tbody></table></section><section id=history><header><h2>History <span class=element-count>81</span></h2></header><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+version-d85098f1966b41ca">425</a></td><td class=col-icon>Function</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOver>StepOver</a></span><span class=params-open>(</span><span class=params-close>)</span>: <span class=return><a class=type href=https://robloxapi.github.io/ref-temp/type/void.html>void</a></span></td></tr></tbody></table></section><section id=history><header><h2>History <span class=element-count>81</span></h2></header><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
 0.573.0.5730507
 version-da56b3062bbf4871">573</a>
-Change ReturnType of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetUpvalue>ScriptDebugger.SetUpvalue</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetUpvalue>ScriptDebugger.SetUpvalue</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
 0.573.0.5730507
 version-da56b3062bbf4871">573</a>
-Change ReturnType of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetLocal>ScriptDebugger.SetLocal</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetLocal>ScriptDebugger.SetLocal</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
 0.573.0.5730507
 version-da56b3062bbf4871">573</a>
-Change ReturnType of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-ScriptGuid>ScriptDebugger.ScriptGuid</a></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-ScriptGuid>ScriptDebugger.ScriptGuid</a></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
-Change Default of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
+Change Default of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
-Change Default of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a>
+Change Default of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
-Change Default of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a>
+Change Default of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
-Change Default of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a>
+Change Default of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-CoreScriptIdentifier>ScriptDebugger.CoreScriptIdentifier</a></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-CoreScriptIdentifier>ScriptDebugger.CoreScriptIdentifier</a></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-WatchRemoved>ScriptDebugger.WatchRemoved</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-WatchRemoved>ScriptDebugger.WatchRemoved</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-WatchAdded>ScriptDebugger.WatchAdded</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-WatchAdded>ScriptDebugger.WatchAdded</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Resuming>ScriptDebugger.Resuming</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Resuming>ScriptDebugger.Resuming</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-EncounteredBreak>ScriptDebugger.EncounteredBreak</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-EncounteredBreak>ScriptDebugger.EncounteredBreak</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-BreakpointRemoved>ScriptDebugger.BreakpointRemoved</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-BreakpointRemoved>ScriptDebugger.BreakpointRemoved</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-BreakpointAdded>ScriptDebugger.BreakpointAdded</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-BreakpointAdded>ScriptDebugger.BreakpointAdded</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetUpvalue>ScriptDebugger.SetUpvalue</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetUpvalue>ScriptDebugger.SetUpvalue</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetLocal>ScriptDebugger.SetLocal</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetLocal>ScriptDebugger.SetLocal</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetWatches>ScriptDebugger.GetWatches</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetWatches>ScriptDebugger.GetWatches</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetWatchValue>ScriptDebugger.GetWatchValue</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetWatchValue>ScriptDebugger.GetWatchValue</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetUpvalues>ScriptDebugger.GetUpvalues</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetUpvalues>ScriptDebugger.GetUpvalues</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetStack>ScriptDebugger.GetStack</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetStack>ScriptDebugger.GetStack</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetLocals>ScriptDebugger.GetLocals</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetLocals>ScriptDebugger.GetLocals</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetGlobals>ScriptDebugger.GetGlobals</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetGlobals>ScriptDebugger.GetGlobals</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetBreakpoints>ScriptDebugger.GetBreakpoints</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetBreakpoints>ScriptDebugger.GetBreakpoints</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-AddWatch>ScriptDebugger.AddWatch</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-AddWatch>ScriptDebugger.AddWatch</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2020-09-25T19:28:15-07:00
 0.450.0.411923
 version-20f4846e87e7487f">450</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2020-06-12T22:33:33-07:00
 0.437.0.406827
 version-f786173f5f9644dc">437</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2020-04-20T20:11:14-07:00
 0.429.0.403819
 version-319177cf01734f2c">429</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2020-04-20T17:14:53-07:00
 0.428.3.403826
 version-df5d8cc226974ffb">428</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2020-04-17T17:35:19-07:00
 0.429.0.403252
 version-bb87f719312c4bb4">429</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2020-04-10T17:50:05-07:00
 0.428.0.401006
 version-12113dba42774ee0">428</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetGlobals>ScriptDebugger.GetGlobals</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetGlobals>ScriptDebugger.GetGlobals</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
 0.425.0.394331
 version-d85098f1966b41ca">425</a>
-Remove <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOver>ScriptDebugger.StepOver</a></li><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
+Remove <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOver>ScriptDebugger.StepOver</a></li><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
 0.425.0.394331
 version-d85098f1966b41ca">425</a>
-Remove <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOut>ScriptDebugger.StepOut</a></li><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
+Remove <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOut>ScriptDebugger.StepOut</a></li><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
 0.425.0.394331
 version-d85098f1966b41ca">425</a>
-Remove <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepIn>ScriptDebugger.StepIn</a></li><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
+Remove <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepIn>ScriptDebugger.StepIn</a></li><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
 0.425.0.394331
 version-d85098f1966b41ca">425</a>
-Remove <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Resume>ScriptDebugger.Resume</a></li><li><a class="history-tag changed" href=# title="Changed on 2019-06-24T13:29:26-07:00
+Remove <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Resume>ScriptDebugger.Resume</a></li><li><a class="history-tag changed" href=# title="Changed on 2019-06-24T13:29:26-07:00
 0.391.0.313677
 version-ed6c1e2b0593493e">391</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-EncounteredBreak>ScriptDebugger.EncounteredBreak</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-EncounteredBreak>ScriptDebugger.EncounteredBreak</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-03-13T19:19:58-07:00
 0.329.0.187788
 version-a10a16caa13a4288">329</a>
-Change ValueType of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
+Change ValueType of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-06-19T00:13:22-07:00
 0.155.0.47629
 version-2135c02b59614a08">155</a>
-Change Tags of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOver>ScriptDebugger.StepOver</a>
+Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOver>ScriptDebugger.StepOver</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-06-19T00:13:22-07:00
 0.155.0.47629
 version-2135c02b59614a08">155</a>
-Change Tags of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOut>ScriptDebugger.StepOut</a>
+Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOut>ScriptDebugger.StepOut</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-06-19T00:13:22-07:00
 0.155.0.47629
 version-2135c02b59614a08">155</a>
-Change Tags of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepIn>ScriptDebugger.StepIn</a>
+Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepIn>ScriptDebugger.StepIn</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2014-06-19T00:13:22-07:00
 0.155.0.47629
 version-2135c02b59614a08">155</a>
-Change Tags of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Resume>ScriptDebugger.Resume</a>
+Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Resume>ScriptDebugger.Resume</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2012-11-14T00:07:23-08:00
 0.79.0.712
 version-9cc70ab624734f4d">79</a>
-Change Tags of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html>ScriptDebugger</a>
+Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html>ScriptDebugger</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2012-11-09T00:03:23-08:00
 0.78.1.702
 version-cbdc8c4c0dd24338">78</a>
-Change Tags of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html>ScriptDebugger</a>
+Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html>ScriptDebugger</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2012-11-08T00:12:46-08:00
 0.79.0.708
 version-78c05653f7414923">79</a>
-Change Tags of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html>ScriptDebugger</a>
+Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html>ScriptDebugger</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-WatchRemoved>ScriptDebugger.WatchRemoved</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-WatchRemoved>ScriptDebugger.WatchRemoved</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-WatchAdded>ScriptDebugger.WatchAdded</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-WatchAdded>ScriptDebugger.WatchAdded</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Resuming>ScriptDebugger.Resuming</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Resuming>ScriptDebugger.Resuming</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-EncounteredBreak>ScriptDebugger.EncounteredBreak</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-EncounteredBreak>ScriptDebugger.EncounteredBreak</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-BreakpointRemoved>ScriptDebugger.BreakpointRemoved</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-BreakpointRemoved>ScriptDebugger.BreakpointRemoved</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-BreakpointAdded>ScriptDebugger.BreakpointAdded</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-BreakpointAdded>ScriptDebugger.BreakpointAdded</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOver>ScriptDebugger.StepOver</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOver>ScriptDebugger.StepOver</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOut>ScriptDebugger.StepOut</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOut>ScriptDebugger.StepOut</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepIn>ScriptDebugger.StepIn</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepIn>ScriptDebugger.StepIn</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetUpvalue>ScriptDebugger.SetUpvalue</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetUpvalue>ScriptDebugger.SetUpvalue</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetLocal>ScriptDebugger.SetLocal</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetLocal>ScriptDebugger.SetLocal</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Resume>ScriptDebugger.Resume</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Resume>ScriptDebugger.Resume</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetWatches>ScriptDebugger.GetWatches</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetWatches>ScriptDebugger.GetWatches</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetWatchValue>ScriptDebugger.GetWatchValue</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetWatchValue>ScriptDebugger.GetWatchValue</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetUpvalues>ScriptDebugger.GetUpvalues</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetUpvalues>ScriptDebugger.GetUpvalues</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetStack>ScriptDebugger.GetStack</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetStack>ScriptDebugger.GetStack</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetLocals>ScriptDebugger.GetLocals</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetLocals>ScriptDebugger.GetLocals</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetGlobals>ScriptDebugger.GetGlobals</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetGlobals>ScriptDebugger.GetGlobals</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetBreakpoints>ScriptDebugger.GetBreakpoints</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetBreakpoints>ScriptDebugger.GetBreakpoints</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-AddWatch>ScriptDebugger.AddWatch</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-AddWatch>ScriptDebugger.AddWatch</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html>ScriptDebugger</a></li></ul></section><section id=members><header><h2>Members</h2></header><div id=members-sections><section id=member-AddWatch><header><h3>AddWatch</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-expression><td class=col-member>expression</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html>ScriptDebugger</a></li></ul></section><section id=members><header><h2>Members</h2></header><div id=members-sections><section id=member-AddWatch><header><h3>AddWatch</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-expression><td class=col-member>expression</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-AddWatch>ScriptDebugger.AddWatch</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-AddWatch>ScriptDebugger.AddWatch</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-AddWatch>ScriptDebugger.AddWatch</a></li></ul></section><section id=member-BreakpointAdded><header><h3>BreakpointAdded</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-breakpoint><td class=col-member>breakpoint</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-AddWatch>ScriptDebugger.AddWatch</a></li></ul></section><section id=member-BreakpointAdded><header><h3>BreakpointAdded</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-breakpoint><td class=col-member>breakpoint</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-BreakpointAdded>ScriptDebugger.BreakpointAdded</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-BreakpointAdded>ScriptDebugger.BreakpointAdded</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-BreakpointAdded>ScriptDebugger.BreakpointAdded</a></li></ul></section><section id=member-BreakpointRemoved><header><h3>BreakpointRemoved</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-breakpoint><td class=col-member>breakpoint</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-BreakpointAdded>ScriptDebugger.BreakpointAdded</a></li></ul></section><section id=member-BreakpointRemoved><header><h3>BreakpointRemoved</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-breakpoint><td class=col-member>breakpoint</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-BreakpointRemoved>ScriptDebugger.BreakpointRemoved</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-BreakpointRemoved>ScriptDebugger.BreakpointRemoved</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-BreakpointRemoved>ScriptDebugger.BreakpointRemoved</a></li></ul></section><section id=member-CoreScriptIdentifier><header><h3>CoreScriptIdentifier</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotScriptable]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-BreakpointRemoved>ScriptDebugger.BreakpointRemoved</a></li></ul></section><section id=member-CoreScriptIdentifier><header><h3>CoreScriptIdentifier</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotScriptable]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-CoreScriptIdentifier>ScriptDebugger.CoreScriptIdentifier</a></li></ul></section><section id=member-CurrentLine><header><h3>CurrentLine</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-CoreScriptIdentifier>ScriptDebugger.CoreScriptIdentifier</a></li></ul></section><section id=member-CurrentLine><header><h3>CurrentLine</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
-Change Default of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a>
+Change Default of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a></li></ul></section><section id=member-EncounteredBreak><header><h3>EncounteredBreak</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>2</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-line><td class=col-member>line</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-breakReason><td class=col-member>breakReason</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/enum/BreakReason.html>BreakReason</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-CurrentLine>ScriptDebugger.CurrentLine</a></li></ul></section><section id=member-EncounteredBreak><header><h3>EncounteredBreak</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>2</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-line><td class=col-member>line</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-breakReason><td class=col-member>breakReason</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/enum/BreakReason.html>BreakReason</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-EncounteredBreak>ScriptDebugger.EncounteredBreak</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-EncounteredBreak>ScriptDebugger.EncounteredBreak</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2019-06-24T13:29:26-07:00
 0.391.0.313677
 version-ed6c1e2b0593493e">391</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-EncounteredBreak>ScriptDebugger.EncounteredBreak</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-EncounteredBreak>ScriptDebugger.EncounteredBreak</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-EncounteredBreak>ScriptDebugger.EncounteredBreak</a></li></ul></section><section id=member-GetBreakpoints><header><h3>GetBreakpoints</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Objects.html>Objects</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-EncounteredBreak>ScriptDebugger.EncounteredBreak</a></li></ul></section><section id=member-GetBreakpoints><header><h3>GetBreakpoints</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/Objects.html>Objects</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetBreakpoints>ScriptDebugger.GetBreakpoints</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetBreakpoints>ScriptDebugger.GetBreakpoints</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetBreakpoints>ScriptDebugger.GetBreakpoints</a></li></ul></section><section id=member-GetGlobals><header><h3>GetGlobals</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-stackFrame><td class=col-member>stackFrame</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-default>0</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Map.html>Map</a></td></tr></tbody></table><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetBreakpoints>ScriptDebugger.GetBreakpoints</a></li></ul></section><section id=member-GetGlobals><header><h3>GetGlobals</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-stackFrame><td class=col-member>stackFrame</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td><td class=col-default><span class=api-default>0</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/Map.html>Map</a></td></tr></tbody></table><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetGlobals>ScriptDebugger.GetGlobals</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetGlobals>ScriptDebugger.GetGlobals</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2020-04-10T17:50:05-07:00
 0.428.0.401006
 version-12113dba42774ee0">428</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetGlobals>ScriptDebugger.GetGlobals</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetGlobals>ScriptDebugger.GetGlobals</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetGlobals>ScriptDebugger.GetGlobals</a></li></ul></section><section id=member-GetLocals><header><h3>GetLocals</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-stackFrame><td class=col-member>stackFrame</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-default>0</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Map.html>Map</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetGlobals>ScriptDebugger.GetGlobals</a></li></ul></section><section id=member-GetLocals><header><h3>GetLocals</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-stackFrame><td class=col-member>stackFrame</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td><td class=col-default><span class=api-default>0</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/Map.html>Map</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetLocals>ScriptDebugger.GetLocals</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetLocals>ScriptDebugger.GetLocals</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetLocals>ScriptDebugger.GetLocals</a></li></ul></section><section id=member-GetStack><header><h3>GetStack</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Array.html>Array</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetLocals>ScriptDebugger.GetLocals</a></li></ul></section><section id=member-GetStack><header><h3>GetStack</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/Array.html>Array</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetStack>ScriptDebugger.GetStack</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetStack>ScriptDebugger.GetStack</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetStack>ScriptDebugger.GetStack</a></li></ul></section><section id=member-GetUpvalues><header><h3>GetUpvalues</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-stackFrame><td class=col-member>stackFrame</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-default>0</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Map.html>Map</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetStack>ScriptDebugger.GetStack</a></li></ul></section><section id=member-GetUpvalues><header><h3>GetUpvalues</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-stackFrame><td class=col-member>stackFrame</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td><td class=col-default><span class=api-default>0</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/Map.html>Map</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetUpvalues>ScriptDebugger.GetUpvalues</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetUpvalues>ScriptDebugger.GetUpvalues</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetUpvalues>ScriptDebugger.GetUpvalues</a></li></ul></section><section id=member-GetWatchValue><header><h3>GetWatchValue</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-watch><td class=col-member>watch</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Variant.html>Variant</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetUpvalues>ScriptDebugger.GetUpvalues</a></li></ul></section><section id=member-GetWatchValue><header><h3>GetWatchValue</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-watch><td class=col-member>watch</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/Variant.html>Variant</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetWatchValue>ScriptDebugger.GetWatchValue</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetWatchValue>ScriptDebugger.GetWatchValue</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetWatchValue>ScriptDebugger.GetWatchValue</a></li></ul></section><section id=member-GetWatches><header><h3>GetWatches</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/Objects.html>Objects</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetWatchValue>ScriptDebugger.GetWatchValue</a></li></ul></section><section id=member-GetWatches><header><h3>GetWatches</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/Objects.html>Objects</a></td></tr></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetWatches>ScriptDebugger.GetWatches</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetWatches>ScriptDebugger.GetWatches</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-GetWatches>ScriptDebugger.GetWatches</a></li></ul></section><section id=member-IsDebugging><header><h3>IsDebugging</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-GetWatches>ScriptDebugger.GetWatches</a></li></ul></section><section id=member-IsDebugging><header><h3>IsDebugging</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
-Change Default of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a>
+Change Default of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a></li></ul></section><section id=member-IsPaused><header><h3>IsPaused</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsDebugging>ScriptDebugger.IsDebugging</a></li></ul></section><section id=member-IsPaused><header><h3>IsPaused</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
-Change Default of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a>
+Change Default of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a></li></ul></section><section id=member-Resuming><header><h3>Resuming</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-IsPaused>ScriptDebugger.IsPaused</a></li></ul></section><section id=member-Resuming><header><h3>Resuming</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Resuming>ScriptDebugger.Resuming</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Resuming>ScriptDebugger.Resuming</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Resuming>ScriptDebugger.Resuming</a></li></ul></section><section id=member-Script><header><h3>Script</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Resuming>ScriptDebugger.Resuming</a></li></ul></section><section id=member-Script><header><h3>Script</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
-Change Default of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
+Change Default of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-03-13T19:19:58-07:00
 0.329.0.187788
 version-a10a16caa13a4288">329</a>
-Change ValueType of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
+Change ValueType of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a></li></ul></section><section id=member-ScriptGuid><header><h3>ScriptGuid</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotScriptable]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Script>ScriptDebugger.Script</a></li></ul></section><section id=member-ScriptGuid><header><h3>ScriptGuid</h3></header><table class=metadata-pairs><tbody><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [Hidden, NotScriptable]</p><h4>History <span class=element-count>1</span></h4><ul class="change-list truncated-list"><li><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-ScriptGuid>ScriptDebugger.ScriptGuid</a></li></ul></section><section id=member-SetBreakpoint><header><h3>SetBreakpoint</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>2</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-line><td class=col-member>line</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-isContextDependentBreakpoint><td class=col-member>isContextDependentBreakpoint</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/bool.html>bool</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></td></tr></tbody></table><h4>History <span class=element-count>6</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-ScriptGuid>ScriptDebugger.ScriptGuid</a></li></ul></section><section id=member-SetBreakpoint><header><h3>SetBreakpoint</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>2</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-line><td class=col-member>line</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-isContextDependentBreakpoint><td class=col-member>isContextDependentBreakpoint</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></td></tr></tbody></table><h4>History <span class=element-count>6</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2020-06-12T22:33:33-07:00
 0.437.0.406827
 version-f786173f5f9644dc">437</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2020-04-20T20:11:14-07:00
 0.429.0.403819
 version-319177cf01734f2c">429</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2020-04-20T17:14:53-07:00
 0.428.3.403826
 version-df5d8cc226974ffb">428</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2020-04-17T17:35:19-07:00
 0.429.0.403252
 version-bb87f719312c4bb4">429</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a></li></ul></section><section id=member-SetGlobal><header><h3>SetGlobal</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>3</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-name><td class=col-member>name</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-value><td class=col-member>value</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Variant.html>Variant</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-stackFrame><td class=col-member>stackFrame</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetBreakpoint>ScriptDebugger.SetBreakpoint</a></li></ul></section><section id=member-SetGlobal><header><h3>SetGlobal</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>3</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-name><td class=col-member>name</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-value><td class=col-member>value</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/Variant.html>Variant</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-stackFrame><td class=col-member>stackFrame</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
 0.573.0.5730507
 version-da56b3062bbf4871">573</a>
-Change ReturnType of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2020-09-25T19:28:15-07:00
 0.450.0.411923
 version-20f4846e87e7487f">450</a>
-Change Parameters of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a>
+Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a></li></ul></section><section id=member-SetLocal><header><h3>SetLocal</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>3</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-name><td class=col-member>name</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-value><td class=col-member>value</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Variant.html>Variant</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-stackFrame><td class=col-member>stackFrame</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-default>0</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetGlobal>ScriptDebugger.SetGlobal</a></li></ul></section><section id=member-SetLocal><header><h3>SetLocal</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>3</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-name><td class=col-member>name</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-value><td class=col-member>value</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/Variant.html>Variant</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-stackFrame><td class=col-member>stackFrame</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td><td class=col-default><span class=api-default>0</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
 0.573.0.5730507
 version-da56b3062bbf4871">573</a>
-Change ReturnType of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetLocal>ScriptDebugger.SetLocal</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetLocal>ScriptDebugger.SetLocal</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetLocal>ScriptDebugger.SetLocal</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetLocal>ScriptDebugger.SetLocal</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetLocal>ScriptDebugger.SetLocal</a></li></ul></section><section id=member-SetUpvalue><header><h3>SetUpvalue</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>3</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-name><td class=col-member>name</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-value><td class=col-member>value</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/Variant.html>Variant</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-stackFrame><td class=col-member>stackFrame</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/type/int.html>int</a></td><td class=col-default><span class=api-default>0</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetLocal>ScriptDebugger.SetLocal</a></li></ul></section><section id=member-SetUpvalue><header><h3>SetUpvalue</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>3</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-name><td class=col-member>name</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-value><td class=col-member>value</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/Variant.html>Variant</a></td><td class=col-default><span class=api-no-default>none</span></td></tr><tr class=row-stackFrame><td class=col-member>stackFrame</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td><td class=col-default><span class=api-default>0</span></td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></td></tr></tbody></table><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
 0.573.0.5730507
 version-da56b3062bbf4871">573</a>
-Change ReturnType of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetUpvalue>ScriptDebugger.SetUpvalue</a>
+Change ReturnType of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetUpvalue>ScriptDebugger.SetUpvalue</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetUpvalue>ScriptDebugger.SetUpvalue</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetUpvalue>ScriptDebugger.SetUpvalue</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-SetUpvalue>ScriptDebugger.SetUpvalue</a></li></ul></section><section id=member-WatchAdded><header><h3>WatchAdded</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-watch><td class=col-member>watch</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-SetUpvalue>ScriptDebugger.SetUpvalue</a></li></ul></section><section id=member-WatchAdded><header><h3>WatchAdded</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-watch><td class=col-member>watch</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-WatchAdded>ScriptDebugger.WatchAdded</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-WatchAdded>ScriptDebugger.WatchAdded</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-WatchAdded>ScriptDebugger.WatchAdded</a></li></ul></section><section id=member-WatchRemoved><header><h3>WatchRemoved</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-watch><td class=col-member>watch</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-WatchAdded>ScriptDebugger.WatchAdded</a></li></ul></section><section id=member-WatchRemoved><header><h3>WatchRemoved</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-watch><td class=col-member>watch</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
-Change ThreadSafety of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-WatchRemoved>ScriptDebugger.WatchRemoved</a>
+Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-WatchRemoved>ScriptDebugger.WatchRemoved</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-WatchRemoved>ScriptDebugger.WatchRemoved</a></li></ul></section></div></section><section id=removed-members><header><h2>Removed members</h2></header><div id=members-sections><section id=member-Resume><header><h3>Resume</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-WatchRemoved>ScriptDebugger.WatchRemoved</a></li></ul></section></div></section><section id=removed-members><header><h2>Removed members</h2></header><div id=members-sections><section id=member-Resume><header><h3>Resume</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/void.html>void</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
 0.425.0.394331
 version-d85098f1966b41ca">425</a>
-Remove <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Resume>ScriptDebugger.Resume</a></li><li><a class="history-tag changed" href=# title="Changed on 2014-06-19T00:13:22-07:00
+Remove <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Resume>ScriptDebugger.Resume</a></li><li><a class="history-tag changed" href=# title="Changed on 2014-06-19T00:13:22-07:00
 0.155.0.47629
 version-2135c02b59614a08">155</a>
-Change Tags of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Resume>ScriptDebugger.Resume</a>
+Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Resume>ScriptDebugger.Resume</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-Resume>ScriptDebugger.Resume</a></li></ul></section><section id=member-StepIn><header><h3>StepIn</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-Resume>ScriptDebugger.Resume</a></li></ul></section><section id=member-StepIn><header><h3>StepIn</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/void.html>void</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
 0.425.0.394331
 version-d85098f1966b41ca">425</a>
-Remove <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepIn>ScriptDebugger.StepIn</a></li><li><a class="history-tag changed" href=# title="Changed on 2014-06-19T00:13:22-07:00
+Remove <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepIn>ScriptDebugger.StepIn</a></li><li><a class="history-tag changed" href=# title="Changed on 2014-06-19T00:13:22-07:00
 0.155.0.47629
 version-2135c02b59614a08">155</a>
-Change Tags of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepIn>ScriptDebugger.StepIn</a>
+Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepIn>ScriptDebugger.StepIn</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepIn>ScriptDebugger.StepIn</a></li></ul></section><section id=member-StepOut><header><h3>StepOut</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepIn>ScriptDebugger.StepIn</a></li></ul></section><section id=member-StepOut><header><h3>StepOut</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/void.html>void</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
 0.425.0.394331
 version-d85098f1966b41ca">425</a>
-Remove <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOut>ScriptDebugger.StepOut</a></li><li><a class="history-tag changed" href=# title="Changed on 2014-06-19T00:13:22-07:00
+Remove <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOut>ScriptDebugger.StepOut</a></li><li><a class="history-tag changed" href=# title="Changed on 2014-06-19T00:13:22-07:00
 0.155.0.47629
 version-2135c02b59614a08">155</a>
-Change Tags of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOut>ScriptDebugger.StepOut</a>
+Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOut>ScriptDebugger.StepOut</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOut>ScriptDebugger.StepOut</a></li></ul></section><section id=member-StepOver><header><h3>StepOver</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref/type/void.html>void</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOut>ScriptDebugger.StepOut</a></li></ul></section><section id=member-StepOver><header><h3>StepOver</h3></header><table class=metadata-pairs><tbody><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody><tr><td>Returns</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/void.html>void</a></td></tr></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>3</span></h4><ul class="change-list truncated-list"><li><a class="history-tag removed" href=# title="Removed on 2020-03-20T17:33:39-07:00
 0.425.0.394331
 version-d85098f1966b41ca">425</a>
-Remove <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOver>ScriptDebugger.StepOver</a></li><li><a class="history-tag changed" href=# title="Changed on 2014-06-19T00:13:22-07:00
+Remove <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOver>ScriptDebugger.StepOver</a></li><li><a class="history-tag changed" href=# title="Changed on 2014-06-19T00:13:22-07:00
 0.155.0.47629
 version-2135c02b59614a08">155</a>
-Change Tags of <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOver>ScriptDebugger.StepOver</a>
+Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOver>ScriptDebugger.StepOver</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref/class/ScriptDebugger.html#member-StepOver>ScriptDebugger.StepOver</a></li></ul></section></div></section><section id=references><section id=related-classes><header><h2>Related classes <span class=element-count>1</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref/class/Instance.html>Instance</a></li></ul></section><section id=related-enums><header><h2>Related enums <span class=element-count>1</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref/enum/BreakReason.html>BreakReason</a></li></ul></section><section id=related-types><header><h2>Related types <span class=element-count>8</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref/type/Array.html>Array</a></li><li><a href=https://robloxapi.github.io/ref/type/bool.html>bool</a></li><li><a href=https://robloxapi.github.io/ref/type/int.html>int</a></li><li><a href=https://robloxapi.github.io/ref/type/Map.html>Map</a></li><li><a href=https://robloxapi.github.io/ref/type/null.html>null</a></li><li><a href=https://robloxapi.github.io/ref/type/Objects.html>Objects</a></li><li><a href=https://robloxapi.github.io/ref/type/string.html>string</a></li><li><a href=https://robloxapi.github.io/ref/type/Variant.html>Variant</a></li></ul></section></section></main><footer><footer id=main-footer><nav class=main-nav><ul><li><a class=header-block href=/ref/>Main</a></li><li><a class=header-block href=/ref/updates.html>Updates</a></li><li><a class=header-block href=/ref/about.html>About</a></li><li><a class=header-block href=https://www.roblox.com>Roblox</a></li><li><a class=header-block href=https://create.roblox.com/docs/en-us/reference/engine>CreatorHub</a></li><li><a class=header-block href=https://github.com/robloxapi/roar>Develop</a></li><li><a class=header-block href=https://github.com/robloxapi/roar/issues>Issues</a></li></ul></nav><div class="header-block license">Content is licensed under <a href=https://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA-4.0.</a></div><div class="header-block publication"><span class="icon svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 7" height="7" width="7"><path d="M2 0V1H1V4H2V7H3V6H4V7H5V4H6V1H5V0H4V1H3V0zM2 2H3V3H2zM4 2H5V3H4z"/></svg></span>2018–2024 <a href=https://anaminus.github.io>Anaminus</a></div></footer></footer></body></html>
+Add <a href=https://robloxapi.github.io/ref-temp/class/ScriptDebugger.html#member-StepOver>ScriptDebugger.StepOver</a></li></ul></section></div></section><section id=references><section id=related-classes><header><h2>Related classes <span class=element-count>1</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></li></ul></section><section id=related-enums><header><h2>Related enums <span class=element-count>1</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref-temp/enum/BreakReason.html>BreakReason</a></li></ul></section><section id=related-types><header><h2>Related types <span class=element-count>8</span></h2></header><ul class="truncated-list element-list"><li><a href=https://robloxapi.github.io/ref-temp/type/Array.html>Array</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/Map.html>Map</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/Objects.html>Objects</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/Variant.html>Variant</a></li></ul></section></section></main><footer><footer id=main-footer><nav class=main-nav><ul><li><a class=header-block href=/ref-temp/>Main</a></li><li><a class=header-block href=/ref-temp/updates.html>Updates</a></li><li><a class=header-block href=/ref-temp/about.html>About</a></li><li><a class=header-block href=https://www.roblox.com>Roblox</a></li><li><a class=header-block href=https://create.roblox.com/docs/en-us/reference/engine>CreatorHub</a></li><li><a class=header-block href=https://github.com/robloxapi/roar>Develop</a></li><li><a class=header-block href=https://github.com/robloxapi/roar/issues>Issues</a></li></ul></nav><div class="header-block license">Content is licensed under <a href=https://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA-4.0.</a></div><div class="header-block publication"><span class="icon svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 7" height="7" width="7"><path d="M2 0V1H1V4H2V7H3V6H4V7H5V4H6V1H5V0H4V1H3V0zM2 2H3V3H2zM4 2H5V3H4z"/></svg></span>2018–2024 <a href=https://anaminus.github.io>Anaminus</a></div></footer></footer></body></html>
