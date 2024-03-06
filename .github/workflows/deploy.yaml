@@ -44,7 +44,7 @@ jobs:
       run: |
         go build -v -o "bin/roar" "roar/cmd/roar"
     - name: "Generate data"
-      run |
+      run: |
         bin/roar \
         --site "roar/site" \
         --source "https://raw.githubusercontent.com/RobloxAPI/build-archive/master/data/" \
