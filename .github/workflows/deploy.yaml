@@ -38,6 +38,11 @@ jobs:
         go-version-file: "roar/go.mod"
         cache-dependency-path: |
           roar/go.sum
+    - name: "Setup Hugo"
+      uses: "peaceiris/actions-hugo@v2"
+      with:
+        hugo-version: "0.119.0"
+        extended: true
     - name: "Build roar"
       run: |
         go build -v -o "bin/roar" "roar/cmd/roar"
@@ -48,11 +53,6 @@ jobs:
         --source "https://raw.githubusercontent.com/RobloxAPI/build-archive/master/data/" \
         --docs "https://github.com/Roblox/creator-docs" \
         --update
-    - name: "Setup Hugo"
-      uses: "peaceiris/actions-hugo@v2"
-      with:
-        hugo-version: "0.119.0"
-        extended: true
     - name: "Build website"
       run: |
         hugo \
