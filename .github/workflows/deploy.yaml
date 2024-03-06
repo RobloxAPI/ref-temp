@@ -26,6 +26,11 @@ jobs:
       with:
         ref: "gh-pages"
         path: "ref"
+    - name: "Checkout build-archive"
+      uses: "actions/checkout@v4"
+      with:
+        repository: "RobloxAPI/build-archive"
+        path: "build-archive"
     - name: "Cache history"
       uses: "actions/cache@v4"
       with:
@@ -50,7 +55,7 @@ jobs:
       run: |
         bin/roar generate \
         --site "roar/site" \
-        --source "https://raw.githubusercontent.com/RobloxAPI/build-archive/master/data/" \
+        --source "build-archive/data/" \
         --docs "https://github.com/Roblox/creator-docs" \
         --update
     - name: "Build website"
