@@ -1,0 +1,72 @@
+name: "Deploy website"
+on:
+  # schedule:
+  # - cron: "19 */6 * * *"
+  # push:
+  #   branches:
+  #   - "deploy"
+  workflow_dispatch: {}
+jobs:
+  "deploy":
+    name: "Build and deploy"
+    timeout-minutes: 5
+    runs-on: "ubuntu-latest"
+    steps:
+    - name: "Print environment"
+      run: |
+        printenv && pwd
+    - name: "Checkout roar"
+      uses: "actions/checkout@v4"
+      with:
+        repository: "RobloxAPI/roar"
+        path: "roar"
+    - name: "Checkout ref"
+      uses: "actions/checkout@v4"
+      with:
+        ref: "gh-pages"
+        path: "ref"
+    - name: "Cache history"
+      uses: "actions/cache@v4"
+      with:
+        path: |
+          roar/site/data/history.json
+        key: "history"
+    - name: "Setup Go"
+      uses: "actions/setup-go@v4"
+      with:
+        go-version-file: "roar/go.mod"
+        cache-dependency-path: |
+          roar/go.sum
+    - name: "Print Go environment"
+      run: |
+        go version && go env
+    - name: "Build roar"
+      run: |
+        go build -v -o "bin/roar" "roar/cmd/roar"
+    - name: "Generate data"
+      run |
+        bin/roar \
+        --site "roar/site" \
+        --source "https://raw.githubusercontent.com/RobloxAPI/build-archive/master/data/" \
+        --docs "https://github.com/Roblox/creator-docs" \
+        --update
+    - name: "Setup Hugo"
+      uses: "peaceiris/actions-hugo@v2"
+      with:
+        hugo-version: "0.119.0"
+        extended: true
+    - name: "Build website"
+      run: |
+        hugo \
+        --verbose \
+        --minify \
+        --source "roar/site" \
+        --destination "ref"
+    - name: "Commit and push website"
+      run: |
+        cd "ref"
+        git config user.email 'github-actions@github.com'
+        git config user.name 'github-actions'
+        git add -A
+        git commit -m 'Update reference.'
+        git push
