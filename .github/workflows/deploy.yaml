@@ -1,4 +1,8 @@
 name: "Deploy website"
+
+env:
+  HUGO_VERSION: "0.123.8"
+
 on:
   # schedule:
   # - cron: "19 */6 * * *"
@@ -6,6 +10,7 @@ on:
   #   branches:
   #   - "deploy"
   workflow_dispatch: {}
+
 jobs:
   "deploy":
     name: "Build and deploy"
@@ -117,7 +122,7 @@ jobs:
         steps.check-cache-roar.outputs.cache-hit != 'true'
       uses: "peaceiris/actions-hugo@v2"
       with:
-        hugo-version: "0.123.8"
+        hugo-version: ${{ env.HUGO_VERSION }}
         extended: true
 
     # The steps to build roar run only if there was no cache hit on the roar
