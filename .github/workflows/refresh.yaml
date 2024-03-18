@@ -35,11 +35,11 @@ jobs:
         bin/roar generate \
         --site "roar/site" \
         --source "build-archive/data/" \
-        --update
-        --no-cache
-        --disable-index
-        --disable-dump
-        --disable-reflect
+        --update \
+        --no-cache \
+        --disable-index \
+        --disable-dump \
+        --disable-reflect \
         --disable-pages
 
     - name: "Cache history"
