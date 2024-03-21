@@ -1,512 +1,647 @@
 <!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="minimum-scale=1,initial-scale=1,width=device-width"><link rel=icon type=image/png sizes=32x32 href=/ref-temp/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/ref-temp/favicon-16x16.png><link rel="shortcut icon" href=/ref-temp/favicon.png><title>Mouse | Roblox API Reference</title>
-<link rel=stylesheet href=/ref-temp/main.min.7e9d3143c40371002e0a67a682752e7a693eb791aef0f245a5d06163f6e78f1d.css integrity="sha256-fp0xQ8QDcQAuCmemgnUuemk+t5Gu8PJFpdBhY/bnjx0=" crossorigin=anonymous><script src=/ref-temp/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js integrity="sha256-I80MfYNyY7nq65buLZzPopadqj+gD6HB/ocBqbhyUaE=" crossorigin=anonymous></script></head><body id=top><header><h1><a href=/ref-temp/>Roblox API Reference</a></h1><nav><ul><li><a href=/ref-temp/class.html>Classes</a></li><li><a href=/ref-temp/enum.html>Enums</a></li><li><a href=/ref-temp/type.html>Types</a></li><li><a href=/ref-temp/updates.html>Updates</a></li></ul></nav><aside id=search><form id=search-form class=js><label><input id=search-input type=search placeholder="Press S to search..."></label></form><noscript><section id=no-search>Searching requires Javascript.</section></noscript></aside><div id=settings-container class=js><span class="icon button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" height="14" width="14"><path d="M6 0 5 2 3 1 1 3 2 5 0 6v2l2 1-1 2 2 2 2-1 1 2h2l1-2 2 1 2-2-1-2 2-1V6L12 5l1-2-2-2L9 2 8 0zM7 4 9 5l1 2L9 9 7 10 5 9 4 7 5 5z"/></svg></span></div></header><main class="kind-page type-class"><nav><section id=hierarchy><section id=superclasses><header><h2>Inherits <span class=element-count>1</span></h2></header><ul class="element-list truncated-list"><li><a href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></li></ul></section><section id=subclasses><header><h2>Inherited by <span class=element-count>2</span></h2></header><ul class="element-list truncated-list"><li><a href=https://robloxapi.github.io/ref-temp/class/PlayerMouse.html>PlayerMouse</a></li><li><a href=https://robloxapi.github.io/ref-temp/class/PluginMouse.html>PluginMouse</a></li></ul></section></section><section id=toc><header><h2>Contents</h2></header><ol class=toc><li class=toc-summary><a href=#summary>Summary</a></li><li class=toc-hierarchy>Class tree<ol><li id=toc-superclasses><a href=#superclasses>Inherits</a></li><li id=toc-subclasses><a href=#subclasses>Inherited by</a></li></ol></li><li class=toc-members-index><a href=#members-index>Member index</a></li><li class=toc-history><a href=#history>History</a></li><li class=toc-members><a href=#members>Members</a><ol><li><a href=#member-Button1Down>Button1Down</a></li><li><a href=#member-Button1Up>Button1Up</a></li><li><a href=#member-Button2Down>Button2Down</a></li><li><a href=#member-Button2Up>Button2Up</a></li><li><a href=#member-Hit>Hit</a></li><li><a href=#member-Icon>Icon</a></li><li><a href=#member-Idle>Idle</a></li><li><a href=#member-KeyDown>KeyDown</a></li><li><a href=#member-KeyUp>KeyUp</a></li><li><a href=#member-Move>Move</a></li><li><a href=#member-Origin>Origin</a></li><li><a href=#member-Target>Target</a></li><li><a href=#member-TargetFilter>TargetFilter</a></li><li><a href=#member-TargetSurface>TargetSurface</a></li><li><a href=#member-UnitRay>UnitRay</a></li><li><a href=#member-ViewSizeX>ViewSizeX</a></li><li><a href=#member-ViewSizeY>ViewSizeY</a></li><li><a href=#member-WheelBackward>WheelBackward</a></li><li><a href=#member-WheelForward>WheelForward</a></li><li><a href=#member-X>X</a></li><li><a href=#member-Y>Y</a></li><li><a href=#member-hit>hit</a></li><li><a href=#member-keyDown>keyDown</a></li><li><a href=#member-target>target</a></li></ol></li><li class=toc-references>References<ol><li><a href=#related-classes>Related classes</a></li><li><a href=#related-members>Related members</a></li><li><a href=#related-enums>Related enums</a></li><li><a href=#related-types>Related types</a></li></ol></li></ol></section></nav><section id=content><header><h1>Mouse</h1></header><section id=summary><header><h2>Summary</h2></header><table class=metadata-pairs><tbody><tr><th>Memory Category</th><td>Instances</td></tr></tbody></table><p class=tags>Tags: [NotCreatable]</p></section><section id=members-index><header><h2>Members <span class=element-count>24</span></h2></header><table class=members-index><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<link rel=stylesheet href=/ref-temp/main.min.4b756e92381cd23625a729268ba10fdc2f5c9669d66b2241f9eb8f37aa7b97ef.css integrity="sha256-S3Vukjgc0jYlpykmi6EP3C9clmnWayJB+euPN6p7l+8=" crossorigin=anonymous><script src=/ref-temp/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js integrity="sha256-I80MfYNyY7nq65buLZzPopadqj+gD6HB/ocBqbhyUaE=" crossorigin=anonymous></script></head><body id=top><header><h1><a href=/ref-temp/>Roblox API Reference</a></h1><nav><ul><li><a href=/ref-temp/class.html>Classes</a></li><li><a href=/ref-temp/enum.html>Enums</a></li><li><a href=/ref-temp/type.html>Types</a></li><li><a href=/ref-temp/updates.html>Updates</a></li></ul></nav><aside id=search><form id=search-form class=js><label><input id=search-input type=search placeholder="Press S to search..."></label></form><noscript><section id=no-search>Searching requires Javascript.</section></noscript></aside><div id=settings-container class=js><span class="icon button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" height="14" width="14"><path d="M6 0 5 2 3 1 1 3 2 5 0 6v2l2 1-1 2 2 2 2-1 1 2h2l1-2 2 1 2-2-1-2 2-1V6L12 5l1-2-2-2L9 2 8 0zM7 4 9 5l1 2L9 9 7 10 5 9 4 7 5 5z"/></svg></span></div></header><main class="kind-page type-class"><nav><section id=hierarchy><section id=superclasses><header><h2>Inherits <span class=element-count>1</span></h2></header><ul class="element-list truncated-list"><li><a href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></li></ul></section><section id=subclasses><header><h2>Inherited by <span class=element-count>2</span></h2></header><ul class="element-list truncated-list"><li><a href=https://robloxapi.github.io/ref-temp/class/PlayerMouse.html>PlayerMouse</a></li><li><a href=https://robloxapi.github.io/ref-temp/class/PluginMouse.html>PluginMouse</a></li></ul></section></section><section id=toc><header><h2>Contents</h2></header><ol class=toc><li class=toc-summary><a href=#summary>Summary</a></li><li class=toc-hierarchy>Class tree<ol><li id=toc-superclasses><a href=#superclasses>Inherits</a></li><li id=toc-subclasses><a href=#subclasses>Inherited by</a></li></ol></li><li class=toc-members-index><a href=#members-index>Member index</a></li><li class=toc-history><a href=#history>History</a></li><li class=toc-members><a href=#members>Members</a><ol><li><a href=#member-Button1Down>Button1Down</a></li><li><a href=#member-Button1Up>Button1Up</a></li><li><a href=#member-Button2Down>Button2Down</a></li><li><a href=#member-Button2Up>Button2Up</a></li><li><a href=#member-Hit>Hit</a></li><li><a href=#member-Icon>Icon</a></li><li><a href=#member-Idle>Idle</a></li><li><a href=#member-KeyDown>KeyDown</a></li><li><a href=#member-KeyUp>KeyUp</a></li><li><a href=#member-Move>Move</a></li><li><a href=#member-Origin>Origin</a></li><li><a href=#member-Target>Target</a></li><li><a href=#member-TargetFilter>TargetFilter</a></li><li><a href=#member-TargetSurface>TargetSurface</a></li><li><a href=#member-UnitRay>UnitRay</a></li><li><a href=#member-ViewSizeX>ViewSizeX</a></li><li><a href=#member-ViewSizeY>ViewSizeY</a></li><li><a href=#member-WheelBackward>WheelBackward</a></li><li><a href=#member-WheelForward>WheelForward</a></li><li><a href=#member-X>X</a></li><li><a href=#member-Y>Y</a></li><li><a href=#member-hit>hit</a></li><li><a href=#member-keyDown>keyDown</a></li><li><a href=#member-target>target</a></li></ol></li><li class=toc-references>References<ol><li><a href=#related-classes>Related classes</a></li><li><a href=#related-members>Related members</a></li><li><a href=#related-enums>Related enums</a></li><li><a href=#related-types>Related types</a></li></ol></li></ol></section></nav><article id=content><header><h1>Mouse</h1></header><section id=summary><header><h2>Summary</h2></header><table class=metadata-pairs><tbody><tr><th>Memory Category</th><td>Instances</td></tr></tbody></table><div class=tags>Tags: [NotCreatable]</div></section><section id=members-index><header><h2>Members <span class=element-count>24</span></h2></header><table class="index-card members-index"><thead><tr><th class=col-history>History</th><th class=col-icon></th><th class=col-member>Member</th></tr></thead><tbody><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Hit>Hit</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Hit>Hit</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Icon>Icon</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/Content.html>Content</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Icon>Icon</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/Content.html>Content</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Origin>Origin</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Origin>Origin</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Target>Target</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/class/BasePart.html>BasePart</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Target>Target</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/class/BasePart.html>BasePart</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetFilter>TargetFilter</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetFilter>TargetFilter</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetSurface>TargetSurface</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/enum/NormalId.html>NormalId</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetSurface>TargetSurface</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/enum/NormalId.html>NormalId</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-UnitRay>UnitRay</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/Ray.html>Ray</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-UnitRay>UnitRay</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/Ray.html>Ray</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeX>ViewSizeX</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeX>ViewSizeX</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeY>ViewSizeY</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeY>ViewSizeY</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-X>X</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-X>X</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Y>Y</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Y>Y</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-hit>hit</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-hit>hit</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-target>target</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/class/BasePart.html>BasePart</a></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-target>target</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/class/BasePart.html>BasePart</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Down>Button1Down</a></span><span class=params-open>(</span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Down>Button1Down</a></span><span class="parameters open">(</span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Up>Button1Up</a></span><span class=params-open>(</span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Up>Button1Up</a></span><span class="parameters open">(</span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Down>Button2Down</a></span><span class=params-open>(</span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Down>Button2Down</a></span><span class="parameters open">(</span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Up>Button2Up</a></span><span class=params-open>(</span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Up>Button2Up</a></span><span class="parameters open">(</span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Idle>Idle</a></span><span class=params-open>(</span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Idle>Idle</a></span><span class="parameters open">(</span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyDown>KeyDown</a></span><span class=params-open>(</span><span class=parameter>key: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyDown>KeyDown</a></span><span class="parameters open">(</span><span class="parameters parameter">key: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyUp>KeyUp</a></span><span class=params-open>(</span><span class=parameter>key: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyUp>KeyUp</a></span><span class="parameters open">(</span><span class="parameters parameter">key: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Move>Move</a></span><span class=params-open>(</span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Move>Move</a></span><span class="parameters open">(</span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelBackward>WheelBackward</a></span><span class=params-open>(</span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelBackward>WheelBackward</a></span><span class="parameters open">(</span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
-version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelForward>WheelForward</a></span><span class=params-open>(</span><span class=params-close>)</span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelForward>WheelForward</a></span><span class="parameters open">(</span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
-version-ec81b0ea2163459b">553</a></td><td class=col-icon>Event</td><td class=col-member><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-keyDown>keyDown</a></span><span class=params-open>(</span><span class=parameter>key: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class=params-close>)</span></td></tr></tbody></table></section><section id=history><header><h2>History <span class=element-count>89</span></h2></header><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-keyDown>keyDown</a></span><span class="parameters open">(</span><span class="parameters parameter">key: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span></span></td></tr></tbody><thead><tr><th class=inherited-members colspan=3><label><input type=checkbox>67 members</label> inherited from <a href=https://robloxapi.github.io/ref-temp/class/Instance.html#members-index>Instance</a></th></tr></thead><tbody><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-Archivable>Archivable</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-Attributes>Attributes</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-AttributesReplicate>AttributesReplicate</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-AttributesSerialize>AttributesSerialize</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/BinaryString.html>BinaryString</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2023-08-22T20:43:18-07:00
+0.591.0.5910633
+version-5a3824df86134561">591</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-Capabilities>Capabilities</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/SecurityCapabilities.html>SecurityCapabilities</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-ClassName>ClassName</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-DataCost>DataCost</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2023-08-22T20:43:18-07:00
+0.591.0.5910633
+version-5a3824df86134561">591</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-DefinesCapabilities>DefinesCapabilities</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-HistoryId>HistoryId</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/UniqueId.html>UniqueId</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-Name>Name</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-Parent>Parent</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-PropertyStatusStudio>PropertyStatusStudio</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/enum/PropertyStatus.html>PropertyStatus</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-RobloxLocked>RobloxLocked</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2024-03-08T21:42:32-08:00
+0.616.0.6160656
+version-c76f0335390547f0">616</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-SourceAssetId>SourceAssetId</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/int64.html>int64</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-Tags>Tags</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/BinaryString.html>BinaryString</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2024-03-08T21:42:32-08:00
+0.616.0.6160656
+version-c76f0335390547f0">616</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-UniqueId>UniqueId</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/UniqueId.html>UniqueId</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-archivable>archivable</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-className>className</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Property</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-numExpectedDirectChildren>numExpectedDirectChildren</a></span>: <span class=type><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2023-05-17T11:55:31-07:00
+0.576.0.5760523
+version-6eaeb4d7cda146c1">576</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-AddTag>AddTag</a></span><span class="parameters open">(</span><span class="parameters parameter">tag: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-ClearAllChildren>ClearAllChildren</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-Clone>Clone</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-Destroy>Destroy</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-FindFirstAncestor>FindFirstAncestor</a></span><span class="parameters open">(</span><span class="parameters parameter">name: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-FindFirstAncestorOfClass>FindFirstAncestorOfClass</a></span><span class="parameters open">(</span><span class="parameters parameter">className: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-FindFirstAncestorWhichIsA>FindFirstAncestorWhichIsA</a></span><span class="parameters open">(</span><span class="parameters parameter">className: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-FindFirstChild>FindFirstChild</a></span><span class="parameters open">(</span><span class="parameters parameter">name: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a><span class="parameters sep">, </span></span><span class="parameters parameter">recursive: <a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a> = false</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-FindFirstChildOfClass>FindFirstChildOfClass</a></span><span class="parameters open">(</span><span class="parameters parameter">className: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-FindFirstChildWhichIsA>FindFirstChildWhichIsA</a></span><span class="parameters open">(</span><span class="parameters parameter">className: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a><span class="parameters sep">, </span></span><span class="parameters parameter">recursive: <a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a> = false</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-FindFirstDescendant>FindFirstDescendant</a></span><span class="parameters open">(</span><span class="parameters parameter">name: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-02-16T15:39:15-08:00
+0.563.0.5630392
+version-08c292fe2f1e4350">563</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-GetActor>GetActor</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/class/Actor.html>Actor</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-GetAttribute>GetAttribute</a></span><span class="parameters open">(</span><span class="parameters parameter">attribute: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/Variant.html>Variant</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-GetAttributeChangedSignal>GetAttributeChangedSignal</a></span><span class="parameters open">(</span><span class="parameters parameter">attribute: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/RBXScriptSignal.html>RBXScriptSignal</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-GetAttributes>GetAttributes</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/Dictionary.html>Dictionary</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-GetChildren>GetChildren</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/Objects.html>Objects</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-GetDebugId>GetDebugId</a></span><span class="parameters open">(</span><span class="parameters parameter">scopeLength: <a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a> = 4</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-GetDescendants>GetDescendants</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/Array.html>Array</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-GetFullName>GetFullName</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-GetPropertyChangedSignal>GetPropertyChangedSignal</a></span><span class="parameters open">(</span><span class="parameters parameter">property: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/RBXScriptSignal.html>RBXScriptSignal</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2023-05-17T11:55:31-07:00
+0.576.0.5760523
+version-6eaeb4d7cda146c1">576</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-GetTags>GetTags</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/Array.html>Array</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2023-05-17T11:55:31-07:00
+0.576.0.5760523
+version-6eaeb4d7cda146c1">576</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-HasTag>HasTag</a></span><span class="parameters open">(</span><span class="parameters parameter">tag: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-IsA>IsA</a></span><span class="parameters open">(</span><span class="parameters parameter">className: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-IsAncestorOf>IsAncestorOf</a></span><span class="parameters open">(</span><span class="parameters parameter">descendant: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+0.486.0.426194
+version-c992b9ce01654146">486</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-IsDescendantOf>IsDescendantOf</a></span><span class="parameters open">(</span><span class="parameters parameter">ancestor: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2023-06-14T11:03:33-07:00
+0.580.0.5800572
+version-98e00d992f0543ee">580</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-IsPropertyModified>IsPropertyModified</a></span><span class="parameters open">(</span><span class="parameters parameter">name: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-Remove>Remove</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2023-05-17T11:55:31-07:00
+0.576.0.5760523
+version-6eaeb4d7cda146c1">576</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-RemoveTag>RemoveTag</a></span><span class="parameters open">(</span><span class="parameters parameter">tag: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2023-06-14T11:03:33-07:00
+0.580.0.5800572
+version-98e00d992f0543ee">580</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-ResetPropertyToDefault>ResetPropertyToDefault</a></span><span class="parameters open">(</span><span class="parameters parameter">name: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-SetAttribute>SetAttribute</a></span><span class="parameters open">(</span><span class="parameters parameter">attribute: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a><span class="parameters sep">, </span></span><span class="parameters parameter">value: <a class=type href=https://robloxapi.github.io/ref-temp/type/Variant.html>Variant</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-WaitForChild>WaitForChild</a></span><span class="parameters open">(</span><span class="parameters parameter">childName: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a><span class="parameters sep">, </span></span><span class="parameters parameter">timeOut: <a class=type href=https://robloxapi.github.io/ref-temp/type/double.html>double</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-children>children</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/Objects.html>Objects</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-clone>clone</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-destroy>destroy</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-findFirstChild>findFirstChild</a></span><span class="parameters open">(</span><span class="parameters parameter">name: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a><span class="parameters sep">, </span></span><span class="parameters parameter">recursive: <a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a> = false</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-getChildren>getChildren</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/Objects.html>Objects</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-isA>isA</a></span><span class="parameters open">(</span><span class="parameters parameter">className: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-isDescendantOf>isDescendantOf</a></span><span class="parameters open">(</span><span class="parameters parameter">ancestor: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/bool.html>bool</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2023-04-26T18:50:09-07:00
+0.573.0.5730507
+version-da56b3062bbf4871">573</a></td><td class=col-icon>Function</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-remove>remove</a></span><span class="parameters open">(</span><span class="parameters close">)</span>: <span class="returns return"><a class=type href=https://robloxapi.github.io/ref-temp/type/null.html>null</a></span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-AncestryChanged>AncestryChanged</a></span><span class="parameters open">(</span><span class="parameters parameter">child: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a><span class="parameters sep">, </span></span><span class="parameters parameter">parent: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-AttributeChanged>AttributeChanged</a></span><span class="parameters open">(</span><span class="parameters parameter">attribute: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-Changed>Changed</a></span><span class="parameters open">(</span><span class="parameters parameter">property: <a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-ChildAdded>ChildAdded</a></span><span class="parameters open">(</span><span class="parameters parameter">child: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-ChildRemoved>ChildRemoved</a></span><span class="parameters open">(</span><span class="parameters parameter">child: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-DescendantAdded>DescendantAdded</a></span><span class="parameters open">(</span><span class="parameters parameter">descendant: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+0.462.0.416719
+version-49b4e2a90c9a455c">462</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-DescendantRemoving>DescendantRemoving</a></span><span class="parameters open">(</span><span class="parameters parameter">descendant: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag added" href=# title="Added on 2021-10-19T11:26:45-07:00
+0.500.0.5000375
+version-8d00ae110ba446ef">500</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-Destroying>Destroying</a></span><span class="parameters open">(</span><span class="parameters close">)</span></span></td></tr><tr><td class=col-history><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+0.553.0.5530621
+version-ec81b0ea2163459b">553</a></td><td class=col-icon>Event</td><td class=col-member><span class=member-text><span class=name><a href=https://robloxapi.github.io/ref-temp/class/Instance.html#member-childAdded>childAdded</a></span><span class="parameters open">(</span><span class="parameters parameter">child: <a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></span><span class="parameters close">)</span></span></td></tr></tbody></table></section><section id=history class="filter-container history-member-filter"><header><h2>History <span class=element-count>89</span></h2><aside class=filter-controls><label><input class=filter-input type=checkbox>
+<span>Hide member changes</span></label></aside></header><ul class="change-list truncated-list"><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-keyDown>Mouse.keyDown</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyUp>Mouse.KeyUp</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyDown>Mouse.KeyDown</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-target>Mouse.target</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-target>Mouse.target</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-hit>Mouse.hit</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-hit>Mouse.hit</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Y>Mouse.Y</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-X>Mouse.X</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeY>Mouse.ViewSizeY</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeX>Mouse.ViewSizeX</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-UnitRay>Mouse.UnitRay</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetSurface>Mouse.TargetSurface</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetFilter>Mouse.TargetFilter</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Target>Mouse.Target</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Origin>Mouse.Origin</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Icon>Mouse.Icon</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Hit>Mouse.Hit</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-target>Mouse.target</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-hit>Mouse.hit</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Y>Mouse.Y</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-X>Mouse.X</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeY>Mouse.ViewSizeY</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeX>Mouse.ViewSizeX</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-UnitRay>Mouse.UnitRay</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetSurface>Mouse.TargetSurface</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetFilter>Mouse.TargetFilter</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Target>Mouse.Target</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Origin>Mouse.Origin</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Icon>Mouse.Icon</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-07-12T18:30:54-07:00
 0.486.0.426194
 version-c992b9ce01654146">486</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Hit>Mouse.Hit</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-keyDown>Mouse.keyDown</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelForward>Mouse.WheelForward</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelBackward>Mouse.WheelBackward</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Move>Mouse.Move</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyUp>Mouse.KeyUp</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyDown>Mouse.KeyDown</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Idle>Mouse.Idle</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Up>Mouse.Button2Up</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Down>Mouse.Button2Down</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Up>Mouse.Button1Up</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Down>Mouse.Button1Down</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-target>Mouse.target</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-hit>Mouse.hit</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Y>Mouse.Y</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-X>Mouse.X</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeY>Mouse.ViewSizeY</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeX>Mouse.ViewSizeX</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-UnitRay>Mouse.UnitRay</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetSurface>Mouse.TargetSurface</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetFilter>Mouse.TargetFilter</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Target>Mouse.Target</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Origin>Mouse.Origin</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Icon>Mouse.Icon</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Hit>Mouse.Hit</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-03-13T19:19:58-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2018-03-13T19:19:58-07:00
 0.329.0.187788
 version-a10a16caa13a4288">329</a>
 Change ValueType of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-target>Mouse.target</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-03-13T19:19:58-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2018-03-13T19:19:58-07:00
 0.329.0.187788
 version-a10a16caa13a4288">329</a>
 Change ValueType of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetFilter>Mouse.TargetFilter</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2018-03-13T19:19:58-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2018-03-13T19:19:58-07:00
 0.329.0.187788
 version-a10a16caa13a4288">329</a>
 Change ValueType of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Target>Mouse.Target</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2015-02-19T23:36:15-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2015-02-19T23:36:15-08:00
 0.185.0.56461
 version-708f91f0ad924d5c">185</a>
 Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyUp>Mouse.KeyUp</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2015-02-19T23:36:15-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2015-02-19T23:36:15-08:00
 0.185.0.56461
 version-708f91f0ad924d5c">185</a>
 Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyDown>Mouse.KeyDown</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2012-09-07T00:00:18-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2012-09-07T00:00:18-07:00
 0.71.0.665
 version-12cd4783f01a48cf">71</a>
 Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-keyDown>Mouse.keyDown</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2012-09-07T00:00:18-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2012-09-07T00:00:18-07:00
 0.71.0.665
 version-12cd4783f01a48cf">71</a>
 Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyUp>Mouse.KeyUp</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag changed" href=# title="Changed on 2012-09-07T00:00:18-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag changed" href=# title="Changed on 2012-09-07T00:00:18-07:00
 0.71.0.665
 version-12cd4783f01a48cf">71</a>
 Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyDown>Mouse.KeyDown</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Event><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-keyDown>Mouse.keyDown</a></li><li><a class="history-tag added" href=# title="Added on 2012-05-24T00:34:34-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-keyDown>Mouse.keyDown</a></li><li class=filter-element data-element=Property><a class="history-tag added" href=# title="Added on 2012-05-24T00:34:34-07:00
 0.61.0.581
 version-221a4807685c44e7">61</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-target>Mouse.target</a></li><li><a class="history-tag changed" href=# title="Changed on 2012-01-30T23:45:54-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-target>Mouse.target</a></li><li class=filter-element data-element=Property><a class="history-tag changed" href=# title="Changed on 2012-01-30T23:45:54-08:00
 0.50.0.502
 version-33cdd1a534aa4a98">50</a>
 Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-hit>Mouse.hit</a>
 <span class=diff-values><span class=row-from><span class=col-label>from</span>
 <span class=col-value></span></span><span class=row-to><span class=col-label>to</span>
-<span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-12-09T00:29:44-08:00
+<span class=col-value></span></span></span></li><li class=filter-element data-element=Property><a class="history-tag added" href=# title="Added on 2011-12-09T00:29:44-08:00
 0.49.0.444
 version-844560f43f354d3f">49</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-hit>Mouse.hit</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-hit>Mouse.hit</a></li><li class=filter-element data-element=Event><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelForward>Mouse.WheelForward</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelForward>Mouse.WheelForward</a></li><li class=filter-element data-element=Event><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelBackward>Mouse.WheelBackward</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelBackward>Mouse.WheelBackward</a></li><li class=filter-element data-element=Event><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Move>Mouse.Move</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Move>Mouse.Move</a></li><li class=filter-element data-element=Event><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyUp>Mouse.KeyUp</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyUp>Mouse.KeyUp</a></li><li class=filter-element data-element=Event><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyDown>Mouse.KeyDown</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyDown>Mouse.KeyDown</a></li><li class=filter-element data-element=Event><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Idle>Mouse.Idle</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Idle>Mouse.Idle</a></li><li class=filter-element data-element=Event><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Up>Mouse.Button2Up</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Up>Mouse.Button2Up</a></li><li class=filter-element data-element=Event><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Down>Mouse.Button2Down</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Down>Mouse.Button2Down</a></li><li class=filter-element data-element=Event><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Up>Mouse.Button1Up</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Up>Mouse.Button1Up</a></li><li class=filter-element data-element=Event><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Down>Mouse.Button1Down</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Down>Mouse.Button1Down</a></li><li class=filter-element data-element=Property><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Y>Mouse.Y</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Y>Mouse.Y</a></li><li class=filter-element data-element=Property><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-X>Mouse.X</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-X>Mouse.X</a></li><li class=filter-element data-element=Property><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeY>Mouse.ViewSizeY</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeY>Mouse.ViewSizeY</a></li><li class=filter-element data-element=Property><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeX>Mouse.ViewSizeX</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeX>Mouse.ViewSizeX</a></li><li class=filter-element data-element=Property><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-UnitRay>Mouse.UnitRay</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-UnitRay>Mouse.UnitRay</a></li><li class=filter-element data-element=Property><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetSurface>Mouse.TargetSurface</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetSurface>Mouse.TargetSurface</a></li><li class=filter-element data-element=Property><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetFilter>Mouse.TargetFilter</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetFilter>Mouse.TargetFilter</a></li><li class=filter-element data-element=Property><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Target>Mouse.Target</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Target>Mouse.Target</a></li><li class=filter-element data-element=Property><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Origin>Mouse.Origin</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Origin>Mouse.Origin</a></li><li class=filter-element data-element=Property><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Icon>Mouse.Icon</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Icon>Mouse.Icon</a></li><li class=filter-element data-element=Property><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Hit>Mouse.Hit</a></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Hit>Mouse.Hit</a></li><li class=filter-element data-element=Class><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html>Mouse</a></li></ul></section><section id=members><header><h2>Members</h2></header><div id=members-sections><section id=member-Button1Down><header><h3>Button1Down</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Event</td></tr><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html>Mouse</a></li></ul></section><section id=members><header><h2>Members</h2></header><div id=members-sections><section id=member-Button1Down><header><h3>Button1Down</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Event</td></tr><tr><th>Parameters</th><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Down>Mouse.Button1Down</a>
@@ -515,7 +650,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Down>Mouse.Button1Down</a></li></ul></section><section id=member-Button1Up><header><h3>Button1Up</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Event</td></tr><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Down>Mouse.Button1Down</a></li></ul></section><section id=member-Button1Up><header><h3>Button1Up</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Event</td></tr><tr><th>Parameters</th><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Up>Mouse.Button1Up</a>
@@ -524,7 +659,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Up>Mouse.Button1Up</a></li></ul></section><section id=member-Button2Down><header><h3>Button2Down</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Event</td></tr><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button1Up>Mouse.Button1Up</a></li></ul></section><section id=member-Button2Down><header><h3>Button2Down</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Event</td></tr><tr><th>Parameters</th><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Down>Mouse.Button2Down</a>
@@ -533,7 +668,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Down>Mouse.Button2Down</a></li></ul></section><section id=member-Button2Up><header><h3>Button2Up</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Event</td></tr><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Down>Mouse.Button2Down</a></li></ul></section><section id=member-Button2Up><header><h3>Button2Up</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Event</td></tr><tr><th>Parameters</th><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Up>Mouse.Button2Up</a>
@@ -542,7 +677,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Up>Mouse.Button2Up</a></li></ul></section><section id=member-Hit><header><h3>Hit</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Property</td></tr><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Button2Up>Mouse.Button2Up</a></li></ul></section><section id=member-Hit><header><h3>Hit</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Property</td></tr><tr><th>Value Type</th><td><a class=type href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></td></tr><tr><th>Category</th><td>Data</td></tr><tr><th>Can Load</th><td>false</td></tr><tr><th>Can Save</th><td>true</td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Hit>Mouse.Hit</a>
@@ -563,7 +698,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Hit>Mouse.Hit</a></li></ul></section><section id=member-Icon><header><h3>Icon</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Property</td></tr><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/Content.html>Content</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Hit>Mouse.Hit</a></li></ul><div class=tags>Tags: [ReadOnly, NotReplicated]</div></section><section id=member-Icon><header><h3>Icon</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Property</td></tr><tr><th>Value Type</th><td><a class=type href=https://robloxapi.github.io/ref-temp/type/Content.html>Content</a></td></tr><tr><th>Category</th><td>Data</td></tr><tr><th>Can Load</th><td>true</td></tr><tr><th>Can Save</th><td>true</td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Icon>Mouse.Icon</a>
@@ -584,7 +719,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Icon>Mouse.Icon</a></li></ul></section><section id=member-Idle><header><h3>Idle</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Event</td></tr><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Icon>Mouse.Icon</a></li></ul></section><section id=member-Idle><header><h3>Idle</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Event</td></tr><tr><th>Parameters</th><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Idle>Mouse.Idle</a>
@@ -593,7 +728,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Idle>Mouse.Idle</a></li></ul></section><section id=member-KeyDown><header><h3>KeyDown</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Event</td></tr><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-key><td class=col-member>key</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Idle>Mouse.Idle</a></li></ul></section><section id=member-KeyDown><header><h3>KeyDown</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Event</td></tr><tr><th>Parameters</th><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-key><td class=col-member>key</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyDown>Mouse.KeyDown</a>
@@ -620,7 +755,7 @@ Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.ht
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyDown>Mouse.KeyDown</a></li></ul></section><section id=member-KeyUp><header><h3>KeyUp</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Event</td></tr><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-key><td class=col-member>key</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyDown>Mouse.KeyDown</a></li></ul><div class=tags>Tags: [Deprecated]</div></section><section id=member-KeyUp><header><h3>KeyUp</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Event</td></tr><tr><th>Parameters</th><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-key><td class=col-member>key</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyUp>Mouse.KeyUp</a>
@@ -647,7 +782,7 @@ Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.ht
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyUp>Mouse.KeyUp</a></li></ul></section><section id=member-Move><header><h3>Move</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Event</td></tr><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-KeyUp>Mouse.KeyUp</a></li></ul><div class=tags>Tags: [Deprecated]</div></section><section id=member-Move><header><h3>Move</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Event</td></tr><tr><th>Parameters</th><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Move>Mouse.Move</a>
@@ -656,7 +791,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Move>Mouse.Move</a></li></ul></section><section id=member-Origin><header><h3>Origin</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Property</td></tr><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Move>Mouse.Move</a></li></ul></section><section id=member-Origin><header><h3>Origin</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Property</td></tr><tr><th>Value Type</th><td><a class=type href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></td></tr><tr><th>Category</th><td>Data</td></tr><tr><th>Can Load</th><td>false</td></tr><tr><th>Can Save</th><td>true</td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Origin>Mouse.Origin</a>
@@ -677,7 +812,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Origin>Mouse.Origin</a></li></ul></section><section id=member-Target><header><h3>Target</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Property</td></tr><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/class/BasePart.html>BasePart</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Origin>Mouse.Origin</a></li></ul><div class=tags>Tags: [ReadOnly, NotReplicated]</div></section><section id=member-Target><header><h3>Target</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Property</td></tr><tr><th>Value Type</th><td><a class=type href=https://robloxapi.github.io/ref-temp/class/BasePart.html>BasePart</a></td></tr><tr><th>Category</th><td>Data</td></tr><tr><th>Can Load</th><td>false</td></tr><tr><th>Can Save</th><td>true</td></tr></tbody></table><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Target>Mouse.Target</a>
@@ -704,7 +839,7 @@ Change ValueType of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.htm
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Target>Mouse.Target</a></li></ul></section><section id=member-TargetFilter><header><h3>TargetFilter</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Property</td></tr><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>true</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Target>Mouse.Target</a></li></ul><div class=tags>Tags: [ReadOnly, NotReplicated]</div></section><section id=member-TargetFilter><header><h3>TargetFilter</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Property</td></tr><tr><th>Value Type</th><td><a class=type href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></td></tr><tr><th>Category</th><td>Data</td></tr><tr><th>Can Load</th><td>true</td></tr><tr><th>Can Save</th><td>true</td></tr></tbody></table><h4>History <span class=element-count>5</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetFilter>Mouse.TargetFilter</a>
@@ -731,7 +866,7 @@ Change ValueType of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.htm
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetFilter>Mouse.TargetFilter</a></li></ul></section><section id=member-TargetSurface><header><h3>TargetSurface</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Property</td></tr><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/enum/NormalId.html>NormalId</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetFilter>Mouse.TargetFilter</a></li></ul></section><section id=member-TargetSurface><header><h3>TargetSurface</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Property</td></tr><tr><th>Value Type</th><td><a class=type href=https://robloxapi.github.io/ref-temp/enum/NormalId.html>NormalId</a></td></tr><tr><th>Category</th><td>Data</td></tr><tr><th>Can Load</th><td>false</td></tr><tr><th>Can Save</th><td>true</td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetSurface>Mouse.TargetSurface</a>
@@ -752,7 +887,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetSurface>Mouse.TargetSurface</a></li></ul></section><section id=member-UnitRay><header><h3>UnitRay</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Property</td></tr><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/Ray.html>Ray</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-TargetSurface>Mouse.TargetSurface</a></li></ul><div class=tags>Tags: [ReadOnly, NotReplicated]</div></section><section id=member-UnitRay><header><h3>UnitRay</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Property</td></tr><tr><th>Value Type</th><td><a class=type href=https://robloxapi.github.io/ref-temp/type/Ray.html>Ray</a></td></tr><tr><th>Category</th><td>Data</td></tr><tr><th>Can Load</th><td>false</td></tr><tr><th>Can Save</th><td>true</td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-UnitRay>Mouse.UnitRay</a>
@@ -773,7 +908,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-UnitRay>Mouse.UnitRay</a></li></ul></section><section id=member-ViewSizeX><header><h3>ViewSizeX</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Property</td></tr><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-UnitRay>Mouse.UnitRay</a></li></ul><div class=tags>Tags: [ReadOnly, NotReplicated]</div></section><section id=member-ViewSizeX><header><h3>ViewSizeX</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Property</td></tr><tr><th>Value Type</th><td><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td></tr><tr><th>Category</th><td>Data</td></tr><tr><th>Can Load</th><td>false</td></tr><tr><th>Can Save</th><td>true</td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeX>Mouse.ViewSizeX</a>
@@ -794,7 +929,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeX>Mouse.ViewSizeX</a></li></ul></section><section id=member-ViewSizeY><header><h3>ViewSizeY</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Property</td></tr><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeX>Mouse.ViewSizeX</a></li></ul><div class=tags>Tags: [ReadOnly, NotReplicated]</div></section><section id=member-ViewSizeY><header><h3>ViewSizeY</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Property</td></tr><tr><th>Value Type</th><td><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td></tr><tr><th>Category</th><td>Data</td></tr><tr><th>Can Load</th><td>false</td></tr><tr><th>Can Save</th><td>true</td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeY>Mouse.ViewSizeY</a>
@@ -815,7 +950,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeY>Mouse.ViewSizeY</a></li></ul></section><section id=member-WheelBackward><header><h3>WheelBackward</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Event</td></tr><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-ViewSizeY>Mouse.ViewSizeY</a></li></ul><div class=tags>Tags: [ReadOnly, NotReplicated]</div></section><section id=member-WheelBackward><header><h3>WheelBackward</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Event</td></tr><tr><th>Parameters</th><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelBackward>Mouse.WheelBackward</a>
@@ -824,7 +959,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelBackward>Mouse.WheelBackward</a></li></ul></section><section id=member-WheelForward><header><h3>WheelForward</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Event</td></tr><tr><td>Parameters</td><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelBackward>Mouse.WheelBackward</a></li></ul></section><section id=member-WheelForward><header><h3>WheelForward</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Event</td></tr><tr><th>Parameters</th><td><span class=element-count>0</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr><td colspan=3>No parameters.</td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>2</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2021-01-15T15:56:17-08:00
 0.462.0.416719
 version-49b4e2a90c9a455c">462</a>
 Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelForward>Mouse.WheelForward</a>
@@ -833,7 +968,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelForward>Mouse.WheelForward</a></li></ul></section><section id=member-X><header><h3>X</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Property</td></tr><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-WheelForward>Mouse.WheelForward</a></li></ul></section><section id=member-X><header><h3>X</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Property</td></tr><tr><th>Value Type</th><td><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td></tr><tr><th>Category</th><td>Data</td></tr><tr><th>Can Load</th><td>false</td></tr><tr><th>Can Save</th><td>true</td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-X>Mouse.X</a>
@@ -854,7 +989,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-X>Mouse.X</a></li></ul></section><section id=member-Y><header><h3>Y</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Property</td></tr><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>true</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-X>Mouse.X</a></li></ul><div class=tags>Tags: [ReadOnly, NotReplicated]</div></section><section id=member-Y><header><h3>Y</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Property</td></tr><tr><th>Value Type</th><td><a class=type href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></td></tr><tr><th>Category</th><td>Data</td></tr><tr><th>Can Load</th><td>false</td></tr><tr><th>Can Save</th><td>true</td></tr></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Y>Mouse.Y</a>
@@ -875,7 +1010,7 @@ Change ThreadSafety of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-10-25T23:33:20-07:00
 0.47.0.380
 version-87de5333d4254860">47</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Y>Mouse.Y</a></li></ul></section><section id=member-hit><header><h3>hit</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Property</td></tr><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [Hidden, ReadOnly, NotReplicated, Deprecated]</p><h4>History <span class=element-count>6</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-Y>Mouse.Y</a></li></ul><div class=tags>Tags: [ReadOnly, NotReplicated]</div></section><section id=member-hit><header><h3>hit</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Property</td></tr><tr><th>Value Type</th><td><a class=type href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></td></tr><tr><th>Category</th><td>Data</td></tr><tr><th>Can Load</th><td>false</td></tr><tr><th>Can Save</th><td>false</td></tr></tbody></table><h4>History <span class=element-count>6</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-hit>Mouse.hit</a>
@@ -908,7 +1043,7 @@ Change Tags of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#mem
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2011-12-09T00:29:44-08:00
 0.49.0.444
 version-844560f43f354d3f">49</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-hit>Mouse.hit</a></li></ul></section><section id=member-keyDown><header><h3>keyDown</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Event</td></tr><tr><td>Parameters</td><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-key><td class=col-member>key</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><p class=tags>Tags: [Deprecated]</p><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-hit>Mouse.hit</a></li></ul><div class=tags>Tags: [Hidden, ReadOnly, NotReplicated, Deprecated]</div></section><section id=member-keyDown><header><h3>keyDown</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Event</td></tr><tr><th>Parameters</th><td><span class=element-count>1</span></td></tr></tbody></table><table class="index-card param-index-card"><thead><tr><th class=col-member>Name</th><th class=col-type>Type</th><th class=col-default>Default</th></tr></thead><tbody><tr class=row-key><td class=col-member>key</td><td class=col-type><a class=type href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></td><td class=col-default><span class=api-no-default>none</span></td></tr></tbody></table><table class=metadata-pairs><tbody></tbody></table><h4>History <span class=element-count>4</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change PreferredDescriptor of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-keyDown>Mouse.keyDown</a>
@@ -929,7 +1064,7 @@ Change Parameters of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.ht
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-08-16T00:00:52-07:00
 0.68.0.639
 version-24713e1f9eb84bed">68</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-keyDown>Mouse.keyDown</a></li></ul></section><section id=member-target><header><h3>target</h3></header><table class=metadata-pairs><tbody><tr><td>Member Type</td><td>Property</td></tr><tr><td>Value Type</td><td><a class=type href=https://robloxapi.github.io/ref-temp/class/BasePart.html>BasePart</a></td></tr><tr><td>Category</td><td>Data</td></tr><tr><td>Can Load</td><td>false</td></tr><tr><td>Can Save</td><td>false</td></tr></tbody></table><p class=tags>Tags: [ReadOnly, NotReplicated, Deprecated]</p><h4>History <span class=element-count>6</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-keyDown>Mouse.keyDown</a></li></ul><div class=tags>Tags: [Deprecated]</div></section><section id=member-target><header><h3>target</h3></header><table class=metadata-pairs><tbody><tr><th>Member Type</th><td>Property</td></tr><tr><th>Value Type</th><td><a class=type href=https://robloxapi.github.io/ref-temp/class/BasePart.html>BasePart</a></td></tr><tr><th>Category</th><td>Data</td></tr><tr><th>Can Load</th><td>false</td></tr><tr><th>Can Save</th><td>false</td></tr></tbody></table><h4>History <span class=element-count>6</span></h4><ul class="change-list truncated-list"><li><a class="history-tag changed" href=# title="Changed on 2022-11-16T09:50:21-08:00
 0.553.0.5530621
 version-ec81b0ea2163459b">553</a>
 Change Default of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-target>Mouse.target</a>
@@ -962,5 +1097,5 @@ Change ValueType of <a href=https://robloxapi.github.io/ref-temp/class/Mouse.htm
 <span class=col-value></span></span></span></li><li><a class="history-tag added" href=# title="Added on 2012-05-24T00:34:34-07:00
 0.61.0.581
 version-221a4807685c44e7">61</a>
-Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-target>Mouse.target</a></li></ul></section></div></section><section id=references><section id=related-classes><header><h2>Related classes <span class=element-count>2</span></h2></header><ul class="element-list truncated-list"><li><a href=https://robloxapi.github.io/ref-temp/class/BasePart.html>BasePart</a></li><li><a href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></li></ul></section><section id=related-members><header><h2>Related members <span class=element-count>2</span></h2></header><ul class="element-list truncated-list"><li><a href=https://robloxapi.github.io/ref-temp/class/Player.html#member-GetMouse>Player.GetMouse</a></li><li><a href=https://robloxapi.github.io/ref-temp/class/Tool.html#member-Equipped>Tool.Equipped</a> (mouse)</li></ul></section><section id=related-enums><header><h2>Related enums <span class=element-count>1</span></h2></header><ul class="element-list truncated-list"><li><a href=https://robloxapi.github.io/ref-temp/enum/NormalId.html>NormalId</a></li></ul></section><section id=related-types><header><h2>Related types <span class=element-count>5</span></h2></header><ul class="element-list truncated-list"><li><a href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/Content.html>Content</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/Ray.html>Ray</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></li></ul></section></section></section></main><div class=top-nav><a href=#top></a></div><footer><nav><ul><li><a href=/ref-temp/>Main</a></li><li><a href=/ref-temp/updates.html>Updates</a></li><li><a href=/ref-temp/about.html>About</a></li><li><a href=https://www.roblox.com>Roblox</a></li><li><a href=https://create.roblox.com/docs/en-us/reference/engine>CreatorHub</a></li><li><a href=https://github.com/robloxapi/roar>Develop</a></li><li><a href=https://github.com/robloxapi/roar/issues>Issues</a></li></ul></nav><span class=license>Content is licensed under <a href=https://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA-4.0</a>.</span>
+Add <a href=https://robloxapi.github.io/ref-temp/class/Mouse.html#member-target>Mouse.target</a></li></ul><div class=tags>Tags: [ReadOnly, NotReplicated, Deprecated]</div></section></div></section><section id=references><section id=related-classes><header><h2>Related classes <span class=element-count>2</span></h2></header><ul class="element-list truncated-list"><li><a href=https://robloxapi.github.io/ref-temp/class/BasePart.html>BasePart</a></li><li><a href=https://robloxapi.github.io/ref-temp/class/Instance.html>Instance</a></li></ul></section><section id=related-members><header><h2>Related members <span class=element-count>2</span></h2></header><ul class="element-list truncated-list"><li><a href=https://robloxapi.github.io/ref-temp/class/Player.html#member-GetMouse>Player.GetMouse</a></li><li><a href=https://robloxapi.github.io/ref-temp/class/Tool.html#member-Equipped>Tool.Equipped</a> (mouse)</li></ul></section><section id=related-enums><header><h2>Related enums <span class=element-count>1</span></h2></header><ul class="element-list truncated-list"><li><a href=https://robloxapi.github.io/ref-temp/enum/NormalId.html>NormalId</a></li></ul></section><section id=related-types><header><h2>Related types <span class=element-count>5</span></h2></header><ul class="element-list truncated-list"><li><a href=https://robloxapi.github.io/ref-temp/type/CFrame.html>CFrame</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/Content.html>Content</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/int.html>int</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/Ray.html>Ray</a></li><li><a href=https://robloxapi.github.io/ref-temp/type/string.html>string</a></li></ul></section></section></article></main><div class=top-nav><a href=#top></a></div><footer><nav><ul><li><a href=/ref-temp/>Main</a></li><li><a href=/ref-temp/updates.html>Updates</a></li><li><a href=/ref-temp/about.html>About</a></li><li><a href=https://www.roblox.com>Roblox</a></li><li><a href=https://create.roblox.com/docs/en-us/reference/engine>CreatorHub</a></li><li><a href=https://github.com/robloxapi/roar>Develop</a></li><li><a href=https://github.com/robloxapi/roar/issues>Issues</a></li></ul></nav><span class=license>Content is licensed under <a href=https://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA-4.0</a>.</span>
 <span class=publication><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 7" height="7" width="7"><path d="M2 0V1H1V4H2V7H3V6H4V7H5V4H6V1H5V0H4V1H3V0zM2 2H3V3H2zM4 2H5V3H4z"/></svg> 2018–2024 <a href=https://anaminus.github.io>Anaminus</a></span></footer><div class=debug></div></body></html>
