@@ -107,42 +107,6 @@ jobs:
           false
         fi
 
-    # Run refresh workflow to ensure stored data uses latest schema.
-    - name: "Run refresh"
-      if: |
-        (steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
-        steps.check-cache-roar.outputs.cache-hit != 'true') &&
-        steps.check-manifest.outputs.refresh == 'true'
-      uses: "./.github/workflows/refresh.yml"
-
-    # Remove ref repo after refresh.
-    - name: "Remove ref"
-      if: |
-        (steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
-        steps.check-cache-roar.outputs.cache-hit != 'true') &&
-        steps.check-manifest.outputs.refresh == 'true'
-      run: |
-        rm --recursive --force "ref"
-
-    # Recheckout ref repo after refresh.
-    - name: "Recheckout ref"
-      if: |
-        (steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
-        steps.check-cache-roar.outputs.cache-hit != 'true') &&
-        steps.check-manifest.outputs.refresh == 'true'
-      uses: "actions/checkout@v4"
-      with:
-        ref: "gh-pages"
-        path: "ref"
-
-    - name: "Restore site data"
-      if: |
-        steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
-        steps.check-cache-roar.outputs.cache-hit != 'true'
-      run: |
-        mkdir --parents "roar/site/data"
-        cp --archive "ref/.roar/." "roar/site/data"
-
     - name: "Cache roar"
       if: |
         steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
@@ -155,22 +119,14 @@ jobs:
         # Cache binary by commit hash.
         key: "bin-roar-${{ steps.check-fetch-roar.outputs.hash }}"
 
-    - name: "Setup Hugo"
-      if: |
-        steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
-        steps.check-cache-roar.outputs.cache-hit != 'true'
-      uses: "peaceiris/actions-hugo@v2"
-      with:
-        hugo-version: ${{ env.HUGO_VERSION }}
-        extended: true
-
     # The steps to build roar run only if there was no cache hit on the roar
-    # binary.
+    # binary, or if refreshing.
     - name: "Setup Go"
       if: |
         (steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
         steps.check-cache-roar.outputs.cache-hit != 'true') &&
-        steps.cache-roar.outputs.cache-hit != 'true'
+        (steps.cache-roar.outputs.cache-hit != 'true' ||
+        steps.check-manifest.outputs.refresh == 'true')
       uses: "actions/setup-go@v4"
       with:
         go-version-file: "roar/go.mod"
@@ -180,9 +136,78 @@ jobs:
       if: |
         (steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
         steps.check-cache-roar.outputs.cache-hit != 'true') &&
-        steps.cache-roar.outputs.cache-hit != 'true'
+        (steps.cache-roar.outputs.cache-hit != 'true' ||
+        steps.check-manifest.outputs.refresh == 'true')
       run: |
         go build -C "roar" -v -o "../bin/roar" "./cmd/roar"
+
+    # Full checkout of build-archive, only if refreshing.
+    - name: "refresh: Checkout build-archive"
+      if: |
+        (steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
+        steps.check-cache-roar.outputs.cache-hit != 'true') &&
+        steps.check-manifest.outputs.refresh == 'true'
+      uses: "actions/checkout@v4"
+      with:
+        repository: "RobloxAPI/build-archive"
+        path: "build-archive"
+
+    # Only regenerate data if refreshing.
+    - name: "refresh: Regenerate data"
+      if: |
+        (steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
+        steps.check-cache-roar.outputs.cache-hit != 'true') &&
+        steps.check-manifest.outputs.refresh == 'true'
+      run: |
+        bin/roar generate \
+        --site "roar/site" \
+        --source "build-archive/data/" \
+        --update \
+        --no-cache \
+        --disable-pages \
+        --disable-icons
+
+    - name: "refresh: Store site data"
+      if: |
+        (steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
+        steps.check-cache-roar.outputs.cache-hit != 'true') &&
+        steps.check-manifest.outputs.refresh == 'true'
+      run: |
+        rm --recursive --force "ref/.roar"
+        mkdir --parents "ref/.roar"
+        cp "roar/site/data/." "ref/.roar"
+
+    - name: "refresh: Commit refreshed data"
+      if: |
+        (steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
+        steps.check-cache-roar.outputs.cache-hit != 'true') &&
+        steps.check-manifest.outputs.refresh == 'true'
+      run: |
+        cd "ref"
+        git config user.email 'github-actions@github.com'
+        git config user.name 'github-actions'
+        git add -A
+        git commit -m 'Refresh data.'
+      continue-on-error: true
+
+    # Does not need to run if refreshed.
+    - name: "Restore site data"
+      if: |
+        steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
+        steps.check-cache-roar.outputs.cache-hit != 'true' &&
+        steps.check-manifest.outputs.refresh != 'true'
+      run: |
+        mkdir --parents "roar/site/data"
+        cp --archive "ref/.roar/." "roar/site/data"
+
+    - name: "Setup Hugo"
+      if: |
+        steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
+        steps.check-cache-roar.outputs.cache-hit != 'true'
+      uses: "peaceiris/actions-hugo@v2"
+      with:
+        hugo-version: ${{ env.HUGO_VERSION }}
+        extended: true
 
     - name: "Generate data"
       if: |
