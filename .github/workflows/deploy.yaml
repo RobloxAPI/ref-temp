@@ -87,6 +87,7 @@ jobs:
         ref: "gh-pages"
         path: "ref"
 
+    # Check if data schema changed.
     - name: "Check manifest"
       id: "check-manifest"
       if: |
@@ -106,8 +107,8 @@ jobs:
           false
         fi
 
-    # Run refresh workflow to ensure cached history has latest schema.
-    - name: "Try refresh"
+    # Run refresh workflow to ensure stored data uses latest schema.
+    - name: "Run refresh"
       if: |
         (steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
         steps.check-cache-roar.outputs.cache-hit != 'true') &&
@@ -115,22 +116,33 @@ jobs:
       uses: "robloxapi/ref-temp/.github/workflows/refresh.yml"
       secrets: inherit
 
-    # roar uses the history file to avoid rebuilding the entire database from
-    # scratch. The cache is abused here to effectively store the latest version
-    # of the file without having to commit it anywhere. The use of run_id forces
-    # a new cache to be generated every run. The restore prefix causes the most
-    # recent cache to be restored.
-    - name: "Cache history"
+    # Remove ref repo after refresh.
+    - name: "Remove ref"
+      if: |
+        (steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
+        steps.check-cache-roar.outputs.cache-hit != 'true') &&
+        steps.check-manifest.outputs.refresh == 'true'
+      run: |
+        rm --recursive --force "ref"
+
+    # Recheckout ref repo after refresh.
+    - name: "Recheckout ref"
+      if: |
+        (steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
+        steps.check-cache-roar.outputs.cache-hit != 'true') &&
+        steps.check-manifest.outputs.refresh == 'true'
+      uses: "actions/checkout@v4"
+      with:
+        ref: "gh-pages"
+        path: "ref"
+
+    - name: "Restore site data"
       if: |
         steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
         steps.check-cache-roar.outputs.cache-hit != 'true'
-      uses: "actions/cache@v4"
-      with:
-        path: |
-          roar/site/data/History.json
-        key: "history-${{ github.run_id }}"
-        restore-keys: |
-          history-
+      run: |
+        mkdir --parents "roar/site/data"
+        cp "ref/.roar/." "roar/site/data"
 
     - name: "Cache roar"
       if: |
@@ -205,6 +217,15 @@ jobs:
         --source "roar/site" \
         --destination "../../ref" \
         --baseURL "https://robloxapi.github.io/${{ github.event.repository.name }}/"
+
+    - name: "Store site data"
+      if: |
+        steps.check-cache-build-archive.outputs.cache-hit != 'true' ||
+        steps.check-cache-roar.outputs.cache-hit != 'true'
+      run: |
+        rm --recursive --force "ref/.roar"
+        mkdir --parents "ref/.roar"
+        cp "roar/site/data/." "ref/.roar"
 
     - name: "Commit and push website"
       if: |
