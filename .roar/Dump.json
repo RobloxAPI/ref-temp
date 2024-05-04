@@ -158224,8 +158224,7 @@
 					},
 					"ReadSecurity": "None",
 					"Tags": [
-						"NotScriptable",
-						"NotBrowsable"
+						"NotScriptable"
 					],
 					"ThreadSafety": "ReadSafe",
 					"ValueType": {
@@ -179026,9 +179025,7 @@
 						"ThreadSafety": ""
 					},
 					"ReadSecurity": "None",
-					"Tags": [
-						"NotBrowsable"
-					],
+					"Tags": [],
 					"ThreadSafety": "ReadSafe",
 					"ValueType": {
 						"Category": "Primitive",
@@ -179679,8 +179676,7 @@
 			},
 			"Tags": [
 				"NotCreatable",
-				"Service",
-				"NotBrowsable"
+				"Service"
 			]
 		},
 		"VRStatusService": {
