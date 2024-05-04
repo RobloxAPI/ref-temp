@@ -51,7 +51,7 @@ jobs:
       run: |
         rm --recursive --force "ref/.roar"
         mkdir --parents "ref/.roar"
-        cp "roar/site/data/." "ref/.roar"
+        cp --archive "roar/site/data/." "ref/.roar"
 
     - name: "Commit and push website"
       if: |
