@@ -1,7 +1,7 @@
 name: "Deploy website"
 
 env:
-  HUGO_VERSION: "0.123.8"
+  HUGO_VERSION: "0.134.1"
 
 on:
   # schedule:
@@ -162,6 +162,7 @@ jobs:
         bin/roar generate \
         --site "roar/site" \
         --source "build-archive/data/" \
+        --docs "https://github.com/Roblox/creator-docs" \
         --update \
         --no-cache \
         --disable-pages \
